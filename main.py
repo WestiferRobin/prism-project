@@ -72,6 +72,7 @@
     - In Gravity Space in Energy for time loop
     - Verifies Nexus Events with Nexus Bubbles occuring with time loops
 """
+from src.simulations.engine_simulations import run_engine_simulation
 
 # Nexus Mechanics in Theory
 """
@@ -112,7 +113,7 @@ Equations to satisfy:
 
 
 
-print("Hello world of light energy as a nexus")
+run_engine_simulation()
 
 
 
