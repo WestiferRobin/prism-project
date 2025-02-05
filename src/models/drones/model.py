@@ -61,21 +61,3 @@ class PrismWorker(PrismDrone):
     def __init__(self, dna_id):
         super().__init__(dna_id)
 
-
-
-if __name__ == "__main__":
-    """
-    TODO: STOP EVERYTHING AND START HERE
-    
-    1.) Nexus Theory proves Hawking's Bubble Universe
-    
-    """
-    # brain = Prism(uuid.uuid4())
-    # print(brain.mass())
-    # agent = PrismAgent(brain)
-    # print(drone.brain())
-    # drone = PrismDrone
-    # print(drone.mass())
-    # Then PrismAgents can go into OrbDrones
-    # Then OrbDrones can go into NexusEngines
-    # Then SpaceSpeeder can go into OrbDrone
