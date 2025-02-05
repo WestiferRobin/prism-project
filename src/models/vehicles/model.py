@@ -27,7 +27,7 @@ class SpaceSpeeder(OrbDrone):
 
         }
 
-class SpaceShuttle(Ship):
+class SpaceShuttle(SpaceSpeeder):
     def __init__(self, pilot: PrismDrone, co_pilot: PrismDrone, cargo: list = None):
         super(pilot.id, co_pilot.id)
 
