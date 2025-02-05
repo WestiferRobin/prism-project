@@ -22,8 +22,10 @@ class Prism:
 
 
 class PrismAgent:
-    def __init__(self, prism: Prism = None):
+    def __init__(self, sprite: str, prism: Prism = None):
+        self.sprite = sprite
         self.brain = Prism(uuid.uuid4()) if prism is None else prism
+
         self.__apply_brain()
 
     def __apply_brain(self):
@@ -32,25 +34,48 @@ class PrismAgent:
         cells = self.brain.mass
 
 
+class PrismAvatar(PrismAgent):
+    def __init__(self, avatar_sprite: str, user_id=None):
+        if user_id is None:
+            user_id = uuid.uuid4()
+        super().__init__(sprite=avatar_sprite, prism=Prism(dna_id=user_id))
+
+
 class PrismDrone(PrismAgent):
     def __init__(self, dna_id):
         super().__init__(dna_id)
+
+class AvatarDrone(PrismAvatar):
+    def __init__(self, avatar_sprite: str, user_id=None):
+        if user_id is None:
+            user_id = uuid.uuid4()
+        super().__init__(sprite=avatar_sprite, prism=Prism(dna_id=user_id))
+
 
 class PrismTrooper(PrismDrone):
     def __init__(self, dna_id):
         super().__init__(dna_id)
 
 
+class PrismWorker(PrismDrone):
+    def __init__(self, dna_id):
+        super().__init__(dna_id)
 
 
 
 if __name__ == "__main__":
-    brain = Prism(uuid.uuid4())
-    print(brain.mass())
-    agent = PrismAgent(brain)
-    print(drone.brain())
-    drone = PrismDrone
-    print(drone.mass())
+    """
+    TODO: STOP EVERYTHING AND START HERE
+    
+    1.) Nexus Theory proves Hawking's Bubble Universe
+    
+    """
+    # brain = Prism(uuid.uuid4())
+    # print(brain.mass())
+    # agent = PrismAgent(brain)
+    # print(drone.brain())
+    # drone = PrismDrone
+    # print(drone.mass())
     # Then PrismAgents can go into OrbDrones
     # Then OrbDrones can go into NexusEngines
     # Then SpaceSpeeder can go into OrbDrone
