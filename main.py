@@ -111,27 +111,11 @@ Equations to satisfy:
     - Obeys Bohr's Mechanics of u and v photon energy with t electrons
 """
 
+def engine_simulation():
+    nexus_engine = NexusEngine()
+    run_engine_simulation(nexus_engine)
+    run_orb_simulation(nexus_engine)
+    run_prism_simulation(nexus_engine)
 
-
-run_engine_simulation()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    run_engine_simulation()

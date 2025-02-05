@@ -1,7 +1,10 @@
 import math
+from typing import Tuple
 
 import numpy as np
 import matplotlib.pyplot as plt
+
+from src.utils.plot_utils import plot_position_time_graph
 
 """
 Universal graphing class to plot any mathematical function.
@@ -13,11 +16,35 @@ Parameters:
 - figsize: Tuple defining figure size.
 """
 class Graph:
-    def __init__(self, title="Function Graph", x_label="X-axis", y_label="Y-axis", size=(8, 5)):
-        self.title = title
-        self.x_label = x_label
-        self.y_label = y_label
-        self.size = size
+
+    def __init__(self, n: int = 8, m: int = None):
+        self.n = n
+        if m is None:
+            m = n
+        self.m = m
+
+
+    def plot_position_time_graph(
+        self,
+        lambda_function,
+        time_tag: str = None,
+        position_tag: str = None,
+        title: str = "Relativistic Motion Near Light Speed",
+        time_bound: Tuple[int] = (0, 1)
+    ):
+        if time_tag is None:
+            time_tag = 't'
+        if position_tag is None:
+            position_tag = 'lambda'
+        plot_position_time_graph(
+            time_function=lambda_function,
+            time_tag=f"Time ({time_tag})",
+            position_tag=f"Position ({position_tag})",
+            title=title
+        )
+
+    def plot_velocity_time_graph(self, mu_function):
+        time_tag =
 
     def plot(self, function, x_range=(-10, 10), y_range=(-10, 10), num_points=100, **kwargs):
         """
@@ -46,31 +73,13 @@ class Graph:
         # Show the graph
         plt.show()
 
-def x(t):
-    return t
+    def results(self):
+        pass
 
-def y(t):
-    return t
 
-def f(t):
-    x_initial = x(0)
-    x_final = x(t * 2 * math.pi)
-    y_initial = y(0)
-    y_final = y(t * 2 * math.pi)
-
-def f(x):
-    pass
-
-# Example usage
 if __name__ == "__main__":
-    graph = Graph(title="Test Graph")
-
-    # Plot a quadratic function
-    graph.plot(x, x_range=(-10, 10))
-
-    # Plot a linear function
-    graph.plot(y, x_range=(-10, 10))
-
-    # # Plot a cubic function
-    # graph.plot(cubic, x_range=(-10, 10), a=1, b=-2, c=1, d=0)
+    graph_2d = Graph(2)
+    graph_3d = Graph(3)
+    plot_energy_density(graph_2d)
+    plot_3d_vector_field(graph_3d)
 
