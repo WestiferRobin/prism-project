@@ -1,2 +1,31 @@
-matplotlib
-numpy
+# Core dependencies
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Data Science and Computational Analysis
+numpy>=1.23.0
+pandas>=1.5.0
+scipy>=1.9.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Machine Learning & LLM Development
+torch>=2.0.0
+transformers>=4.30.0
+sentencepiece>=0.1.97
+scikit-learn>=1.2.0
+
+# FastAPI for API exposure and model deployment
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+
+# Async and Utilities
+httpx>=0.23.0
+asyncio>=3.4.3
+
+# Optional: Model evaluation and dataset handling
+datasets>=2.7.0
+evaluate>=0.4.0
+
+# Optional: Jupyter Notebook support for visualization
+jupyterlab>=3.5.0
