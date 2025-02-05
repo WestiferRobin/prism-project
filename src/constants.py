@@ -31,25 +31,6 @@ class Planet:
         self.light_velocity = length(t)
 
 
-def length(t):
-    x(2 * math.pi) - x(0) =
-
-def force(t):
-    pass
-
-def acceleration(t):
-    return length(t)
-
-def momentum(t):
-    pass
-
-def velocity(t, is_forward: bool=True, is_backwards: bool=False):
-    direction = 1 if is_forward or is_backwards else 0
-    velocity_momentum =
-    return length(t + )
-
-
-
 class Mechanics:
 
     def __init__(self, function_vector=None):
