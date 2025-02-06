@@ -103,6 +103,14 @@ class AdminLegion:
 
 if __name__ == "__main__":
     # TODO: STOP EVERYTHING AND START nexus_mechanics.py
+    """
+    TODO: Need to learn this too
+    Library	Purpose	Key Features
+    NumPy (numpy)	General numerical operations	Arrays, matrix multiplications
+    SymPy (sympy)	Symbolic tensor calculus	Differentiation, integrals, tensor algebra
+    SciPy (scipy)	Solving tensor-based physics problems	ODE/PDE solvers, numerical integration
+    PyTorch (torch)	High-performance tensor computations	Automatic differentiation, optimized matrix operations
+    """
     # run_engine_simulation()
 
     # This is the idea how my LegionArmada would look like
