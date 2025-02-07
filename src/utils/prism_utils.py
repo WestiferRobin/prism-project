@@ -14,7 +14,7 @@ def hex_id(seed=None):
 
 
 def str_id(seed=None):
-    return str(seed) if seed is not None else str(seed_id().hex)
+    return str(seed.hex) if seed is not None else str(seed_id().hex)
 
 
 # Data Structure for Prism Cells
@@ -26,11 +26,9 @@ def build_data_byte(u_nibble=None, v_nibble=None):
     return {"u": u_value, "v": v_value}
 
 
-def build_prism_cell(nexus_id=None, data=None):
-    if nexus_id is None:
-        nexus_id = seed_id()
+def build_prism_cell(nexus_id, data=None):
     if data is None:
-        data = build_data_byte()
+        data = build_data_byte(nexus_id)
     return {"id": nexus_id, "data": data}
 
 
@@ -40,7 +38,8 @@ def build_prism_nexus(nexus_id=None):
     for i in range(MAX_CELL_SIZE):
         cells = []
         for j in range(MAX_CELL_SIZE):
-            cells.append(build_prism_cell(nexus_id))
+            prism_cell = build_prism_cell(nexus_id)
+            cells.append(prism_cell)
         nexus_mass.append(cells)
     return {"id": nexus_id, "cells": nexus_mass}
 
