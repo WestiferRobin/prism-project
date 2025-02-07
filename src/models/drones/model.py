@@ -15,8 +15,16 @@ class Prism:
         self.age = 0
         self.id = self.mass["id"]
 
-    def cells(self):
-        return self.mass["cells"]
+    def dna_cells(self):
+        cells_mass = self.mass["cells"]
+        dna_cells = []
+        for strand in cells_mass:
+            cells = []
+            for cell in strand:
+                prism_cell = PrismCell(self.id)
+                cells.append(prism_cell)
+            dna_cells.append(cells)
+        return dna_cells
 
 
 class PrismDrone:
@@ -35,7 +43,7 @@ class PrismDrone:
         self.__apply_brain()
 
     def __apply_brain(self):
-        cells = self.brain.cells()
+        cells = self.brain.dna_cells()
 
     def life_span(self):
         if self.age <= 0:

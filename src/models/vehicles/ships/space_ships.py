@@ -7,7 +7,7 @@ from src.models.vehicles.model import NexusEngine
 class OrbDrone:
     def __init__(self, pilot: Prism, engines: Tuple = None):
         if engines is None:
-            engines = (NexusEngine(pilot.id))
+            engines = (NexusEngine(pilot.id),)
         self.pilot = pilot
         self.engines = engines
 
