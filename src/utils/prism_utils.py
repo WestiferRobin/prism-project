@@ -42,5 +42,5 @@ def build_prism_nexus(nexus_id=None):
         for j in range(MAX_CELL_SIZE):
             cells.append(build_prism_cell(nexus_id))
         nexus_mass.append(cells)
-    return {"id": nexus_id, "mass": nexus_mass}
+    return {"id": nexus_id, "cells": nexus_mass}
 
