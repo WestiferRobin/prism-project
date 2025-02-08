@@ -1,85 +1,42 @@
-import math
-from typing import Tuple
-
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+from sympy.physics.units import acceleration
 
-from src.utils.plot_utils import plot_position_time_graph
 
-"""
-Universal graphing class to plot any mathematical function.
+def plot_function(function, inputs, label: str, color: str):
+    outputs = function(inputs)
+    plt.plot(inputs, outputs, label=label, color=color)
 
-Parameters:
-- title: Title of the graph.
-- xlabel: Label for the x-axis.
-- ylabel: Label for the y-axis.
-- figsize: Tuple defining figure size.
-"""
+
+def plot_area(function, inputs, label: str, color: str, transparent: float = 0.3):
+    plot_function(function, inputs, label, color)
+    plt.fill_between(inputs, function(inputs), color=color, alpha=transparent)
+
+
 class Graph:
 
-    def __init__(self, n: int = 8, m: int = None):
-        self.n = n
-        if m is None:
-            m = n
-        self.m = m
+    def __init__(self, title: str, x_axis: str = "X", y_axis: str = "Y"):
+        self.title = title
+        self.x_axis = x_axis
+        self.y_axis = y_axis
 
-
-    def plot_position_time_graph(
-        self,
-        lambda_function,
-        time_tag: str = None,
-        position_tag: str = None,
-        title: str = "Relativistic Motion Near Light Speed",
-        time_bound: Tuple[int] = (0, 1)
-    ):
-        if time_tag is None:
-            time_tag = 't'
-        if position_tag is None:
-            position_tag = 'lambda'
-        plot_position_time_graph(
-            time_function=lambda_function,
-            time_tag=f"Time ({time_tag})",
-            position_tag=f"Position ({position_tag})",
-            title=title
-        )
-
-    def plot_velocity_time_graph(self, mu_function):
-        time_tag =
-
-    def plot(self, function, x_range=(-10, 10), y_range=(-10, 10), num_points=100, **kwargs):
-        """
-        Plots the given function over the specified x range.
-
-        Parameters:
-        - func: Function to be plotted.
-        - x_range: Tuple (min, max) defining x values.
-        - num_points: Number of points to generate between x_range.
-        - kwargs: Additional parameters to pass to func (e.g., parameters for equations).
-        """
-        x_values = np.linspace(x_range[0], x_range[1], num_points)
-        y_values = function(x_values, **kwargs)
-
-        # Create the plot
-        plt.figure(figsize=self.size)
-        plt.plot(x_values, y_values, label=f'{function.__name__}', color='blue', linewidth=2)
-
-        # Labels and title
-        plt.xlabel(self.x_label)
-        plt.ylabel(self.y_label)
-        plt.title(self.title)
+    def plot(self):
+        plt.axhline(0, color='black')
+        plt.axvline(0, color='black')
+        plt.xlabel(f"{self.x_axis} axis")
+        plt.ylabel(f"{self.y_axis} axis")
         plt.legend()
-        plt.grid(True)
-
-        # Show the graph
+        plt.title(self.title)
+        plt.grid()
         plt.show()
 
-    def results(self):
-        pass
-
+def sample_graph():
+    graph = Graph("sample graph")
+    plot_function(lambda x : np.sin(x), np.linspace(0, 2 * np.pi), "sin(x)", "blue")
+    plot_area(lambda  x : np.cos(x), np.linspace(0, 2 * np.pi), "cos(x)", "red")
+    plot_area(lambda x : x / 3, np.linspace(0, np.pi), "y=mx+b", color="orange")
+    plot_area(lambda x: -x / 3 + 2.1, np.linspace(np.pi, 2 * np.pi), "y=mx+b", color="green")
+    graph.plot()
 
 if __name__ == "__main__":
-    graph_2d = Graph(2)
-    graph_3d = Graph(3)
-    plot_energy_density(graph_2d)
-    plot_3d_vector_field(graph_3d)
-
+    sample_graph()
