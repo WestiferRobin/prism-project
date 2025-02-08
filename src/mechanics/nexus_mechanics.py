@@ -1,3 +1,15 @@
+import numpy as np
+
+top = np.array(["alpha", "gamma", "beta"])
+center = np.array(["sigma", "mu", "lambda"])
+bot = np.array(["theta", "phi", "psi"])
+matrix = np.array([top, center, bot])
+nexus = np.array([[matrix], [matrix]])
+print(nexus.shape)
+
+
+
+
 
 
 """
