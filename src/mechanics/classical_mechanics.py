@@ -1,40 +1,75 @@
 import numpy as np
-
 from src.graph.model import Graph
 
-class PositionEquation:
-    def __init__(self, acceleration, initial_velocity, initial_position):
+class MotionSegment:
+    """Represents a single segment of motion with acceleration, velocity, and position equations."""
+    def __init__(self, acceleration, initial_velocity, initial_position, t_start):
         self.acceleration = acceleration
-        self.velocity = lambda t: initial_velocity + t * self.acceleration(t)
-        self.position = lambda t: initial_position + t * initial_velocity + 0.5 * self.acceleration(t) * t ** 2
+        self.initial_velocity = initial_velocity
+        self.initial_position = initial_position
+        self.t_start = t_start  # Start time of the motion segment
 
-class PositionGraph:
-    def __init__(self, position_variable: str="x", time_variable: str="t"):
-        self.graph = Graph("Position-Time Graph", y_axis=f"Position({position_variable})", x_axis=f"Time({time_variable})")
+    def compute_velocity(self, t):
+        """Computes velocity at time t, ensuring continuity."""
+        return self.initial_velocity + self.acceleration(self.t_start) * (t - self.t_start)
 
-    def plot_interval(self, t_start, t_end, equation: PositionEquation):
-        times = np.linspace(t_start, t_end)
-        self.graph.plot_function(lambda t: equation.position(t), times, "position(t)", "blue")
-        self.graph.plot_function(lambda t: equation.velocity(t), times, "velocity(t)", "green")
-        self.graph.plot_function(lambda t: equation.acceleration(t), times, "acceleration(t)", "red")
+    def compute_position(self, t):
+        """Computes position at time t, ensuring continuity."""
+        return (
+            self.initial_position
+            + self.initial_velocity * (t - self.t_start)
+            + 0.5 * self.acceleration(self.t_start) * (t - self.t_start) ** 2
+        )
 
-    def plot_area(self, t_start, t_end, equation: PositionEquation):
-        times = np.linspace(t_start, t_end)
-        self.graph.plot_area(lambda t: equation.position(t), times, "position(t)", "blue")
-        self.graph.plot_area(lambda t: equation.velocity(t - t_end + t_start), times, "velocity(t)", "green")
-        self.graph.plot_area(lambda t: equation.acceleration(t - t_end + t_start), times, "acceleration(t)", "red")
+class MotionSimulation:
+    """Manages multiple motion segments and ensures smooth transitions."""
+    def __init__(self):
+        self.graph = Graph("Position-Time Graph", y_axis="Position(x)", x_axis="Time(t)")
+        self.motion_segments = []
+        self.time_stamps = [0]  # Initialize time tracking
 
-    def show(self):
+    def add_motion(self, t_end, acceleration_function):
+        """Adds a new motion segment and ensures continuity."""
+        t_start = self.time_stamps[-1]  # Last known time
+
+        if not self.motion_segments:
+            initial_velocity, initial_position = 0, 0
+        else:
+            last_segment = self.motion_segments[-1]
+            initial_velocity = last_segment.compute_velocity(t_start)
+            initial_position = last_segment.compute_position(t_start)
+
+        # Create a new motion segment
+        new_segment = MotionSegment(acceleration_function, initial_velocity, initial_position, t_start)
+        self.motion_segments.append(new_segment)
+        self.time_stamps.append(t_end)
+
+        # Generate time array for plotting
+        times = np.linspace(t_start, t_end, 100)
+        self.plot_motion(times, new_segment)
+
+    def plot_motion(self, times, segment):
+        """Plots position, velocity, and acceleration for a given segment."""
+        self.graph.plot_function(
+            lambda t: np.array([segment.compute_position(ti) for ti in t]), times, "position(t)", "blue"
+        )
+        self.graph.plot_function(
+            lambda t: np.array([segment.compute_velocity(ti) for ti in t]), times, "velocity(t)", "green"
+        )
+        self.graph.plot_function(
+            lambda t: np.full_like(t, segment.acceleration(segment.t_start)), times, "acceleration(t)", "red"
+        )
+
+    def run_simulation(self):
+        """Displays the final graph with all motion segments."""
         self.graph.plot()
 
-
+# --- Running the Simulation ---
 if __name__ == "__main__":
-    graph = PositionGraph()
+    sim = MotionSimulation()
 
-    asdf = PositionEquation(lambda t : t*0 + 1, 0, 0)
-    graph.plot_interval(0, 1, asdf)
+    sim.add_motion(1, lambda t: 1)
 
-    fdsa = PositionEquation(lambda t : t*0 - 1, asdf.velocity(1), asdf.position(1))
-    graph.plot_area(1, 2, fdsa)
+    sim.add_motion(2, lambda t: -2 * t)
 
-    graph.show()
+    sim.run_simulation()
