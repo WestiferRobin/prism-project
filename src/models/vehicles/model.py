@@ -4,6 +4,17 @@ class NexusEngine:
         self.id = ship_id
 
     def start(self):
+        """
+
+        Engine is unknown energy for thrust
+
+        F_thrust = mg - ma
+
+        a = g
+        v = v0 + a*t
+
+        :return:
+        """
         pass
 
     def run(self):
