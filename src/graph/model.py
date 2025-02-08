@@ -1,16 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from sympy.physics.units import acceleration
-
-
-def plot_function(function, inputs, label: str, color: str):
-    outputs = function(inputs)
-    plt.plot(inputs, outputs, label=label, color=color)
-
-
-def plot_area(function, inputs, label: str, color: str, transparent: float = 0.3):
-    plot_function(function, inputs, label, color)
-    plt.fill_between(inputs, function(inputs), color=color, alpha=transparent)
 
 
 class Graph:
@@ -19,6 +8,19 @@ class Graph:
         self.title = title
         self.x_axis = x_axis
         self.y_axis = y_axis
+        self.labels = set()
+
+    def plot_function(self, function, inputs, label: str, color: str):
+        outputs = function(inputs)
+        if label in self.labels:
+            plt.plot(inputs, outputs, color=color)
+        else:
+            plt.plot(inputs, outputs, label=label, color=color)
+            self.labels.add(label)
+
+    def plot_area(self, function, inputs, label: str, color: str, transparent: float = 0.3):
+        self.plot_function(function, inputs, label, color)
+        plt.fill_between(inputs, function(inputs), color=color, alpha=transparent)
 
     def plot(self):
         plt.axhline(0, color='black')
@@ -32,11 +34,12 @@ class Graph:
 
 def sample_graph():
     graph = Graph("sample graph")
-    plot_function(lambda x : np.sin(x), np.linspace(0, 2 * np.pi), "sin(x)", "blue")
-    plot_area(lambda  x : np.cos(x), np.linspace(0, 2 * np.pi), "cos(x)", "red")
-    plot_area(lambda x : x / 3, np.linspace(0, np.pi), "y=mx+b", color="orange")
-    plot_area(lambda x: -x / 3 + 2.1, np.linspace(np.pi, 2 * np.pi), "y=mx+b", color="green")
+    graph.plot_function(lambda x : np.sin(x), np.linspace(0, 2 * np.pi), "sin(x)", "blue")
+    graph.plot_area(lambda  x : np.cos(x), np.linspace(0, 2 * np.pi), "cos(x)", "red")
+    graph.plot_area(lambda x : x / 3, np.linspace(0, np.pi), "y=mx+b", color="orange")
+    graph.plot_area(lambda x: -x / 3 + 2.1, np.linspace(np.pi, 2 * np.pi), "y=mx+b", color="green")
     graph.plot()
+    # TODO Figure out 3d stuff and packaging graphs
 
 if __name__ == "__main__":
     sample_graph()
