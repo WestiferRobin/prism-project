@@ -3,11 +3,23 @@ from src.simulations.nexus_simulations import run_nexus_simulations
 from src.simulations.ship_simulations import run_orb_simulations
 
 
-def run_simulation():
-    # run_nexus_simulations()
+def run_test_simulations():
     run_orb_simulations()
+    run_nexus_simulations()
     legion = AdminLegion(username="Wes")
     print(legion)
+
+
+def run_debug_simulations():
+    run_orb_simulations()
+    # run_nexus_simulations()
+
+
+def run_simulation(is_debug=True):
+    if is_debug:
+        run_debug_simulations()
+    else:
+        run_test_simulations()
 
 
 if __name__ == "__main__":
