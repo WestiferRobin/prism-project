@@ -48,7 +48,7 @@ class StarShip:
         }
 
 
-class CruiserShip(StarShip): # Outposts, Camps
+class StarCruiser(StarShip): # Outposts, Camps
     def __init__(self, lead_officer=None, first_officer=None, second_officer=None):
         if lead_officer is None:
             lead_officer = PrismDrone(rank=DroneRank.Lieutenant)
@@ -59,7 +59,7 @@ class CruiserShip(StarShip): # Outposts, Camps
         super().__init__(lead_officer, first_officer, second_officer)
 
 
-class FrigateShip(StarShip): # Town, Outposts
+class StarFrigate(StarShip): # Town, Outposts
     def __init__(self, lead_officer=None, first_officer=None, second_officer=None):
         if lead_officer is None:
             lead_officer = PrismDrone(rank=DroneRank.Commander)
@@ -70,7 +70,7 @@ class FrigateShip(StarShip): # Town, Outposts
         super().__init__(lead_officer, first_officer, second_officer)
 
 
-class CapitalShip(StarShip): # City, Town
+class StarCapital(StarShip): # City, Town
     def __init__(self, lead_officer=None, first_officer=None, second_officer=None):
         if lead_officer is None:
             lead_officer = PrismDrone(rank=DroneRank.Captain)
@@ -81,7 +81,7 @@ class CapitalShip(StarShip): # City, Town
         super().__init__(lead_officer, first_officer, second_officer)
 
 
-class DreadnoughtShip(StarShip): # Citadel
+class StarDreadnought(StarShip): # Citadel
     def __init__(self, lead_officer=None, first_officer=None, second_officer=None):
         if lead_officer is None:
             lead_officer = PrismDrone(rank=DroneRank.Arch)

@@ -36,7 +36,7 @@ class PrismDrone:
                  ):
         self.id = uuid.uuid4() if prism is None else prism.id
         self.brain = Prism(self.id) if prism is None else prism
-        self.xp = rank if age >= 20 else DroneRank.Student
+        self.rank = rank if age >= 20 else DroneRank.Student
         self.sprite = sprite
         self.age = age
 

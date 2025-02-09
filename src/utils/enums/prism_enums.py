@@ -6,9 +6,9 @@ class DroneRank:
 
     # Decides which fleet base a prism belongs too at birth
     Major = 14 # Can establish Cities with Captain of Fleet in Arch's Armada
-    Captain = 12 # Can establish Towns with Commander on CapitalShips
-    Commander = 10 # Can establish Outposts with Lieutenant on FrigateShips
-    Lieutenant = 8 # Can establish Camps with Sergeant on CruiserShips
+    Captain = 12 # Can establish Towns with Commander on StarCapitals
+    Commander = 10 # Can establish Outposts with Lieutenant on StarFrigates
+    Lieutenant = 8 # Can establish Camps with Sergeant on StarCruisers
 
     # Decides to NavyWorker or MarineWorker
     Sergeant = 6 # Can become Leader of Cruisers and chosen on performance
