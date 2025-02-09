@@ -66,6 +66,22 @@ class MotionSimulation:
 
 # --- Running the Simulation ---
 if __name__ == "__main__":
+
+    """
+    Notes:
+    - Did a draft but had gpt polish for me since im new at this modeling thing
+    - Goal is to make ai drones and star armada using drones for Trade and Battle Missions
+    - FotF Inspires Dream:
+        - I control a droid armada
+        - I can do Trade and Battle missions
+        - Will have all or none full star ships of drones
+        - Will have shuttles, fighters, speeders, probes to help on star ships
+        - All ships hail from colonies to do Trade and Battle missions
+        
+    - Newton
+        
+    """
+
     sim = MotionSimulation()
 
     sim.add_motion(1, lambda t: 1)

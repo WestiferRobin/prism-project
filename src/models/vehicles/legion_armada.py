@@ -2,17 +2,17 @@ import uuid
 from typing import Tuple
 
 from src.models.drones.model import PrismDrone, PrismAvatar
-from src.models.vehicles.ships.star_ships import StarShip, DreadnoughtShip, CapitalShip, FrigateShip, CruiserShip
+from src.models.vehicles.ships.star_ships import StarShip, StarDreadnought, StarCapital, StarFrigate, StarCruiser
 
 
 class LegionFleet:
     def __init__(self, leader: PrismDrone, ships: Tuple[StarShip] = None):
         if ships is None:
             ships = (
-                DreadnoughtShip(),
-                CapitalShip(),
-                FrigateShip(),
-                CruiserShip()
+                StarDreadnought(),
+                StarCapital(),
+                StarFrigate(),
+                StarCruiser()
             )
         self.leader = leader
         self.ships = ships

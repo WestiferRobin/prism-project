@@ -28,7 +28,7 @@ class SpaceSpeeder(OrbDrone):
 
 
 class SpaceShuttle(OrbDrone):
-    def __init__(self, pilot: PrismDrone, co_pilot: PrismDrone = None):
+    def __init__(self, pilot: PrismDrone, co_pilot: PrismDrone = None, crew = None):
         super().__init__(
             pilot=pilot.brain,
             engines=(
@@ -39,6 +39,7 @@ class SpaceShuttle(OrbDrone):
             )
         )
         self.co_pilot = co_pilot
+        self.crew = tuple() if crew is None else crew
 
 
 class RangeWeapon:
