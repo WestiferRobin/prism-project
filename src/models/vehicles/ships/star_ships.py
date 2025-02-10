@@ -1,9 +1,9 @@
 from typing import Tuple
 
 from src.models.drones.model import PrismDrone
-from src.models.vehicles.model import LightEngine
+from src.models.vehicles.engines.light_engine import LightEngine
 from src.models.vehicles.ships.space_ships import OrbDrone, SpaceFighter, SpaceShuttle, SpaceSpeeder
-from src.utils.enums.prism_enums import DroneRank
+from src.utils.enums.prism_enums import LegionRank
 
 
 class StarShip:
@@ -29,12 +29,12 @@ class StarShip:
             lead_officer,
             first_officer,
             second_officer,
-            PrismDrone(rank=DroneRank.Private),
-            PrismDrone(rank=DroneRank.Private),
-            PrismDrone(rank=DroneRank.Corporal),
-            PrismDrone(rank=DroneRank.Private),
-            PrismDrone(rank=DroneRank.Lance),
-            PrismDrone(rank=DroneRank.Ensign)
+            PrismDrone(rank=LegionRank.Private),
+            PrismDrone(rank=LegionRank.Private),
+            PrismDrone(rank=LegionRank.Corporal),
+            PrismDrone(rank=LegionRank.Private),
+            PrismDrone(rank=LegionRank.Lance),
+            PrismDrone(rank=LegionRank.Ensign)
         )
 
         self.grid = {
@@ -51,43 +51,43 @@ class StarShip:
 class StarCruiser(StarShip): # Outposts, Camps
     def __init__(self, lead_officer=None, first_officer=None, second_officer=None):
         if lead_officer is None:
-            lead_officer = PrismDrone(rank=DroneRank.Lieutenant)
+            lead_officer = PrismDrone(rank=LegionRank.Lieutenant)
         elif first_officer is None:
-            first_officer = PrismDrone(rank=DroneRank.Sergeant)
+            first_officer = PrismDrone(rank=LegionRank.Sergeant)
         elif second_officer is None:
-            second_officer = PrismDrone(rank=DroneRank.Sergeant)
+            second_officer = PrismDrone(rank=LegionRank.Sergeant)
         super().__init__(lead_officer, first_officer, second_officer)
 
 
 class StarFrigate(StarShip): # Town, Outposts
     def __init__(self, lead_officer=None, first_officer=None, second_officer=None):
         if lead_officer is None:
-            lead_officer = PrismDrone(rank=DroneRank.Commander)
+            lead_officer = PrismDrone(rank=LegionRank.Commander)
         elif first_officer is None:
-            first_officer = PrismDrone(rank=DroneRank.Lieutenant)
+            first_officer = PrismDrone(rank=LegionRank.Lieutenant)
         elif second_officer is None:
-            second_officer = PrismDrone(rank=DroneRank.Sergeant)
+            second_officer = PrismDrone(rank=LegionRank.Sergeant)
         super().__init__(lead_officer, first_officer, second_officer)
 
 
 class StarCapital(StarShip): # City, Town
     def __init__(self, lead_officer=None, first_officer=None, second_officer=None):
         if lead_officer is None:
-            lead_officer = PrismDrone(rank=DroneRank.Captain)
+            lead_officer = PrismDrone(rank=LegionRank.Captain)
         elif first_officer is None:
-            first_officer = PrismDrone(rank=DroneRank.Commander)
+            first_officer = PrismDrone(rank=LegionRank.Commander)
         elif second_officer is None:
-            second_officer = PrismDrone(rank=DroneRank.Lieutenant)
+            second_officer = PrismDrone(rank=LegionRank.Lieutenant)
         super().__init__(lead_officer, first_officer, second_officer)
 
 
 class StarDreadnought(StarShip): # Citadel
     def __init__(self, lead_officer=None, first_officer=None, second_officer=None):
         if lead_officer is None:
-            lead_officer = PrismDrone(rank=DroneRank.Arch)
+            lead_officer = PrismDrone(rank=LegionRank.Arch)
         elif first_officer is None:
-            first_officer = PrismDrone(rank=DroneRank.Major)
+            first_officer = PrismDrone(rank=LegionRank.Major)
         elif second_officer is None:
-            second_officer = PrismDrone(rank=DroneRank.Commander)
+            second_officer = PrismDrone(rank=LegionRank.Commander)
         super().__init__(lead_officer, first_officer, second_officer)
 

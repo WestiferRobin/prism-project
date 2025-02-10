@@ -25,6 +25,14 @@ def run_engine_simulation(engine: NexusEngine):
 
 
 if __name__ == "__main__":
-    nexus_engine = NexusEngine(uuid.uuid4())
+    nexus_engine = NexusEngine(
+        ship_id=uuid.uuid4(),
+        unit_mass=1,
+        alloy_mass = {
+            "Iron": 1,
+            "Aluminum": 0,
+            "Copper": 0
+        }
+    )
     run_engine_simulation(nexus_engine)
     # TODO: Need to start LightEngine() next after this is refactored!

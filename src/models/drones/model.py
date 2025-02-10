@@ -1,6 +1,6 @@
 import uuid
 
-from src.utils.enums.prism_enums import LifeSpan, DroneRank
+from src.utils.enums.prism_enums import LifeSpan, LegionRank
 from src.utils.prism_utils import build_prism_nexus
 
 
@@ -28,17 +28,36 @@ class Prism:
 
 
 class PrismDrone:
+    drone_count = 0
+
+    @staticmethod
+    def get_valid_name():
+        name = f"Drone #{PrismDrone.drone_count}"
+        PrismDrone.drone_count += 1
+        return name
+
+    def __str__(self):
+        return f"{self.rank} {self.name}"
+
     def __init__(self,
-                 prism: Prism = None,
-                 rank: DroneRank = DroneRank.Private,
+                 prism_id = None,
+                 name: str = None,
+                 rank: LegionRank = LegionRank.Private,
                  sprite: str = "O",
-                 age: int = 20
+                 age: int = 20,
+                 gender: bool = True
                  ):
-        self.id = uuid.uuid4() if prism is None else prism.id
-        self.brain = Prism(self.id) if prism is None else prism
-        self.rank = rank if age >= 20 else DroneRank.Student
+
+
+        self.id = uuid.uuid4() if prism_id is None else prism_id
+        self.brain = Prism(self.id)
+
+        self.name = PrismDrone.get_valid_name() if name is None else name
+
+        self.rank = rank if age >= 20 else LegionRank.Student
         self.sprite = sprite
         self.age = age
+        self.gender = gender
 
         self.__apply_brain()
 
@@ -58,13 +77,6 @@ class PrismDrone:
             return LifeSpan.Adult
         else:
             return LifeSpan.Elder
-
-
-class PrismAvatar(PrismDrone):
-    def __init__(self, avatar_sprite: str, user_id=None):
-        if user_id is None:
-            user_id = uuid.uuid4()
-        super().__init__(sprite=avatar_sprite, prism=Prism(dna_id=user_id))
 
 
 class PrismTrooper(PrismDrone):
