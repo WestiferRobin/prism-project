@@ -1,5 +1,5 @@
 
-class DroneRank:
+class LegionRank:
 
     # Decides which fleet ship a prism belongs too at adult age 20
     Arch = 16 # Admin, Vice, General, Admiral for PrismDrones living on SolarBases
