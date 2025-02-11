@@ -114,7 +114,7 @@ class AdminLegion:
         planets = []
         for base in self.bases():
             if base.planet is Planet:
-            planets.append(base.planet)
+                planets.append(base.planet)
         return tuple(planets)
 
     def moons(self):
