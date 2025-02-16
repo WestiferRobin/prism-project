@@ -1,0 +1,78 @@
+
+Battle Front 2:
+- Prequel Era: Republic vs Separatists
+  - Republic has troopers
+  - Separatists have droids
+- Civil Era: Empire vs Alliance
+  - Empire has trooper clones
+  - Alliance has troopers
+- Remnant Era: Sith vs Federation
+  - Sith has trooper drones
+  - Federation has troopers and droids
+- Galatic Conquest:
+  - Online
+    - Rank uses Era only
+      - Factions unlock by completing one game as faction in era
+        - Play as Trade Federation and ally with Republic and defeat Solar Separatists 
+    - Unrank is Ranked but any Faction
+      - Prequel Era: James and Spock
+        - Sovereign Republic with Trade Federation
+        - Sith Order with Droid Union
+      - Civil Era: Luke and Mara
+        - Solar Alliance into Bail, Mon, Akbar, Ashoka, Kenobi, Yoda, Ventrus Exchange
+        - Sith Empire with Hutt and Fett Exchange
+      - Sequel Era:
+        - Solar Federation with Maul Exchange
+        - Imperial Remnant with Sith Order
+- Trooper Classes:
+  - Space:
+    - Marine => Trooper
+    - Pilot => Engineer
+  - Land:
+    - Tanks:
+      - Heavy => Arch, Dark, Alliance, Super Droid Trooper
+      - Ranger => Republic Jedi, Imperial Sith, Alliance Jedi, Dathomear Sith
+    - Damage:
+      - Trooper => Clone, Storm, Alliance, Droid Trooper
+      - Recon => Clone, Scout, Alliance, Droid Trooper
+    - Support:
+      - Engineer => Clone, Shock, Alliance, Droid Trooper
+      - Officer => Clone Commander, Imperial Commander, Alliance Commander, Comando Droid Trooper
+    - Trooper Layout:
+      - Primary Weapon: Vandel, Phantom, Force, Sniper, LMG, SMG, 
+      - Secondary Weapon: Sword, Axe, Pistol, Shotgun
+      - Primary Ability from Inventory
+      - Secondary Ability from Inventory
+      - Third Ability or Passive
+      - Ultimate Ability from Inventory
+      - Inventory: Packs, Stims, Explosives
+  - Heros:
+    - Rivals: 6x3 Agents
+      - Tanks: Thor, DrStrange, Groot, Hulk, Magneto, Cyclops
+      - Damage: MoonKnight, IronMan, Bucky, Wanda, Wolverine, Storm
+      - Healer: Adam, Rocket, Mantis, Loki, Gambit, Jean
+    - Valorant: 5x4 Agents
+      - Duelists => Tanks
+        - Phoenix
+        - Raze
+        - Neon
+        - Yoru
+        - Reyna
+      - Initiators => Damage
+        - Sova
+        - Skye
+        - Breach
+        - Fade
+        - KAYO
+      - Sentinels => Healer
+        - Sage
+        - Killjoy
+        - Cypher
+        - Deadlock
+        - Vyse
+      - Controller => Damage
+        - Omen
+        - Brim
+        - Viper
+        - Chamber
+        - Wes: Bomb Arrows, Warlock Healing, Moon Knives, Loki Ult
