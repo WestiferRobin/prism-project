@@ -1,5 +1,5 @@
-from src.models.planets.solar_system import Sol, SolarSystem
-from src.utils.enums.planet_enums import SunType
+from src.models.solars.model import Sol, SolarSystem
+from src.utils.enums.solar_enums import SunColor
 
 
 class Galaxy:
@@ -33,17 +33,17 @@ class MilkywayGalaxy(Galaxy):
     def __init__(self):
         super().__init__(name="Milkyway")
         self.first_quadrant.append(Sol())
-        self.second_quadrant.append(SolarSystem("Bov", SunType.Blue))
-        self.third_quadrant.append(SolarSystem("Mol", SunType.Red))
-        self.fourth_quadrant.append(SolarSystem("Sov", SunType.Yellow))
+        self.second_quadrant.append(SolarSystem("Bov", SunColor.Blue))
+        self.third_quadrant.append(SolarSystem("Mol", SunColor.Red))
+        self.fourth_quadrant.append(SolarSystem("Sov", SunColor.Yellow))
 
 class AndromedaGalaxy(Galaxy):
     def __init__(self):
         super().__init__(name="Andromeda")
-        self.second_quadrant.append(SolarSystem("Mol", SunType.Yellow))
-        self.second_quadrant.append(SolarSystem("Tav", SunType.Red))
-        self.third_quadrant.append(SolarSystem("Jav", SunType.Blue))
-        self.fourth_quadrant.append(SolarSystem("Mov", SunType.Orange))
+        self.second_quadrant.append(SolarSystem("Mol", SunColor.Yellow))
+        self.second_quadrant.append(SolarSystem("Tav", SunColor.Red))
+        self.third_quadrant.append(SolarSystem("Jav", SunColor.Blue))
+        self.fourth_quadrant.append(SolarSystem("Mov", SunColor.Orange))
 
 class UniverseGalaxy(Galaxy):
     def __init__(self):

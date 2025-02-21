@@ -1,15 +1,21 @@
-from src.models.legions.legion import AdminLegion
+from src.models.legions.legion import AdminLegion, ArchLegion, Legion
+from src.utils.armada_utils import find_armada_fleet
 
 
-def simulate_legion():
-    return AdminLegion()
+def simulate_legion(is_arch_legion: bool = False) -> Legion:
+    name = "Legion"
+    if is_arch_legion:
+        return ArchLegion(name=name)
+    else:
+        return AdminLegion(name)
 
-def simulate_armada():
-    return simulate_legion().armada()
+def simulate_armada(is_arch_legion: bool = False):
+    legion = simulate_legion(is_arch_legion)
+    return legion.armada
 
 def simulate_fleet():
-    legion_armada = simulate_armada()
-    return legion_armada.fleets[legion_armada.__admin]
+    legion_armada = simulate_armada(is_arch_legion=False)
+    return find_armada_fleet(legion_armada, legion_armada.admin().id)
 
 def simulate_star_ship(index: int):
     legion_fleet = simulate_fleet()
@@ -48,15 +54,41 @@ def simulate_star_cruiser(index: int=0):
         return simulate_star_ship(8)
 
 def simulate_space_shuttle(index: int):
-    pass
+    ship_index = index % 10
+    if ship_index == 0:
+        ship = simulate_star_dreadnought()
+    elif 1 <= ship_index <= 2:
+        ship = simulate_star_capital(ship_index)
+    elif 3 <= ship_index <= 5:
+        ship = simulate_star_frigate(ship_index)
+    else:
+        ship = simulate_star_cruiser(ship_index)
+    shuttle = ship.hanger()["shuttle-squadrons"][0]
+    return shuttle
 
-def simulate_space_fighter(index: int):
-    pass
+def simulate_space_fighters(index: int):
+    ship_index = index % 6
+    if ship_index == 0:
+        ship = simulate_star_dreadnought()
+    elif 1 <= ship_index <= 2:
+        ship = simulate_star_capital(ship_index)
+    else:
+        ship = simulate_star_frigate(ship_index)
+    fighters = ship.hanger()["fighter-squadrons"][0]
+    return fighters
 
-def simulate_space_speeder(index: int):
-    pass
+def simulate_space_speeders(index: int):
+    ship_index = index % 10
+    if ship_index == 0:
+        ship = simulate_star_dreadnought()
+    elif 1 <= ship_index <= 2:
+        ship = simulate_star_capital(ship_index)
+    elif 3 <= ship_index <= 5:
+        ship = simulate_star_frigate(ship_index)
+    else:
+        ship = simulate_star_cruiser(ship_index)
+    speeders = ship.hanger()["speeder-squadrons"][0]
+    return speeders
 
-def simulate_space_vehicle(index: int):
-    pass
 
 

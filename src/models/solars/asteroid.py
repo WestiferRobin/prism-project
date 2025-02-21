@@ -1,10 +1,10 @@
-from src.models.planets.planet import Planet
-from src.utils.enums.planet_enums import PlanetType
+from src.models.solars.planet import Planet
+from src.utils.enums.solar_enums import SolarType
 
 
 class Asteroid(Planet):
     def __init__(self, name: str):
-        super().__init__(name, PlanetType.Asteroid)
+        super().__init__(name, SolarType.Asteroid)
 
 class AsteroidBelt:
     def __init__(self, name, m=1, n=1):
