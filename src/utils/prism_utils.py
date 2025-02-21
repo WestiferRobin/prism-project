@@ -5,25 +5,74 @@ MAX_CELL_SIZE = 16
 MAX_PRISM_SIZE = 64
 
 
-def seed_id():
-    return uuid.uuid4()
-
-
-def hex_id(seed=None):
-    return seed.hex if seed is not None else seed_id().hex
-
-
-def str_id(seed=None):
-    return str(seed.hex) if seed is not None else str(seed_id().hex)
-
-
 # Data Structure for Prism Cells
 def build_data_byte(u_nibble=None, v_nibble=None):
-    u_nibble = seed_id() if u_nibble is None else u_nibble
-    v_nibble = seed_id() if v_nibble is None else v_nibble
-    u_value = str_id(u_nibble)
-    v_value = str_id(v_nibble)
-    return {"u": u_value, "v": v_value}
+    u_value = uuid.uuid4() if u_nibble is None else u_nibble
+    v_value = uuid.uuid4() if v_nibble is None else v_nibble
+
+    if len(u_value.bytes) != len(v_value.bytes):
+        raise Exception("build_data_byte in prism_utils.py isn't working here. ")
+
+    uv = str()
+    vu = str()
+    vv = str()
+    uu = str()
+    for index in range(0, len(u_value.hex)):
+        u = int(u_value.hex[index], 0xF + 1)
+        v = int(v_value.hex[index], 0xF + 1)
+        uv += hex((u + v) & 0xF)[2:3]
+        vu += hex((u * v) & 0xF)[2:3]
+        vv += hex((v - u) & 0xF)[2:3]
+        uu += hex((u - v) & 0xF)[2:3]
+
+    uv_value = uuid.UUID(hex=uv)
+    vu_value = uuid.UUID(hex=vu)
+    uu_value = uuid.UUID(hex=uu)
+    vv_value = uuid.UUID(hex=vv)
+
+    a = str()
+    b = str()
+    c = str()
+    d = str()
+    e = str()
+    f = str()
+
+    for index in range(0, len(u_value.hex)):
+        u = int(u_value.hex[index], 0xF + 1)
+        v = int(v_value.hex[index], 0xF + 1)
+        uv = int(uv_value.hex[index], 0xF + 1)
+        vu = int(vu_value.hex[index], 0xF + 1)
+        vv = int(v_value.hex[index], 0xF + 1)
+        uu = int(v_value.hex[index], 0xF + 1)
+        a += hex((u * uu + v + vv + uv + vu) & 0xF)[2:]
+        b += hex((u + uu + v * vv + uv + vu) & 0xF)[2:]
+        c += hex((u + uu + v + vv + uv * vu) & 0xF)[2:]
+        d += hex((u + uu + v * vv + uv * vu) & 0xF)[2:]
+        e += hex((u * uu + v + vv + uv * vu) & 0xF)[2:]
+        f += hex((u * uu + v * vv + uv * vu) & 0xF)[2:]
+
+    a_value = uuid.UUID(hex=a)
+    b_value = uuid.UUID(hex=b)
+    c_value = uuid.UUID(hex=c)
+    d_value = uuid.UUID(hex=d)
+    e_value = uuid.UUID(hex=e)
+    f_value = uuid.UUID(hex=f)
+
+    # TODO: Solve this please.....
+    return {
+        "u": u_value,
+        "v": v_value,
+        "uv": uv_value,
+        "vu": vu_value,
+        "uu": uu_value,
+        "vv": vv_value,
+        "a": a_value,
+        "b": b_value,
+        "c": c_value,
+        "d": d_value,
+        "e": e_value,
+        "f": f_value
+    }
 
 
 def build_prism_cell(nexus_id, data=None):
@@ -31,15 +80,4 @@ def build_prism_cell(nexus_id, data=None):
         data = build_data_byte(nexus_id)
     return {"id": nexus_id, "data": data}
 
-
-def build_prism_nexus(nexus_id=None):
-    nexus_id = seed_id() if nexus_id is None else nexus_id
-    nexus_mass = []
-    for i in range(MAX_CELL_SIZE):
-        cells = []
-        for j in range(MAX_CELL_SIZE):
-            prism_cell = build_prism_cell(nexus_id)
-            cells.append(prism_cell)
-        nexus_mass.append(cells)
-    return {"id": nexus_id, "cells": nexus_mass}
 

@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
 class NexusEngine:
     def __init__(self, ship_id, unit_mass: int = 1, alloy_mass=None):
         self.id = ship_id
@@ -32,13 +35,13 @@ class NexusEngine:
         P(t) = W(t)/t
         g(u,v) <= (8pi/c^4)G(u,v)
 
-        OrbDrone: 4 Nexus Engine Graphs
-        OrbDrone as Mass in Vacuum of Space with Plasma Mass of Suns
-        OrbDrone as Mass in Solid Space of Earth
-        OrbDrone as Mass in Gas Pressure of Atmosphere
-        OrbDrone as Mass in Liquid Pressure of Oceans
+        OrbProbe: 4 Nexus Engine Graphs
+        OrbProbe as Mass in Vacuum of Space with Plasma Mass of Suns
+        OrbProbe as Mass in Solid Space of Earth
+        OrbProbe as Mass in Gas Pressure of Atmosphere
+        OrbProbe as Mass in Liquid Pressure of Oceans
 
-        Proves OrbDrone as an all-terrain vehicle on Earth.
+        Proves OrbProbe as an all-terrain vehicle on Earth.
         """
         print(f"Starting Nexus Engine {self.id}")
         # Initialize magnetic and charge fields
@@ -47,10 +50,7 @@ class NexusEngine:
         self.velocity = 0  # Initial velocity
         self.height = 0.5  # Initial height (m)
 
-    def run(self, time_step=0.05, duration=10):
-        """Simulate the Nexus Engine running over time."""
-        import numpy as np
-        import matplotlib.pyplot as plt
+    def run(self, time_step=0.05, duration=10, show_plot=True):
 
         time = np.arange(0, duration, time_step)
         heights = []
@@ -62,6 +62,8 @@ class NexusEngine:
             self.height += self.velocity * time_step
             heights.append(self.height)
 
+        if not show_plot:
+            return
         plt.plot(time, heights, label="Orb Drone Height")
         plt.xlabel("Time (s)")
         plt.ylabel("Height (m)")

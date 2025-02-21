@@ -1,11 +1,11 @@
-from typing import Tuple, List
+from typing import Tuple
 
-from src.models.drones.model import Prism, PrismDrone
-from src.models.vehicles.model import NexusEngine
+from src.models.drones.model import PrismDrone
+from src.models.vehicles.engines.nexus_engine import NexusEngine
 from src.utils.enums.prism_enums import LegionRank
 
 
-class OrbDrone:
+class OrbProbe:
     def __init__(self, pilot: PrismDrone, engines: Tuple = None, position: Tuple = None):
         self.pilot = pilot
 
@@ -46,7 +46,7 @@ class PhotonLauncher(BombLauncher):
     def __init__(self, rounds=1):
         super().__init__(rounds)
 
-class SpaceSpeeder(OrbDrone):
+class SpaceSpeeder(OrbProbe):
     def __init__(self, pilot: PrismDrone, right_cannon: LaserCannon = None, left_cannon: LaserCannon = None):
         super().__init__(
             pilot=pilot,

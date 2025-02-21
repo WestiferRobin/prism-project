@@ -14,138 +14,70 @@ def determine_board(version: int):
 
 
 class FotfGame:
-    def __init__(self, version: int = 1):
+    def __init__(self, avatar: PrismDrone, version: int = 1):
+        self.player_avatar = avatar
         self.player_faction = AdminLegion()
         self.enemy_faction = AdminLegion()
         self.board = determine_board(version)
-        # Needs to see planets like EAW: Corrupt Forces for Episodes 0-X (11 Episodes? Maybe 12?)
-            # Idea: Player sees fleets per StarBase and can order them to attack or trade
-        # Needs to battle like battlefront but it's a tactical shooter in rivals convoy
-            # Idea: Battlefront Orbit Battles as Valorant Rivals game
-        # Needs to land battle like AOE2 and Rimworld
-            # Idea: Player builds base with drones in a AOE2 world
-            # Workers gather resources for Base to build Farms, Mines, Lumberyard, Harbor, Houses
-            # Tier 1 can build Troopers in Barracks
-            # Tier 2 can build Tanks in Factory
-            # Tier 3 can build Shuttles in Factory
-            # Tier 4 can build Portals in StarBase
-        # Needs to space battle like Battlefront and Rouge Squadron
-            # Think Rivals logic between dogfight, support-ships, lead-ship of Fleet Battle
-            # 1st Round fighter dogfight
-            # 2nd Round defend support ships from fighters
-            # 3rd Round defend lead ship from enemy fighters and support ships
-                # Consider defend lead ship from enemy fighters and lead ships
-            # Consider Orbit Battles between FleetShip and LegionBase
-            # 1st Round secure area
-            # 2nd Round secure wall
-            # 3rd Round secure center
-        # Needs to galactic conquest like Battlefront
-            # Legion needs full armada with stockpile of resources
-            # stockpiles stored on citadel bases connected at tier 4 level portals and ships
-            # stockpiles stored on city bases with tier 3 ships
-            # stockpiles stored on town bases with tier 2 ships
-            # stockpiles stored on outpost bases with tier 1 ships
-            # camp bases are created from tier 1 ships
-        # Player needs to experience war in simulated battles in ranked-game, unrated-game, or quick-game
-            # Game Modes:
-                # Campaigns: Clone Wars, Civil Wars, Reminate Wars
-                # Ranked => 1 v 1, 2 v 2, 4 v 4
-                # Unrated => Ranked without score
-            # Player's Avatar is Private to Admin or Baby to Elder
-            # If dies goes to next avaliable heir otherwise loose
-            # Starts on Battle Mission
-            # Continue until Sergeant of Trade Mission
-            # fails will become Ensign until Sergeant of Battle Mission
-            # Sergeant does Trade and Battle Mission on Cruiser
-            # Lieutenant does Science and Battle Mission on Cruiser
-            # Lieutenant does Trade and Battle Mission on Frigate
-            # Commander does Trade and Battle Mission on Frigate
-            # Captain does Science and Battle Mission on Frigate
-            # Captain does Trade and Battle Mission on Capital
-            # Major does Trade and Battle Mission on Capital
-            # Major is elected for being Arch Guardian
-            # Arch Guardian is voted to AdminGeneral or AdminAdmiral
-            # General or Admiral can be voted as ViceAdmin
-            # ViceAdmin as Leader of LegionArmada
-            # ArchAdmin as Leader of LegionOrder in Sol of Galaxy
 
-def build_drone_squadron(leader: PrismDrone = None):
-    if leader is None:
-        leader = PrismDrone(rank=LegionRank.Sergeant)
-    squadron = (
-        leader,
-        PrismDrone(rank=LegionRank.Lance),
-        PrismDrone(rank=LegionRank.Corporal),
-        PrismDrone(rank=LegionRank.Corporal),
-        PrismDrone(rank=LegionRank.Private),
-        PrismDrone(rank=LegionRank.Private),
-        PrismDrone(rank=LegionRank.Private),
-        PrismDrone(rank=LegionRank.Private)
-    )
-    return squadron
+    def is_running(self):
+        if not self.player_avatar.is_alive():
+            return False
+        player_admin = self.player_faction.admin()
+        enemy_admin = self.enemy_faction.admin()
+        if player_admin.is_alive() and enemy_admin.is_alive():
+            return True
+        else:
+            return False
 
-def build_fighter_squadron():
-    leader = SpaceFighter(PrismDrone(rank=LegionRank.Lance))
-    squadron = (
-        leader,
-        SpaceFighter(PrismDrone(rank=LegionRank.Lance)),
-        SpaceFighter(PrismDrone(rank=LegionRank.Lance)),
-        SpaceFighter(PrismDrone(rank=LegionRank.Corporal)),
-        SpaceFighter(PrismDrone(rank=LegionRank.Corporal)),
-        SpaceFighter(PrismDrone(rank=LegionRank.Corporal))
-    )
-    return squadron
+    def winner(self):
+        if self.is_running():
+            return None
+        player_admin = self.player_faction.admin()
+        enemy_admin = self.enemy_faction.admin()
+        if player_admin.is_alive() and not enemy_admin.is_alive():
+            return player_admin
+        elif not player_admin.is_alive() and enemy_admin.is_alive():
+            return enemy_admin
+        else:
+            return None
 
-def build_shuttle_squadron():
-    squadron = build_drone_squadron()
-    lead_pilot = squadron[1]
-    co_pilot = squadron[2]
-    crew = (
-        squadron[0],
-        squadron[3:]
-    )
-    return SpaceShuttle(lead_pilot, co_pilot, crew)
+    def loser(self):
+        winner = self.winner()
+        player_admin = self.player_faction.admin()
+        enemy_admin = self.enemy_faction.admin()
+        if winner is None:
+            return None
+        elif player_admin.id == winner.id:
+            return enemy_admin
+        elif enemy_admin.id == winner.id:
+            return player_admin
+        else:
+            return None
 
-def build_star_cruiser():
-    return StarCruiser()
+    def is_tie(self):
+        winner = self.winner()
+        looser = self.loser()
+        if winner is None and looser is None:
+            return True
+        else:
+            return False
 
-def build_star_frigate():
-    return StarFrigate()
 
-def build_star_capital():
-    return StarCapital()
+    def start(self):
+        while self.is_running():
+            self.update()
+            break
+        if self.is_tie():
+            print("It's a draw")
+        else:
+            print(f"{self.winner()} wins in Solar Conquest")
+            print(f"{self.loser()} looses in Solar Conquest")
 
-def build_star_dreadnought():
-    return StarDreadnought()
+    def update(self):
+        pass
 
-def build_star_fleet():
-    star_cruiser = build_star_cruiser()
-    star_frigate = build_star_frigate()
-    star_capital = build_star_capital()
-    fleet = (
-        star_cruiser,
-        star_frigate,
-        star_capital,
-    )
-    return fleet
-
-def build_star_armada():
-    flagship = build_star_dreadnought()
-    elite_fleet = (
-        flagship,
-        build_star_capital(),
-        build_star_capital()
-    )
-    armada = (
-        elite_fleet,
-        build_star_fleet(),
-        build_star_fleet()
-    )
-    return armada
 
 if __name__ == "__main__":
-    star_armada = build_star_armada()
-    print(star_armada)
-
-
+    game = FotfGame(PrismDrone(name="Wes"))
 

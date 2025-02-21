@@ -1,6 +1,6 @@
 import uuid
 
-from src.models.vehicles.model import NexusEngine
+from src.models.vehicles.engines.nexus_engine import NexusEngine
 
 
 def run_pre_ignition(engine: NexusEngine):
@@ -9,7 +9,7 @@ def run_pre_ignition(engine: NexusEngine):
 
 
 def run_engine(engine: NexusEngine):
-    engine.run()
+    engine.run(show_plot=False)
     print("ignition: Inconclusive")
 
 
