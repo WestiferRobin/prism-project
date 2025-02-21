@@ -1,9 +1,13 @@
+
 import pygame
 
+from src.models.drones.model import PrismDrone
 from src.models.games.fotf_game import FotfGame
 
-def run_fotf_game():
-    fotf_game = FotfGame()
+max_game_byte_size = 16
+
+def run_fotf_game(avatar: PrismDrone):
+    fotf_game = FotfGame(avatar)
     # Solve for nxm Room of n and m Tiles
     # Solve for 2x2 Room Battle with 2 Prisms of 1 team
     # Solve for 4x4 Room Battle with 4 Prisms of 1 or 2 teams
@@ -12,68 +16,96 @@ def run_fotf_game():
     # Solve for 16x16 Room Battle with 12 Prisms of 1 or 2 or 3 or 4 or 6 or 8 or 9 or 12 teams
     # Solve for 64x64 Rooms of Land and Orbit Tile Spaces for 16 Prisms of 1 StarCruiser
 
-def run_game_simulations():
-    run_fotf_game()
+def run_game_simulations(avatar: PrismDrone):
+    run_fotf_game(avatar)
 
-def sample_checkers_game():
+"""
+for visual game simulations
+"""
+def draw_board(board, screen, length: int, width: int):
+
+    # Constants
+    WHITE = (255, 255, 255)
+    BLACK = (0, 0, 0)
+    BLUE = (0, 0, 255)
+    YELLOW = (255, 255, 0)
+    GREEN = (0, 255, 0)
+    MAGENTA = (255, 0, 255)
+    RED = (255, 0, 0)
+    CYAN = (0, 255, 255)
+    GRAY = (128, 128, 128)
+
+    screen.fill(BLACK)  # Fill background
+
+    cell_size = 16
+    for i in range(0, width):
+        for j in range(0, length):
+            white_band = (i + j) % 2 == 0
+            red_band = (i + j) % 3 == 0
+            blue_band = (i + j) % 4 == 0
+            green_band = (i + j) % 6 == 0
+
+            if white_band == 0:
+                if red_band and blue_band and green_band:
+                    color = GRAY
+                elif red_band and not blue_band and not green_band:
+                    color = CYAN
+                elif not red_band and blue_band and not green_band:
+                    color = YELLOW
+                elif not red_band and not blue_band and green_band:
+                    color = MAGENTA
+                else:
+                    color = WHITE
+            else:
+                if red_band and blue_band and green_band:
+                    color = GRAY
+                elif red_band and not blue_band and not green_band:
+                    color = RED
+                elif not red_band and blue_band and not green_band:
+                    color = BLUE
+                elif not red_band and not blue_band and green_band:
+                    color = GREEN
+                else:
+                    color = BLACK
+
+            pygame.draw.rect(screen, color, (i * cell_size, j * cell_size, cell_size, cell_size))
+
+"""
+for visual game simulations
+"""
+def create_board(length: int = 8, height: int = None):
+    length = max(0, length)
+    if height is None:
+        height = max(0, length)
+
+    board = [["." for _ in range(height)] for _ in range(length)]
+
+    # Place pieces in initial positions
+    # for row in range(length):
+    return board
+
+def run_visual_simulation(name: str=None):
+    if name is None:
+        name = "game-board"
+    else:
+        name = f"{name}'s game-board"
+
     # Initialize Pygame
     pygame.init()
 
-    # Constants
-    WIDTH, HEIGHT = 600, 600
-    ROWS, COLS = 8, 8
-    SQUARE_SIZE = WIDTH // COLS
-
-    # Colors
-    WHITE = (255, 255, 255)
-    BLACK = (0, 0, 0)
-    RED = (200, 0, 0)
-    GRAY = (160, 160, 160)
-
-    # Pygame Setup
+    board = create_board()
+    size = len(board)
+    print(size)
+    WIDTH = size**2
+    HEIGHT = size**2
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption("Checkers Board")
-
-    # Define Checkers Board Data
-    def create_board():
-        """Generates an 8x8 checkers board with initial pieces"""
-        board = [["." for _ in range(COLS)] for _ in range(ROWS)]
-
-        # Place pieces in initial positions
-        for row in range(ROWS):
-            for col in range(COLS):
-                if (row + col) % 2 == 1:  # Pieces only on dark squares
-                    if row < 3:
-                        board[row][col] = "B"  # Black pieces
-                    elif row > 4:
-                        board[row][col] = "W"  # White pieces
-        return board
-
-    # Draw Board
-    def draw_board(board):
-        screen.fill(WHITE)  # Fill background
-
-        for row in range(ROWS):
-            for col in range(COLS):
-                color = GRAY if (row + col) % 2 == 1 else WHITE
-                pygame.draw.rect(screen, color, (col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
-
-                # Draw pieces
-                piece = board[row][col]
-                if piece != ".":
-                    piece_color = BLACK if piece == "B" else RED
-                    pygame.draw.circle(
-                        screen, piece_color,
-                        (col * SQUARE_SIZE + SQUARE_SIZE // 2, row * SQUARE_SIZE + SQUARE_SIZE // 2),
-                        SQUARE_SIZE // 3
-                    )
+    pygame.display.set_caption(name)
 
     # Game Loop
-    board = create_board()
     running = True
 
     while running:
-        draw_board(board)
+        draw_board(board=board, screen=screen, width=WIDTH, length=HEIGHT)
         pygame.display.update()
 
         for event in pygame.event.get():
@@ -82,6 +114,22 @@ def sample_checkers_game():
 
     pygame.quit()
 
+def run_room_visual_simulation():
+    pass
+
+def run_ship_visual_simulation():
+    pass
+
+def run_board_visual_simulation():
+    pass
+
+
+def run_game_simulation(has_ui=False):
+    avatar = PrismDrone()
+    if has_ui:
+        run_visual_simulation()
+    else:
+        run_fotf_game(avatar)
+
 if __name__ == "__main__":
-    run_fotf_game()
-    print("debug finished")
+    run_game_simulation(has_ui=True)

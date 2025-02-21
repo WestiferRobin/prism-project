@@ -1,27 +1,48 @@
+from enum import Enum
 
-class LegionRank:
+
+class LegionRank(Enum):
 
     # Decides which fleet ship a prism belongs too at adult age 20
     Arch = 16 # Admin, Vice, General, Admiral for PrismDrones living on SolarBases
 
+    # Chain
     # Decides which fleet base a prism belongs too at birth
     Major = 14 # Can establish Cities with Captain of Fleet in Arch's Armada
     Captain = 12 # Can establish Towns with Commander on StarCapitals
     Commander = 10 # Can establish Outposts with Lieutenant on StarFrigates
     Lieutenant = 8 # Can establish Camps with Sergeant on StarCruisers
 
+    # Test of working or leading a ship for battle or trade
     # Decides to NavyWorker or MarineWorker
     Sergeant = 6 # Can become Leader of Cruisers and chosen on performance
     Ensign = 5 # Failed to become Sergeant after 5 missions
 
+    # Test of working in Squadron for Trade or Battle
     # Prism at age 20 in NavyWork, MarineWork, TradeWork on AcademyExams
     Lance = 4 # Did 4 missions
     Corporal = 2 # Did 2 missions
     Private = 0 # Graduate from Academy
+
+    # SPECIAL CASES
+    # Admin = -1 # Chosen Arch by People per Faction Galactic Cycle
     Student = -1 # No Teen or Younger is on Missions on Simulations in Academy
 
+LEGION_RANKS = {
+    0: LegionRank.Arch,
+    1: LegionRank.Major,
+    2: LegionRank.Captain,
+    3: LegionRank.Commander,
+    4: LegionRank.Lieutenant,
+    5: LegionRank.Sergeant,
+    6: LegionRank.Ensign,
+    7: LegionRank.Lance,
+    8: LegionRank.Corporal,
+    9: LegionRank.Private
+}
+LEGION_RANK_NAMES = [rank.name for rank in LEGION_RANKS.values()]
 
-class LifeSpan:
+class LifeSpan(Enum):
     Baby = 0
     Toddler = 1
     Child = 2
