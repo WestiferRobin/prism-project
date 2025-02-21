@@ -10,11 +10,11 @@ The Warp of Space Time is a derivative of spacetime in a bubble of time loops
 
 ## Nexus Applications in Mechanics
 
-Building OrbProbe and PrismAgents
+Building OrbDrone and PrismAgents
 
-### OrbProbe as Flying PrismDrone
-1. Model OrbProbe of 4 NexusEngines => Start
-2. Model SpaceSpeeder of OrbProbe
+### OrbDrone as Flying PrismDrone
+1. Model OrbDrone of 4 NexusEngines => Start
+2. Model SpaceSpeeder of OrbDrone
 3. Model SpaceFighter of SpaceSpeeder
 4. Model SpaceShuttle in 8 NexusEngines
 5. Model SolarShip in 16 NexusEngines as 1 LightEngine
@@ -33,7 +33,7 @@ Building OrbProbe and PrismAgents
 2. Model PrismBrain
 3. Model PrismAgent
 4. Model PrismDrone
-5. Model OrbProbe => Start
+5. Model OrbDrone => Start
 6. Model SpaceSpeeder that needs PrismDrone
 7. Model SpaceFighter that needs SpaceSpeeder
 8. Model HedronHive => Start

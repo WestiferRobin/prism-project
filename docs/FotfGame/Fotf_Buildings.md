@@ -82,7 +82,7 @@ Only Cities look like Coruscant, Hoth, Yavin-IV, Endor, Genosis, Mustifar, Utapu
 
 # Tier X: Citadels
 Only Admin is on Citadel as Leader
-Only Vice is on Dreadnought Ship Leader of Admin Fleet
+Only Vice is on Dreadnought LegionShip Leader of Admin LegionFleet
 
 while admin.agrees():
     Admin and Vice discuss with Admiral and General

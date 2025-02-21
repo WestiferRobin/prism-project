@@ -1,4 +1,4 @@
-from src.models.drones.model import PrismCell, Prism, PrismDrone
+from src.models.drones.prism import PrismCell, Prism, PrismDrone
 
 
 def run_cell_simulations(source_cell: PrismCell):

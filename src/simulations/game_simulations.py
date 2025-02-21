@@ -1,20 +1,35 @@
 
 import pygame
 
-from src.models.drones.model import PrismDrone
+from src.models.drones.prism import PrismDrone
 from src.models.games.fotf_game import FotfGame
+from src.utils.enums.prism_enums import LegionRank
 
 max_game_byte_size = 16
 
 def run_fotf_game(avatar: PrismDrone):
     fotf_game = FotfGame(avatar)
-    # Solve for nxm Room of n and m Tiles
+
+    # LegionFleet Battles: Squadrons, Cruisers, Frigates, Capitals, and Dreadnoughts
+    # Solve for nxm Room of n and m Tiles for ShipRoom as BridgeRoom
     # Solve for 2x2 Room Battle with 2 Prisms of 1 team
     # Solve for 4x4 Room Battle with 4 Prisms of 1 or 2 teams
     # Solve for 8x8 Room Battle with 8 Prisms of 1 or 2 or 4 teams
     # Solve for 9x9 Room Battle with 9 Prisms of 1 or 3 teams
+    player_fleet = fotf_game.player_faction.find_armada_fleet(fotf_game.player_faction.__general().id, )
+    avatar.rank = LegionRank.Sergeant
+
+    # Academy Exams: Battle Section and Trade Section
+    player_cruiser = player_fleet.cruiser_ships()[0]
+    player_frigate = player_fleet.frigate_ships()[0]
+    player_capital = player_fleet.capital_ships()[0]
+
+    # Base Battles: Camps, Outposts, Towns, Cities, and Citadels
     # Solve for 16x16 Room Battle with 12 Prisms of 1 or 2 or 3 or 4 or 6 or 8 or 9 or 12 teams
     # Solve for 64x64 Rooms of Land and Orbit Tile Spaces for 16 Prisms of 1 StarCruiser
+    solar_board = fotf_game.board.find_solar_system("Sol")
+    planet_board = solar_board.find_legion_planet("Earth", )
+    moon_board = solar_board.find_legion_moon("Luna", )
 
 def run_game_simulations(avatar: PrismDrone):
     run_fotf_game(avatar)
