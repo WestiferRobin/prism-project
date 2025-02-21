@@ -1,7 +1,7 @@
 from src.models.drones.prism import PrismDrone
 from src.models.legions.legion import LegionFleet
-from src.models.planets.planet import Planet
-from src.models.planets.solar_system import Sol
+from src.models.solars.planet import Planet
+from src.models.solars.model import Sol
 from src.models.vehicles.ships.star_ships import StarShip, StarCapital
 from src.utils.enums.prism_enums import LegionRank
 

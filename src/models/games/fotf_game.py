@@ -1,5 +1,5 @@
 from src.models.drones.prism import PrismDrone
-from src.models.planets.galaxy import MilkywayGalaxy, UniverseGalaxy
+from src.models.solars.galaxy import MilkywayGalaxy, UniverseGalaxy
 from src.models.legions.legion import AdminLegion
 
 

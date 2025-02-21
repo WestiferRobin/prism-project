@@ -1,8 +1,8 @@
 from src.models.legions.armada import LegionArmada, AdminArmada
 from src.models.drones.prism import PrismDrone
 from src.models.legions.legionfleet import LegionFleet, AdminFleet
-from src.models.planets.planet import Planet, Moon
-from src.models.planets.solar_system import Sol
+from src.models.solars.planet import Planet, Moon
+from src.models.solars.model import Sol
 from src.models.ships.star_ships import StarCruiser, StarFrigate, StarCapital, StarShip
 from src.utils.enums.prism_enums import LegionRank
 from src.utils.legion_utils import find_fleet_leaders, find_base_leaders, find_legion_ship, find_legion_base
@@ -310,7 +310,7 @@ if __name__ == "__main__":
     """
 
     """
-    Idea: fleets + planets = sol with legion armada
+    Idea: fleets + solars = sol with legion armada
     
     Fleets:
         - AdminFleet:
