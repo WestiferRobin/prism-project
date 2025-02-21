@@ -1,6 +1,6 @@
 import uuid
 
-from src.models.vehicles.engines.nexus_engine import NexusEngine
+from src.models.engines import NexusEngine
 
 
 def run_pre_ignition(engine: NexusEngine):

@@ -10,7 +10,7 @@
     # Tier 3 can build Shuttles in Factory
     # Tier 4 can build Portals in StarBase
 # Needs to space battle like Battlefront and Rouge Squadron
-    # Think Rivals logic between dogfight, support-ships, lead-ship of Fleet Battle
+    # Think Rivals logic between dogfight, support-ships, lead-ship of LegionFleet Battle
     # 1st Round fighter dogfight
     # 2nd Round defend support ships from fighters
     # 3rd Round defend lead ship from enemy fighters and support ships

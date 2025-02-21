@@ -1,4 +1,4 @@
-from src.models.legion import AdminLegion
+from src.models.legions.legion import AdminLegion
 
 
 def simulate_legion():
@@ -9,7 +9,7 @@ def simulate_armada():
 
 def simulate_fleet():
     legion_armada = simulate_armada()
-    return legion_armada.fleets[legion_armada.leader]
+    return legion_armada.fleets[legion_armada.__admin]
 
 def simulate_star_ship(index: int):
     legion_fleet = simulate_fleet()

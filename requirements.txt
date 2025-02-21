@@ -29,3 +29,4 @@ evaluate>=0.4.0
 
 # Optional: Jupyter Notebook support for visualization
 jupyterlab>=3.5.0
+pytest

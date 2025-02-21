@@ -1,24 +1,51 @@
-from src.models.drones.model import PrismDrone
-from src.models.legion import AdminLegion
-from src.models.planets.model import Sol
-from src.models.vehicles.ships.space_ships import SpaceFighter, SpaceShuttle
-from src.models.vehicles.ships.star_ships import StarCruiser, StarFrigate, StarCapital, StarDreadnought
-from src.utils.enums.prism_enums import LegionRank
+from src.models.drones.prism import PrismDrone
+from src.models.planets.galaxy import MilkywayGalaxy, UniverseGalaxy
+from src.models.legions.legion import AdminLegion
 
 
-def determine_board(version: int):
-    if version == 1:
-        return Sol()
+def determine_board(version: int = 0):
+    if version == 0:
+        return UniverseGalaxy()
+    elif version == 1:
+        return MilkywayGalaxy()
     else:
         raise Exception(f"Cannot play game with known board version {version}")
 
 
 class FotfGame:
-    def __init__(self, avatar: PrismDrone, version: int = 1):
+    def __init__(self, avatar: PrismDrone, version: int = 0):
         self.player_avatar = avatar
-        self.player_faction = AdminLegion()
-        self.enemy_faction = AdminLegion()
         self.board = determine_board(version)
+
+        self.player_faction = AdminLegion()
+        self.raider_faction = ArchLegion()
+        self.pirate_faction = ArchLegion()
+        self.enemy_faction = AdminLegion()
+        self.setup()
+
+    def setup_player_faction(self):
+
+    def setup(self):
+
+        self.apply_faction(self.player_faction, self.board.first_quadrant)
+        self.apply_faction()
+        self.apply_faction(self.enemy_faction, self.board.fourth_quadrant)
+        """
+        Sol adds Admin, Vice, Admiral, General:
+        - Inner Belt:
+            - Mercury: Admin Legion Stations and Bases
+            - Venus: Admiral on StarStation with Admiral StarShips
+            - Earth: Admin on StarBase and Vice on LunaBase
+            - Mars: General with 2 LunaBases with General StarTroopers and StarWorkers => StarAcademy
+            - Asteroid Belt: Admin Legion Stations and Bases
+        - Outer Belt
+            - Jupiter: Admin LegionFleet Station and Bases
+            - Saturn: Admin LegionFleet Station and Bases
+            - Uranus: General LegionFleet Station and Bases
+            - Neptune: Admiral LegionFleet Station and Bases
+            - Pluto: Admin Legion Stations and Bases
+            - Asteroid Belt: Admin Legion Stations and Bases
+        """
 
     def is_running(self):
         if not self.player_avatar.is_alive():

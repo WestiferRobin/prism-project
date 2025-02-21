@@ -120,8 +120,8 @@ Idea: NexusLegion of Sol
             - Private is Rookies of Squadrons
             - Corporal is Veterans of Squadrons
             - Lance is Vices of Squadrons
-            - Ensign is Ship Crew for Sergeant
-        - Fleet Years: Sergeant, Lieutenant, Commander, Captain, Major, Arch
+            - Ensign is LegionShip Crew for Sergeant
+        - LegionFleet Years: Sergeant, Lieutenant, Commander, Captain, Major, Arch
             - Cruiser: Ensign as TradeShip
               - lead_officer: Ensign
               - command_officer: Lance
