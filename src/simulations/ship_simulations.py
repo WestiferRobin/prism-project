@@ -2,7 +2,7 @@ from src.models.drones.model import PrismDrone
 from src.models.vehicles.ships.space_ships import OrbDrone, SpaceSpeeder, SpaceInterceptor, SpaceShuttle, SpaceFighter, \
     SpaceBomber
 from src.simulations.engine_simulations import run_engine_simulation
-from src.simulations.planet_simulations import simulate_sol_missions
+from src.simulations.armada_simulations import simulate_sol_missions
 from src.simulations.prism_simulations import run_drone_simulations
 
 
