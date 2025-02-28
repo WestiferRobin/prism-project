@@ -1,4 +1,4 @@
-from src.models.drones.model import PrismCell, Prism, PrismDrone
+from src.models.drones.prism import PrismCell, Prism, PrismDrone
 
 
 def run_cell_simulations(source_cell: PrismCell):
@@ -17,7 +17,7 @@ def run_cell_simulations(source_cell: PrismCell):
 
 def run_prism_simulations(model: Prism):
     try:
-        for strand in model.dna_cells():
+        for strand in model.cells():
             for cell in strand:
                 if not run_cell_simulations(cell):
                     return False
@@ -29,4 +29,5 @@ def run_prism_simulations(model: Prism):
 
 def run_drone_simulations(drone: PrismDrone):
     did_pass = run_prism_simulations(drone.brain)
+    print(f"verifying drone_id: {drone.id} with a {'Pass!' if did_pass else 'Fail.'}")
     return did_pass

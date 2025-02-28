@@ -1,27 +1,52 @@
+from enum import Enum
 
-class LegionRank:
+
+class LegionRank(Enum):
 
     # Decides which fleet ship a prism belongs too at adult age 20
     Arch = 16 # Admin, Vice, General, Admiral for PrismDrones living on SolarBases
 
     # Decides which fleet base a prism belongs too at birth
-    Major = 14 # Can establish Cities with Captain of Fleet in Arch's Armada
+    Major = 14 # Can establish Cities with Captain of LegionFleet in Arch's LegionArmada
     Captain = 12 # Can establish Towns with Commander on StarCapitals
     Commander = 10 # Can establish Outposts with Lieutenant on StarFrigates
     Lieutenant = 8 # Can establish Camps with Sergeant on StarCruisers
 
+    # Test of working or leading a ship for battle or trade
     # Decides to NavyWorker or MarineWorker
     Sergeant = 6 # Can become Leader of Cruisers and chosen on performance
     Ensign = 5 # Failed to become Sergeant after 5 missions
 
+    # Test of working in Squadron for Trade or Battle
     # Prism at age 20 in NavyWork, MarineWork, TradeWork on AcademyExams
     Lance = 4 # Did 4 missions
     Corporal = 2 # Did 2 missions
     Private = 0 # Graduate from Academy
+
+    # SPECIAL CASES
+    # Admin = -1 # Chosen Arch by People per Faction Galactic Cycle
     Student = -1 # No Teen or Younger is on Missions on Simulations in Academy
 
+LEGION_RANKS = {
+    # LegionFleet and Base Leaders
+    0: LegionRank.Arch,
+    1: LegionRank.Major,
 
-class LifeSpan:
+    # LegionShip Leaders and Base Crew
+    2: LegionRank.Captain,
+    3: LegionRank.Commander,
+    4: LegionRank.Lieutenant,
+    5: LegionRank.Sergeant,
+
+    # LegionShip and Base Crew
+    6: LegionRank.Ensign,
+    7: LegionRank.Lance,
+    8: LegionRank.Corporal,
+    9: LegionRank.Private
+}
+LEGION_RANK_NAMES = [rank.name for rank in LEGION_RANKS.values()]
+
+class LifeSpan(Enum):
     Baby = 0
     Toddler = 1
     Child = 2
@@ -57,9 +82,9 @@ class LifeSpan:
     John and Jane see Child on breaks from Academy and Missions
     
     Prism's life span is 0-125 cycles of Earth in Sol
-    0: Baby so Parents must stay on Fleet Base for Arch Armada thus AdminTask
+    0: Baby so Parents must stay on LegionFleet Base for Arch LegionArmada thus AdminTask
     1-5: Toddler so 1 Parent must be agreed to stay behind
-    6-12: Child is sent to Fleet Academy to be Tank, Damage, Support
+    6-12: Child is sent to LegionFleet Academy to be Tank, Damage, Support
     - Tank: Heavy, Commando in Land and Space
     - Damage: Trooper, Ranger in Land and Space
     - Support: Recon, Engineer in Land and Space
