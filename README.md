@@ -17,31 +17,26 @@ Building OrbDrone and PrismAgents
 2. Model SpaceSpeeder of OrbDrone
 3. Model SpaceFighter of SpaceSpeeder
 4. Model SpaceShuttle in 8 NexusEngines
-5. Model SolarShip in 16 NexusEngines as 1 LightEngine
-6. Model SolarArmada in PrismLegion => End
+5. Model StarShip in 16 NexusEngines as 1 LightEngine
+6. Model SolarArmada in UserLegion => End
 
-### PrismAgent as PrismDrone
-1. Model PrismCell => Start
-2. Model PrismBrain
-3. Model PrismAgent
-4. Model PrismDrone => Goal
-5. Model HedronHive
-6. Model PrismLegion => End
-
-### Project Priority
-1. Model PrismCell => Start
-2. Model PrismBrain
-3. Model PrismAgent
-4. Model PrismDrone
-5. Model OrbDrone => Start
-6. Model SpaceSpeeder that needs PrismDrone
-7. Model SpaceFighter that needs SpaceSpeeder
-8. Model HedronHive => Start
-9. Model SpaceShuttle
-10. Model SolarShip that needs HedronHive
-11. Model SolarArmada that needs SolarShips
-12. Model PrismLegion that needs PrismLegion
+### Prism as PrismDrone
+1. Model Cell => Start
+2. Model Organ -> Brain
+3. Model Prism
+4. Model Drone => Goal
+5. Model Hive
+6. Model Legion => End
 
 
 
 ### Nexus Mechanics
+
+Studies to cross with:
+- Chemistry: Study of Matter in Objects and Life
+- Physics: Study of Matter in the Universe
+- Biology: Study of Life in the Universe
+- Mathmatics: Study of Symbology with Numbers and it's Solutions
+- Alchemy: The history of Chemistry
+- 
+
