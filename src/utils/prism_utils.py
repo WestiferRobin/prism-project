@@ -1,6 +1,5 @@
 import uuid
 
-from src.models.drones.prism import PrismDrone
 from src.utils.enums.prism_enums import LegionRank
 
 # Constants
