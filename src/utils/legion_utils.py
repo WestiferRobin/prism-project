@@ -1,4 +1,4 @@
-from src.models.legions.legion import Legion
+from src.models.legions.model import Legion
 from src.utils.armada_utils import find_armada_fleet
 
 

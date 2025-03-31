@@ -4,7 +4,7 @@ from typing import Tuple
 import numpy as np
 from matplotlib import pyplot as plt
 
-from src.graph.model import Graph
+from src.mechanics.graph import Graph
 
 
 def plot_graph(title: str, y_tag: str, x_tag: str, graph: Graph):

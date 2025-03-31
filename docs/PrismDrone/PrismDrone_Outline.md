@@ -1,4 +1,4 @@
-# Prism Drone
+# PrismBrain Drone
 
 Objective: A servant to the user to help owner earn a profit
 

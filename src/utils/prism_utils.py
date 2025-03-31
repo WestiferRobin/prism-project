@@ -7,7 +7,7 @@ MAX_CELL_SIZE = 16
 MAX_PRISM_SIZE = 64
 
 
-# Data Structure for Prism Cells
+# Data Structure for PrismBrain Cells
 def build_data_byte(u_nibble=None, v_nibble=None):
     u_value = uuid.uuid4() if u_nibble is None else u_nibble
     v_value = uuid.uuid4() if v_nibble is None else v_nibble

@@ -16,7 +16,7 @@ Rank-0: -inf <= -t <= 0 <= t <= inf
             - So All Real Numbers of Rationals and Irrational Numbers
                 - Need Complex Numbers for Irrational Numbers
                 - Need Rational Numbers for Scalers
-                - Need Scalers(1) for Vectors(2), Matrices(3), Tensors(4), Prism(t)
+                - Need Scalers(1) for Vectors(2), Matrices(3), Tensors(4), PrismBrain(t)
                 - Proves we can solve 0-4 Dimensions for t Dimensions
                 - so t has t%4 Dimensions therefore t,t-1,t-2,t-3,t-4 Dimensions
                 - Proves were in 0-4 + sum(t to t-4) = 4 + 5 = 9 Dimensions
@@ -25,7 +25,7 @@ Rank-0: -inf <= -t <= 0 <= t <= inf
                 - With mass as scalers
                 - With momentum as scalers
                 - With energy as scalers
-                - Therefore we can see variables in 9 Dimensions with 9 Ranks on a Prism
+                - Therefore we can see variables in 9 Dimensions with 9 Ranks on a PrismBrain
         - Theorem 2:
             - Points:
                 - 0D: All Real Numbers
@@ -84,7 +84,7 @@ Rank-0: -inf <= -t <= 0 <= t <= inf
                         - Hyper Length of a Vector
                         - Hyper Area of a Matrix
                         - Hyper Volume of a Tensor
-                        - Hyper Space of a Prism
+                        - Hyper Space of a PrismBrain
     - hyper parameters from sqrt(-1) <= t <= inf
         - types: scaler(1), vector(2), matrix(3), tensor(4), prism(t)
         - <alpha, gamma, beta> => 0D to 3D in position for F=m(t)(a + g)
@@ -146,9 +146,9 @@ Rank-3: <x, y, z>
   - Rectangular Coordinates
       Cube => V=r^3
       Cylindrical => z=p*cos(phi), r=p*sin(phi), A=pi*z*r^2
-  Sphere Prism => V=(4/3)*pi*r^3
+  Sphere PrismBrain => V=(4/3)*pi*r^3
   Cube => V=r^3
-  Rectangular Prism => V=x*y*z
+  Rectangular PrismBrain => V=x*y*z
   P
 
 Rank-4: <x, y, z, t>

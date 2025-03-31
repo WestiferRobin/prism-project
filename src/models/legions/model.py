@@ -1,5 +1,5 @@
 from src.models.legions.armada import LegionArmada, AdminArmada
-from src.models.drones.prism import PrismDrone
+from src.models.prisms.model import PrismDrone
 from src.models.legions.legionfleet import LegionFleet, AdminFleet
 from src.models.solars.planet import Planet, Moon
 from src.models.solars.model import Sol
@@ -79,7 +79,7 @@ class Legion:
 
     def drones(self):
         drones = {}
-        if "drones" not in self.population():
+        if "prisms" not in self.population():
             return None
         drone_population = self.population()["drone"]
         for drone_id in drone_population.keys():

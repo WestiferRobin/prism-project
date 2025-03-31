@@ -1,4 +1,4 @@
-from src.models.drones.prism import PrismDrone
+from src.models.prisms.model import PrismDrone
 from src.models.ships.space_ships.speeder_ships import SpaceSpeeder
 from src.models.weapons.range_weapons.vehicle_weapons.launcher_weapon import MissileLauncher, BombLauncher, Launcher
 from src.models.weapons.range_weapons.vehicle_weapons.cannon_weapon import LaserCannon, PlasmaCannon, IonCannon

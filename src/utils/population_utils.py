@@ -1,7 +1,7 @@
-from src.models.bases.legion_base import LegionBase
+from src.models.bases.model import LegionBase
 from src.models.legions.armada import LegionArmada
 from src.models.legions.legionfleet import LegionFleet
-from src.models.legions.legion import Legion
+from src.models.legions.model import Legion
 from src.models.ships.model import LegionShip
 
 

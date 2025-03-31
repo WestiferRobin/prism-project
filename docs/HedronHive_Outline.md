@@ -6,7 +6,7 @@ A portal for a user's PrismDrones. Note this is 1-16 Prisms per experience per u
 
 1 Social Media Agent
 1 Gold Goose Agent
-1 Prism Scribe Agent
+1 PrismBrain Scribe Agent
 1 Fotf Agent
 
 
@@ -14,17 +14,17 @@ A portal for a user's PrismDrones. Note this is 1-16 Prisms per experience per u
 
 4 Social Media Agent
 4 Gold Goose Agent
-4 Prism Scribe Agent
+4 PrismBrain Scribe Agent
 4 Fotf Agent
 
 ## Drone Case: User(first_name, last_name, email) for 16 Prisms
 
 1 Social Media Agent
 1 Gold Goose Agent
-1 Prism Scribe Agent
+1 PrismBrain Scribe Agent
 1 Fotf Agent
-12 Prism Drones trained on Fotf Data and talking with other agents from hive
+12 PrismBrain Drones trained on Fotf Data and talking with other agents from hive
 
 ## Last Case: User(first_name, last_name, email) for Arch Legion
 
-16 Prism Drones trained on FotF data, Social Media data, Scribe data, Goose data
+16 PrismBrain Drones trained on FotF data, Social Media data, Scribe data, Goose data

@@ -42,7 +42,7 @@ PrismDirector: Major
     PrismManagers: Captain and Commander and Sergeant
     PrismManagers: Commander and Lieutenant and Sergeant
 
-PrismManager: Captain of CapitalShip of PrismDirector for 20 drones
+PrismManager: Captain of CapitalShip of PrismDirector for 20 prisms
     bridge-crew:
         vice_officer: Commander PrismTrooper
         tactical_officer: Lieutenant PrismTrooper
@@ -72,7 +72,7 @@ PrismManager: Captain of CapitalShip of PrismDirector for 20 drones
             - 1 Corporal
             - 2 Private
 
-PrismManager: Lieutenant of CruiserShip of PrismDirector for 12 drones
+PrismManager: Lieutenant of CruiserShip of PrismDirector for 12 prisms
     bridge-crew:
         vice_officer: Sergeant PrismTrooper
         tactical_officer: Sergeant PrismTrooper

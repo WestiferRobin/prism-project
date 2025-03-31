@@ -1,32 +1,8 @@
 import random
 import uuid
 
+from src.models.prisms.brain import PrismBrain
 from src.utils.enums.prism_enums import LifeSpan, LegionRank
-from src.utils.prism_utils import build_prism_cell, MAX_CELL_SIZE
-
-
-class PrismCell:
-    def __init__(self, seed):
-        self.dna = seed
-        self.cell = build_prism_cell(self.dna)
-
-class Prism:
-    def __init__(self, dna_id):
-        self.age = 0
-        self.id = dna_id
-
-        nexus_mass = []
-        for i in range(MAX_CELL_SIZE):
-            cells = []
-            for j in range(MAX_CELL_SIZE):
-                prism_cell = PrismCell(self.id)
-                cells.append(prism_cell)
-            nexus_mass.append(cells)
-
-        self.mass = nexus_mass
-
-    def cells(self):
-        return self.mass
 
 class PrismDrone:
     drone_count = 0
@@ -51,7 +27,8 @@ class PrismDrone:
 
 
         self.id = uuid.uuid4() if prism_id is None else prism_id
-        self.brain = Prism(self.id)
+        self.brain = PrismBrain(self.id)
+        self.health = 100
 
         self.age = age
         self.rank = rank if self.age >= 20 else LegionRank.Student
@@ -90,7 +67,7 @@ class PrismDrone:
             return LifeSpan.Elder
 
     def is_alive(self):
-        pass
+        return self.health > 0
 
     def interact(self, target):
         # TODO: Need to figure this out soon...

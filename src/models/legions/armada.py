@@ -1,4 +1,4 @@
-from src.models.drones.prism import PrismDrone
+from src.models.prisms.model import PrismDrone
 from src.models.legions.legionfleet import AdminFleet, LegionFleet
 from src.models.ships.star_ships import StarCruiser, StarFrigate, StarCapital
 from src.utils.armada_utils import find_armada_ship, find_armada_ships_by_type

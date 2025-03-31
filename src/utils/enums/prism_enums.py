@@ -18,7 +18,7 @@ class LegionRank(Enum):
     Ensign = 5 # Failed to become Sergeant after 5 missions
 
     # Test of working in Squadron for Trade or Battle
-    # Prism at age 20 in NavyWork, MarineWork, TradeWork on AcademyExams
+    # PrismBrain at age 20 in NavyWork, MarineWork, TradeWork on AcademyExams
     Lance = 4 # Did 4 missions
     Corporal = 2 # Did 2 missions
     Private = 0 # Graduate from Academy
@@ -81,7 +81,7 @@ class LifeSpan(Enum):
     
     John and Jane see Child on breaks from Academy and Missions
     
-    Prism's life span is 0-125 cycles of Earth in Sol
+    PrismBrain's life span is 0-125 cycles of Earth in Sol
     0: Baby so Parents must stay on LegionFleet Base for Arch LegionArmada thus AdminTask
     1-5: Toddler so 1 Parent must be agreed to stay behind
     6-12: Child is sent to LegionFleet Academy to be Tank, Damage, Support

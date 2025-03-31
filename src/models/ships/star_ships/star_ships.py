@@ -1,4 +1,4 @@
-from src.models.drones.prism import PrismDrone
+from src.models.prisms.model import PrismDrone
 from src.models.engines.light_engine import LightEngine
 
 """

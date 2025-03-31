@@ -1,5 +1,5 @@
 import numpy as np
-from src.graph.model import Graph
+from src.mechanics.graph import Graph
 
 class MotionSegment:
     """Represents a single segment of motion with acceleration, velocity, and position equations."""
@@ -70,11 +70,11 @@ if __name__ == "__main__":
     """
     Notes:
     - Did a draft but had gpt polish for me since im new at this modeling thing
-    - Goal is to make ai drones and star armada using drones for Trade and Battle Missions
+    - Goal is to make ai prisms and star armada using prisms for Trade and Battle Missions
     - FotF Inspires Dream:
         - I control a droid armada
         - I can do Trade and Battle missions
-        - Will have all or none full star ships of drones
+        - Will have all or none full star ships of prisms
         - Will have shuttles, fighters, speeders, probes to help on star ships
         - All ships hail from colonies to do Trade and Battle missions
         

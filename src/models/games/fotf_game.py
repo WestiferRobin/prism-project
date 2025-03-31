@@ -1,6 +1,6 @@
-from src.models.drones.prism import PrismDrone
+from src.models.prisms.model import PrismDrone
 from src.models.solars.galaxy import MilkywayGalaxy, UniverseGalaxy
-from src.models.legions.legion import AdminLegion
+from src.models.legions.model import AdminLegion
 
 
 def determine_board(version: int = 0):

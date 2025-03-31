@@ -1,10 +1,9 @@
-from src.models.drones.orb import OrbDrone
-from src.models.drones.prism import PrismDrone
+from src.models.prisms.model import PrismDrone
 from src.models.engines.nexus_engine import NexusEngine
 from src.models.weapons.range_weapons.vehicle_weapons.cannon_weapon import LaserCannon
 
 
-class SpaceSpeeder(OrbDrone):
+class SpaceSpeeder:
     def __init__(self, pilot: PrismDrone, right_cannon: LaserCannon = None, left_cannon: LaserCannon = None):
         super().__init__(
             pilot=pilot,

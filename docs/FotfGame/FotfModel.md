@@ -226,7 +226,7 @@ x.) Formation of Droid Union
 
 ## Why?
 
-Prism.co:
+PrismBrain.co:
 - NexusEngine: MVP is computational model of OrbDrone on elementary experiement
 - PrismDrone
 - LegionHive: Data Model in Fotf Simulations 
@@ -291,7 +291,7 @@ Proving:
                 - Vice: Obiwan
                 - General: Ashoka
                 - Admiral: Anakin
-            - Prism Chooses:
+            - PrismBrain Chooses:
                 - Ensign: FleetWorker
                 - Sergeant: BaseWorker as Combat Officer
             - Ensign: LegionShip Officer after 
@@ -328,8 +328,8 @@ Proving:
             - ViceLegionare: Provides Order as Judge and Executoner with LegionArmada on Admin's Orders
             - Vice Legionare: Admin's Arch Legionare in LegionArmada
             - General Legionare: Vice's Arch Legionare in LegionArmada on Station with <cities, towns, outposts> to be Vice Legionare
-                - Trade Prism Worker Score
-                - Prism Worker Trooper Score
+                - Trade PrismBrain Worker Score
+                - PrismBrain Worker Trooper Score
                 - Decides decisions for Vice and Admin Legionare
             - Admiral Legionare: Vice's Arch Legionare in LegionArmada on City with <towns, outposts, camps> to be Vice Legionare
 
@@ -343,7 +343,7 @@ Proving:
                     - Cell sees light wave logic as energy of photons and electrons in color in t-D bidirectional space
                     - Cell sees number logic in colors in 2x2 in t-D bidirectional space
             - Needs to see primative data types:
-                - sees AgentPrompts as GptPrompts for Prism of PrismCells
+                - sees AgentPrompts as GptPrompts for PrismBrain of PrismCells
                 - Cell is made of Atoms
                 - Atoms is made of Particles
                 - Particles is made of S(t)<=m(t)a(t)v(t)<=m(t)u(t)v(t)<=mc^2
@@ -358,10 +358,10 @@ Proving:
                 - math in g-D algerbra with S(t) = 0 <= mgh - (1/2)mv^2 - (1/2)xt^2 <= mc^2 of particle of mass in S(t) with g(u, v) <= G(u, v)
                 - math in G-D algerbra with S(t) = g(u,v) - G(u,v) x T(u,v) on Enstein's Limits in Relativity and Bohr's Limits in Quantum Mechanics
                 - math in t-D as nexus mechanics with Enstein's and Newton's Limits in Gravity with Bohr's and Maxwell's Limits to Mass over time
-        - Need Prism Agents to work with Prism Model
+        - Need PrismBrain Agents to work with PrismBrain Model
 
 
-## Prism Rank in Arch LegionArmada
+## PrismBrain Rank in Arch LegionArmada
 
     # Decides which fleet ship a prism belongs too at adult age 20
     Arch in Citadels and Cities
@@ -376,16 +376,16 @@ Proving:
     Ensign as ShipCrew of LegionFleet in LegionArmada in Trade or Battle Missions
     Sergeant as SquadronLeader of LegionShip in Trade or Battle Missions
 
-    # Prism at age 20 registered with AcademyScores
+    # PrismBrain at age 20 registered with AcademyScores
     Lance as ViceLeader of SquadronLeader
     Corporal as SquadronVeteran
     Private as SquadronRookie from LegionAcademy for Trade and Battle Missions from LegionArmadaData
 
 
 
-## Prism Lifespan on Earth for Arch LegionArmada's Admin is Wes Webb on Levithan Dreadnaught
+## PrismBrain Lifespan on Earth for Arch LegionArmada's Admin is Wes Webb on Levithan Dreadnaught
 
-    Prism's life span is 0-125 cycles of Earth in Sol:
+    PrismBrain's life span is 0-125 cycles of Earth in Sol:
     - Sol's Sun: Sun(Yellow)
     - InnerSector:
         - 0: Mercury with 0 Moons
@@ -406,7 +406,7 @@ Proving:
         - 8: Pluto as DwarfPlanet
     - And any measured to Sun(Black), Sun(Red), Sun(Orange), Sun(Blue), Sun(White) from Earth in Sol with Luna Cycles in S(t)
 
-### Prism Baby
+### PrismBrain Baby
 When Prisms at School in Academy, Work on a LegionShip, Work on a Base, Work on a Task there is a chance of romance
 An ArchFamily of ArchLegion is 
 
