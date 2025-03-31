@@ -1,13 +1,13 @@
 from src.models.prisms.model import PrismDrone
 from src.models.legions.legionfleet import AdminFleet, LegionFleet
-from src.models.ships.star_ships import StarCruiser, StarFrigate, StarCapital
+from src.models.ships.star_ships.star_ships import StarCruiser, StarFrigate, StarCapital
 from src.utils.armada_utils import find_armada_ship, find_armada_ships_by_type
 from src.utils.enums.prism_enums import LegionRank
 from src.utils.population_utils import build_armada_population
 
 
 class LegionArmada:
-    def __init__(self, admin_leader: PrismDrone=None, vice_leader: PrismDrone=None, fleets: dict = None):
+    def __init__(self, admin_leader: PrismDrone = None, vice_leader: PrismDrone = None, fleets: dict = None):
         if admin_leader is None:
             admin_leader = PrismDrone(name=f"Admin Leader", rank=LegionRank.Arch)
         if vice_leader is None:
@@ -65,7 +65,7 @@ class LegionArmada:
 
     def bases(self):
         leader_base = self.leader_base()
-        armada_bases = { leader_base.id: leader_base }
+        armada_bases = {leader_base.id: leader_base}
         for ship in self.ships():
             home_base = ship.home_base()
             if home_base.id in armada_bases:
@@ -79,11 +79,11 @@ class LegionArmada:
 
 class AdminArmada(LegionArmada):
     def __init__(self,
-        admin_leader: PrismDrone = None,
-        vice_leader: PrismDrone = None,
-        admiral_leader: PrismDrone = None,
-        general_leader: PrismDrone = None
-    ):
+                 admin_leader: PrismDrone = None,
+                 vice_leader: PrismDrone = None,
+                 admiral_leader: PrismDrone = None,
+                 general_leader: PrismDrone = None
+                 ):
         if admiral_leader is None:
             admiral_leader = PrismDrone(name=f"Admiral Leader", rank=LegionRank.Arch)
         if general_leader is None:
@@ -100,7 +100,3 @@ class AdminArmada(LegionArmada):
 
     def general(self):
         return self.__general
-
-
-
-

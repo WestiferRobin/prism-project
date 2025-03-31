@@ -19,10 +19,12 @@ class DwarfPlanet(Planet):
     def __init__(self, name: str):
         super().__init__(name, SolarType.Dwarf, None)
 
+
 class TerrestrialPlanet(Planet):
     def __init__(self, name: str, moons: list = None):
         super().__init__(name, SolarType.Terrestrial,
                          [TerrestrialMoon(moon, self) for moon in moons] if moons is not None else None)
+
 
 class JovianPlanet(Planet):
     def __init__(self, name: str, moons: list = None):

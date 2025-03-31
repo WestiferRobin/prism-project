@@ -1,15 +1,15 @@
-from src.models.solars.model import Sol, SolarSystem
+from src.models.solars.solar_system import Sol, SolarSystem
 from src.utils.enums.solar_enums import SunColor
 
 
 class Galaxy:
     def __init__(self,
-        name: str,
-        first_quadrant: list=None,
-        second_quadrant: list=None,
-        third_quadrant: list=None,
-        fourth_quadrant: list=None
-    ):
+                 name: str,
+                 first_quadrant: list = None,
+                 second_quadrant: list = None,
+                 third_quadrant: list = None,
+                 fourth_quadrant: list = None
+                 ):
         self.name = f"{name} Galaxy"
         self.first_quadrant = [] if first_quadrant is None else first_quadrant
         self.second_quadrant = [] if second_quadrant is None else second_quadrant
@@ -17,7 +17,7 @@ class Galaxy:
         self.fourth_quadrant = [] if fourth_quadrant is None else fourth_quadrant
 
     def solar_systems(self):
-        solars = []
+        solar_systems = []
         quadrants = (
             self.first_quadrant,
             self.second_quadrant,
@@ -26,8 +26,9 @@ class Galaxy:
         )
         for quadrant in quadrants:
             for solar in quadrant:
-                solars.append(solar)
-        return solars
+                solar_systems.append(solar)
+        return solar_systems
+
 
 class MilkywayGalaxy(Galaxy):
     def __init__(self):
@@ -37,6 +38,7 @@ class MilkywayGalaxy(Galaxy):
         self.third_quadrant.append(SolarSystem("Mol", SunColor.Red))
         self.fourth_quadrant.append(SolarSystem("Sov", SunColor.Yellow))
 
+
 class AndromedaGalaxy(Galaxy):
     def __init__(self):
         super().__init__(name="Andromeda")
@@ -44,6 +46,7 @@ class AndromedaGalaxy(Galaxy):
         self.second_quadrant.append(SolarSystem("Tav", SunColor.Red))
         self.third_quadrant.append(SolarSystem("Jav", SunColor.Blue))
         self.fourth_quadrant.append(SolarSystem("Mov", SunColor.Orange))
+
 
 class UniverseGalaxy(Galaxy):
     def __init__(self):

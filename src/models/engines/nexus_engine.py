@@ -1,5 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
 
 class NexusEngine:
     def __init__(self, ship_id, unit_mass: int = 1, alloy_mass=None):

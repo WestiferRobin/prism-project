@@ -7,7 +7,7 @@ numpy>=1.23.0
 pandas>=1.5.0
 scipy>=1.9.0
 matplotlib>=3.6.0
-# seaborn>=0.12.0
+# seaborn>=0.12.0  # Uncomment if needed
 
 # Machine Learning & LLM Development
 torch>=2.0.0
@@ -21,12 +21,14 @@ uvicorn[standard]>=0.22.0
 
 # Async and Utilities
 httpx>=0.23.0
-asyncio>=3.4.3
 
 # Optional: Model evaluation and dataset handling
 datasets>=2.7.0
 evaluate>=0.4.0
 
-# Optional: Jupyter Notebook support for visualization
+# Optional: Jupyter Notebook support for visualization and testing
 jupyterlab>=3.5.0
-pytest
+pytest>=7.0.0
+
+# Game Development
+pygame>=2.1.0

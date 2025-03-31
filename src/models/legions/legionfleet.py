@@ -1,5 +1,5 @@
 from src.models.prisms.model import PrismDrone
-from src.models.ships.star_ships import StarDreadnought, StarCapital, StarFrigate, StarCruiser, StarShip
+from src.models.ships.star_ships.star_ships import StarCapital, StarFrigate, StarCruiser, StarShip, StarDreadnought
 from src.utils.enums.prism_enums import LEGION_RANKS, LegionRank
 from src.utils.fleet_utils import find_fleet_ships_by_type
 

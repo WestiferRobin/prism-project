@@ -1,70 +1,28 @@
 import random
-import uuid
 
+from src.configs.prism_config import PrismConfig
 from src.models.prisms.brain import PrismBrain
-from src.utils.enums.prism_enums import LifeSpan, LegionRank
+
 
 class PrismDrone:
     drone_count = 0
 
-    @staticmethod
-    def get_valid_name():
-        name = f"Drone #{PrismDrone.drone_count}"
-        PrismDrone.drone_count += 1
-        return name
-
     def __str__(self):
-        return f"{self.rank.name} {self.__name}"
+        return self.config.title()
 
-    def __init__(self,
-                 prism_id = None,
-                 name: str = None,
-                 rank: LegionRank = LegionRank.Private,
-                 sprite: str = None,
-                 age: int = 20,
-                 gender: bool = None
-                 ):
+    def __init__(self, config: PrismConfig = None):
+        if config is None:
+            config = PrismConfig()
+        self.config = config
 
-
-        self.id = uuid.uuid4() if prism_id is None else prism_id
-        self.brain = PrismBrain(self.id)
+        self.brain = PrismBrain(self.config.id)
         self.health = 100
-
-        self.age = age
-        self.rank = rank if self.age >= 20 else LegionRank.Student
-
-        if name is None:
-            name = PrismDrone.get_valid_name()
-        self.__name = name
-        self.name = self.__str__()
-
-        if sprite is None:
-            sprite = "O"
-        self.sprite = sprite
-
-        if gender is None: # Male is True 1, Female is False 0
-            gender = random.choice([True, False])
-        self.gender = gender
         self.network = {}
 
         self.__apply_brain()
 
     def __apply_brain(self):
         cells = self.brain.cells()
-
-    def life_span(self):
-        if self.age <= 0:
-            return LifeSpan.Baby
-        elif 1 <= self.age <= 5:
-            return LifeSpan.Toddler
-        elif 6 <= self.age <= 12:
-            return LifeSpan.Child
-        elif 13 <= self.age <= 19:
-            return LifeSpan.Teen
-        elif 20 <= self.age <= 79:
-            return LifeSpan.Adult
-        else:
-            return LifeSpan.Elder
 
     def is_alive(self):
         return self.health > 0
@@ -87,7 +45,7 @@ class PrismDrone:
             for j in range(0xF + 1):
                 source_cell = source_cells[i][j].cell
                 source_data = source_cell['data']
-                data_keys = [ key for key in source_data.keys() ]
+                data_keys = [key for key in source_data.keys()]
 
                 target_cell = target_cells[i][j].cell
                 target_data = target_cell['data']
@@ -115,5 +73,3 @@ class PrismDrone:
         self.network[target.id] += social_score
 
         return social_score
-
-

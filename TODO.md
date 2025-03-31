@@ -1,6 +1,13 @@
-1. Clean grid folder and main.py
-2. Start draft for Goose and Fotf
-3. Start draft for Social Media => MoodWave
-4. Apply Fotf to Unity
-5. Make repos for GoldenGoose and MoodWave
-
+- Refactor models to work from a top-down approach on getting a simple iso-morph game.
+  - Design the Game and refactor the docs. Ensure Testing and Document topology synced with models
+    - Fix the src/models/solars for circular dependency
+    - Fix the src/models/bases for AOE2, RA2, and EAW
+    - 
+  - PrismDrone is a base model for later versions
+    - LegionWorker => Circle
+    - LegionTrooper => Triangle
+    - LegionManager => Square
+- Once you have a skirmish of 1v1, 2v2, and 4 team free for all then decide game engine
+  - Full Package: Unreal => Hard Mode
+  - Base Package: Unity => Easy Mode
+  - Free Package: Godot => Medium Mode

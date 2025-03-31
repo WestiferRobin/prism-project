@@ -1,20 +1,21 @@
-from src.models.legions.model import Legion
 from src.utils.armada_utils import find_armada_fleet
 
 
-def find_legion_drone(legion: Legion, drone_id):
+def find_legion_drone(legion, drone_id):
     for prism in legion.drones():
         if prism.id == drone_id:
             return prism
     return None
 
-def find_legion_leader(legion: Legion, leader_id):
+
+def find_legion_leader(legion, leader_id):
     for leader in legion.leaders():
         if leader.id == leader_id:
             return leader
     return None
 
-def find_legion_ship(legion: Legion, fleet_id, ship_id):
+
+def find_legion_ship(legion, fleet_id, ship_id):
     fleet = find_legion_fleet(legion, fleet_id)
     if fleet is None:
         return None
@@ -23,43 +24,49 @@ def find_legion_ship(legion: Legion, fleet_id, ship_id):
     ship = fleet.ships()[ship_id]
     return ship
 
-def find_legion_base(legion: Legion, base_id):
+
+def find_legion_base(legion, base_id):
     for base in legion.bases():
         if base.id == base_id:
             return base
     return None
 
-def find_legion_fleet(legion: Legion, fleet_id):
+
+def find_legion_fleet(legion, fleet_id):
     fleet = find_armada_fleet(legion.armada, fleet_id)
     return fleet
 
-def find_legion_solar(legion: Legion, solar_id):
-    solars = legion.solars()
+
+def find_legion_solar(legion, solar_id):
+    solars = legion.solar_systems()
     for solar in solars:
         if solar.id == solar_id:
             return solar
     return None
 
-def find_legion_planet(legion: Legion, planet_id):
+
+def find_legion_planet(legion, planet_id):
     planets = legion.planets()
     for planet in planets:
         if planet.id == planet_id:
             return planet
     return None
 
-def find_legion_moon(legion: Legion, moon_id):
+
+def find_legion_moon(legion, moon_id):
     moons = legion.moons()
     for moon in moons:
         if moon.id == moon_id:
             return moon
     return None
 
-def find_fleet_leaders(legion: Legion, leader_id, vice_id):
+
+def find_fleet_leaders(legion, leader_id, vice_id):
     leader = find_legion_leader(legion, leader_id)
     if leader is None:
         return None
 
-    leaders = { leader_id: leader }
+    leaders = {leader_id: leader}
     primary_fleet = find_legion_fleet(legion, leader_id)
     secondary_fleet = find_legion_fleet(legion, vice_id)
     fleets = (primary_fleet, secondary_fleet)
@@ -73,7 +80,8 @@ def find_fleet_leaders(legion: Legion, leader_id, vice_id):
 
     return leaders
 
-def find_base_leaders(legion: Legion, leader_id, vice_id):
+
+def find_base_leaders(legion, leader_id, vice_id):
     leader = find_legion_leader(legion, leader_id)
     if leader is None:
         return None
@@ -92,6 +100,3 @@ def find_base_leaders(legion: Legion, leader_id, vice_id):
             leaders[lead_officer.id] = lead_officer
 
     return leaders
-
-
-
