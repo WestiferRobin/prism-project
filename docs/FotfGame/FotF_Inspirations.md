@@ -146,15 +146,108 @@ Theme:
   - Needs to fit with AOE2 layout.
   - Campaign is perfect if FotF needs a story line. This will be considered later but a good note.
 
+- Red Alert 2:
+  - Theme: Nato Allies, Soviet Union, and Yuri Rebellion
+  - Buildings: (builds and unlocks in order)
+    - Base: Trade
+      - Center => From Imperial Age
+      - Power => Telsa Reactor & Power Plant for Energy
+        - Coal: Industrial
+        - Oil: Digital
+        - Atomic: Quantum
+      - Ore Refinery => Upgrade from Mining Yard with Vehicles
+      - Barracks => Upgrade from Archery and Barracks
+      - Factory => Builds Vehicle Units
+        - Depends on Labs and Workshops (upgrade from workshops)
+      - Naval Shipyard => Upgrade from Ship Harbor
+      - Radar Tower => Enables mini-map
+        - Tier 1: Soviet Radar
+        - Tier 2: Airforce Command
+      - Service Depo => Heals Vehicle units
+      - Medical Depo => Heals Infintry and Worker units
+      - Lab => Unlocks Elite units for Age
+        - Unlocks choice for 2 special buildings
+          - Nuclear Reactor => Infinite Energy
+          - Cloning Vats => Double Barracks
+          - Ore Purifier => Get 25% more Credits
+    - Defense: War
+      - Fortress Wall: Final Wall upgrade
+      - Turret:
+        - Sentry Turret: Turret Upgrade
+        - Flak Cannon or Missile System: Turret against air units
+        - Elite Turret:
+          - Tesla Coil
+          - Prism Tower
+      - Player Powers:
+        - Soviets:
+          - Psychic Sensor => Controls units in area
+          - Iron Curtain Device => Invulnerability
+          - Nuclear Missile Silo => Nuclear Missile Strike
+        - Allies:
+          - Gap Generator => Hides base on Radar
+          - Chronosphere => Teleports units to area
+          - Weather Control Device => Thunderstorm Strike
+  - Units
+    - Soviets:
+      - Infinity:
+        - Trooper
+        - Engineer
+        - Attack Dog
+        - Tesla Trooper
+        - Flak Trooper
+        - Nuclear Trooper
+        - Crazy Ivan
+        - Psi Trooper
+      - Vehicles
+        - Land:
+          - Ore Miner
+          - Battle Tank
+          - Anti-Air Missile Tank
+          - Advance Tank
+          - Center Convoy => Make new Bases on Player Map or Planet Area
+          - Prism Tank
+          - Mirage Tank
+        - Air:
+          - Transport Helicopter
+          - Fighter Jet
+          - Advance Fighter Jet
+        - Ships:
+          - Hover Transport
+          - Naval Destroyer
+          - Naval Cruiser
+          - Aircraft Carrier => Fighter Jets transport
+    - Allies:
+      - Infinity:
+        - Trooper
+        - Engineer
+        - Attack Dog
+        - Rocketeer
+        - Sniper
+        - Navy Seal
+        - Spy
+        - Chrono Legionnaire
+      - Vehicles
+        - Land:
+          - Ore Miner
+          - Battle Tank
+          - Anti-Air Missile Tank
+          - Advance Tank
+          - Center Convoy => Make new Bases on Player Map or Planet Area
+          - Prism Tank
+          - Mirage Tank
+        - Air:
+          - Transport Helicopter
+          - Fighter Jet
+          - Advance Fighter Jet
+        - Ships:
+          - Hover Transport
+          - Naval Destroyer
+          - Naval Cruiser
+          - Aircraft Carrier => Fighter Jets transport
+
 - Oil Age: Industrial Age => Map on WW1 vs WW2 based on Red Alert series
-  - Buildings:
-  - Units:
 - Modern Age: Digital Age => Red Alert 2
-  - Buildings:
-  - Units:
-- Atomic Age => Yuri's Revenge
-  - Buildings:
-  - Units:
+  - Must Advance after annex cities or trade with cities (buy the city)
 
 ## Empire at War
 
@@ -163,11 +256,33 @@ Theme:
   - Consider hex layout, although isometric grids are valid.
   - Consider only thing with land for Star Fighters and Star Ships
 
-- Space Age => Build Space stations and control Solar Systems by Space Warfare
-  - Buildings:
+- Space Age
+  - Buildings: Atomic Age and Space Stations
   - Units:
-- Galactic Age => Space super weapons
-  - Buildings:
+    - Land:
+      - AT-ST or Walker Tank
+      - Imperial Tank or Hover Tank
+      - Trooper Class
+    - Space:
+      - Units:
+        - Fighters: Tie or X-Wing
+        - Bomber: Tie or Y-Wing
+      - Ships:
+        - Cruisers: Corellian or Tartan Cruisers
+        - Frigates: Interceptor Frigate or Imperial Accumulator
+- Galactic Age
+  - Buildings: Atomic Age and Space Super Weapons
   - Units:
+    - Land:
+      - Beam Walker or Missile Launcher
+      - AT-AT or Assault Speeder
+      - Commanders or Heroes
+    - Space:
+      - Units:
+        - Interceptor: Tie or A-Wing
+        - Advance: Tie or B-Wing
+      - Ships:
+        - Frigates: Nebulan B Frigate or Imperial Frigate
+        - Capital Ships: Mon Kalimari or Imperial Capital
 
 
