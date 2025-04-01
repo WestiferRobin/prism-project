@@ -112,12 +112,11 @@ Theme:
         - University => Updates for Buildings and Units
     - Defense: War
       - Workshop: Catapults and Rams
-      - Castle => Guardians and Heroes
+      - Castle => Guardians
   - Units:
     - Catapults
     - Rams
     - Guardians
-    - Heroes
 - Gold Age: Imperial Age
   - Buildings:
     - Base: Trade
@@ -128,14 +127,17 @@ Theme:
       - Workshop: Cannon and Trebuchet
       - Gate and Walls: Upgrade to Cannon
       - Turret: Upgrade to Cannon
+      - Castle => Heroes
   - Units:
     - Trebuchet
     - Cannon
+    - Heroes
 
 - Notes:
   - Fog of War in this game is perfect. Hue at 50 percent vs 100 percent in a units or building view.
   - When a section is conquered or radar update then the section is exposed
   - When configuring keybindings and shortcuts, this game is the basis of all RTS games.
+  - If breeding is a feature then we need those children to learn in schools and universities to become heroes?
 
 ## Red Alert 2
 
