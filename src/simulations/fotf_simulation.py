@@ -4,8 +4,8 @@ from src.configs.game_config import (
     TILE_WIDTH, TILE_HEIGHT,
     MAP_WIDTH, MAP_HEIGHT
 )
-from src.models.legions.model import AdminLegion
-from src.models.solars.galaxy import UniverseGalaxy
+# from src.models.legions.model import AdminLegion
+# from src.models.solars.galaxy import UniverseGalaxy
 
 
 class Game:
@@ -39,9 +39,9 @@ class Game:
 class Fotf(Game):
     def __init__(self):
         super().__init__("FotF")
-        self.board = UniverseGalaxy()
-        self.player_faction = AdminLegion("Federation")
-        self.enemy_faction = AdminLegion("Empire")
+        # self.board = UniverseGalaxy()
+        # self.player_faction = AdminLegion("Federation")
+        # self.enemy_faction = AdminLegion("Empire")
         self.selector = None
         self.tilemap = self.generate_tilemap()
 
