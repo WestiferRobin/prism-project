@@ -1,4 +1,6 @@
-
+Versions:
+- 0.X is pygame as top down
+- 1.X is unity as isomorphic
 
 
 
