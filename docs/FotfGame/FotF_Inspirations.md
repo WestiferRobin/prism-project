@@ -205,17 +205,15 @@ Theme:
           - Anti-Air Missile Tank
           - Advance Tank
           - Center Convoy => Make new Bases on Player Map or Planet Area
-          - Prism Tank
-          - Mirage Tank
+          - Rocket Tank
+          - Tesla Tank
         - Air:
-          - Transport Helicopter
-          - Fighter Jet
-          - Advance Fighter Jet
+          - War Airship
         - Ships:
           - Hover Transport
           - Naval Destroyer
-          - Naval Cruiser
-          - Aircraft Carrier => Fighter Jets transport
+          - Naval Sub
+          - Naval Advance Destroyer
     - Allies:
       - Infinity:
         - Trooper
