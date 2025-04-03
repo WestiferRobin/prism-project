@@ -1,3 +1,4 @@
+from src.models.goose_models.dashboard import plot_stock_chart
 from src.models.goose_models.engine_models.indicators import compute_indicators
 from src.models.goose_models.engine_models.market_data import get_market_data
 from src.models.goose_models.engine_models.strategy_engine import generate_signals
@@ -16,3 +17,6 @@ def run_goose_engine(tickers: list):
 
     # STEP 4: Simulate Trades and Log Them
     execute_paper_trades(signals, data_with_indicators)
+
+    # STEP 5: Visualize the root chart for len(tickers) stocks
+    plot_stock_chart(tickers, data_with_indicators)
