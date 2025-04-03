@@ -1,4 +1,4 @@
-from src.utils.prism_utils import build_prism_cell
+from src.utils.nexus_utils.prism_utils import build_prism_cell
 
 
 class PrismCell:

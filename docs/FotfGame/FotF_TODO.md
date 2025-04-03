@@ -1,0 +1,40 @@
+Current:
+- Refactor models to work from a top-down approach on getting a simple top down rts game on planet area.
+  - Goal: 
+    - Progression from Stone Age to Modern Age on a Planet's Area on a Planet Board.
+    - Must-have units/buildings from AOE2 and RA2.
+  - Design the Game and refactor the docs.
+  - Add views at the main menu.
+    - Galactic Conquest
+      - Starting Age: Stone Age (Default)
+      - Other ages are unlocked after progression
+    - Skirmish Mode:
+      - 1-4 Players on a Planet's Area based on Biome
+      - Same based on Land or Space
+    - Leaderboard => Offline Leaderboard based on FTL board
+    - Settings => Apply as development continues
+    - Exit => Done
+  - Design the Game and refactor the docs. Ensure Testing and Document topology synced with models
+    - Fix the src/models/solars for circular dependency
+    - Fix the src/models/vehicles based on AOE2, RA2, and EAW
+      - First Time or Default: Stone Age
+      - AOE2
+        - Bronze Age 
+        - Iron Age
+        - Medieval Age
+        - Imperial Age
+      - RA2
+        - Industrial Age => 1800s - End of WW1
+        - Modern Age => WW2 - 20XX (Red Alert 2)
+        - Atomic Age => Yuri's Revenge => 20XX - Science Fiction
+      - EAW
+        - Galactic Age => Space Combat and Galactic Board (Planet, Solar, and Galactic maps)
+    - Fix the src/models/bases for AOE2, RA2, and EAW
+    - PrismDrone is a base model for later versions
+      - LegionWorker => Circle
+      - LegionTrooper => Triangle
+      - LegionManager => Square
+
+Trello:
+- Once you have a skirmish of 1v1, 2v2, and 4 team free for all then work on Galactic Age in Sol
+- Apply 2.5 isomorphic version in Unity with solution in Pygame

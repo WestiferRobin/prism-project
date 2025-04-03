@@ -1,5 +1,5 @@
 from src.models.prisms.cell import PrismCell
-from src.utils.prism_utils import MAX_CELL_SIZE
+from src.utils.nexus_utils.prism_utils import MAX_CELL_SIZE
 
 
 class PrismBrain:
