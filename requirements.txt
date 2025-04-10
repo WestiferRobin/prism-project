@@ -33,3 +33,5 @@ pytest>=7.0.0
 
 # Game Development
 pygame>=2.1.0
+
+python-dateutil~=2.9.0.post0
