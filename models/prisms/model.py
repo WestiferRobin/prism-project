@@ -73,3 +73,23 @@ class PrismDrone:
         self.network[target.id] += social_score
 
         return social_score
+
+
+class PrismFamily:
+    def __init__(self, father: PrismDrone, mother: PrismDrone, children: list = None):
+        self.father = father
+        self.mother = mother
+        self.members = {
+            "father": self.father,
+            "mother": self.mother,
+            "children": {child.config.id: child for child in children}
+        }
+
+    def breed(self, random_chance: bool = False):
+        if random_chance:
+            if random.choice([True, False]):
+                return None
+        # TODO: Figure out the dna sequencing when two prisms breed
+        child = PrismDrone()
+        self.members["children"][child.config.id] = child
+        return child
