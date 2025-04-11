@@ -36,3 +36,6 @@ pygame>=2.1.0
 
 python-dateutil~=2.9.0.post0
 skyfield~=1.53
+Cartopy~=0.24.1
+geopandas~=1.0.1
+fiona~=1.10.1

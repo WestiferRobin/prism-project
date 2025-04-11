@@ -1,6 +1,6 @@
 
-DATA_CACHE = "data/golden_goose_data/market_data"
-TEST_TICKERS = ["AAPL", "MSFT", "GOOGL", "NVDA", "AMZN", "BTC-USD"]
+DATA_CACHE = "data/market_data"
+TEST_TICKERS = ["^GSPC", "AAPL", "MSFT", "GOOGL", "NVDA", "AMZN", "BTC-USD"]
 
 
 WIDTH, HEIGHT = 1280, 720  # Standard 720p HD
@@ -12,3 +12,4 @@ SIM_SPEED_OPTIONS = [1, 30, 365, 3650]  # days/sec
 DEFAULT_SPEED = SIM_SPEED_OPTIONS[1]
 
 SUN_SIZE = 24
+SUN_COLOR = (255, 255, 0)

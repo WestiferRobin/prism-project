@@ -1,3 +1,5 @@
+import datetime
+
 import uvicorn
 from fastapi import FastAPI
 
@@ -7,7 +9,13 @@ from models.goose.engine.model import run_goose_engine
 goose_api = FastAPI()
 
 def test_goose_engine():
-    run_goose_engine(tickers=TEST_TICKERS)
+    end_date = datetime.datetime.now(datetime.UTC)
+    start_date = datetime.datetime.combine(
+            end_date.date().replace(year=end_date.year - 1),
+            datetime.time.min,
+            tzinfo=datetime.UTC
+        )
+    run_goose_engine(tickers=TEST_TICKERS, start_date=start_date, end_date=end_date)
 
 @goose_api.get("/goose/test")
 async def test_golden_goose():

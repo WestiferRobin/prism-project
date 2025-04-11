@@ -1,24 +1,26 @@
 import datetime
 
-from models.goose.goose_ui.solar_system_ui import run_solar_system_ui
+from models.data.market_data import load_market_data
+from models.data.solar_data import load_solar_data
+from models.data.weather_data import load_weather_data
 
 
-def run_goose_engine(tickers: list, start_date: datetime.datetime=None, end_date: datetime.datetime=None):
-    if end_date is None:
-        end_date = datetime.datetime.now(datetime.UTC)
+def load_physics_data(start_date, end_date):
+    load_solar_data(start_date, end_date)
+    load_weather_data(start_date, end_date)
 
-    if start_date is None:
-        start_date = datetime.datetime.combine(
-            end_date.date().replace(year=end_date.year - 5),
-            datetime.time.min,
-            tzinfo=datetime.UTC
-        )
+def load_economy_data(tickers, start_date, end_date):
+    load_market_data(tickers, start_date, end_date)
 
-    # STEP 2: Load Sudo Data => cosmos from sun to earth, and it's perspective with the weather
-    # solar_data = get_planet_data(start_date, end_date)
-    run_solar_system_ui(start_date, end_date)
+def load_goose_data(tickers, start_date, end_date):
+    load_physics_data(start_date, end_date)
+    load_economy_data(tickers, start_date, end_date)
 
-    print(f"predicting stonks for {tickers} with cosmos and weather data on markets")
+
+def run_goose_engine(tickers: list, start_date: datetime.datetime, end_date: datetime.datetime):
+    # STEP 1: Load Market Data
+    load_goose_data(tickers, start_date, end_date)
+
     # STEP 1: Load Market Data
     # market_data = get_market_data(tickers)
 
