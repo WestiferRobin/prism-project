@@ -1,5 +1,5 @@
 
-DATA_CACHE = "data/market_data"
+DATA_CACHE = "data/stock_data"
 TEST_TICKERS = ["^GSPC", "AAPL", "MSFT", "GOOGL", "NVDA", "AMZN", "BTC-USD"]
 
 

@@ -5,17 +5,17 @@ This is the sandbox for my thesis and work. Prism.co supports Nexus Theory and A
 - FotF => RTS game for player to conquer galaxy with Prism Drones
 - Prism.co Infrastructure:
   - Golden Goose => automated hedge fund
-  - Mood Wave => automated social media for money and marketing
+  - Mood Wave => automated social media
 
 ## Phase 2: Business - Full-AI
+- Prism Drone => Prism Agent as a Bot
 - Hive => Portal to Prism Agents
-- Book => The Nexus of Light (Talks about the Nexus in Science, Philosophy, and History as a book or series)
 - Scribe => Mental Health app to help users manifest their goals
 
 ## Phase 3: Drone Bots - Bot-AI simulations
-- Prism Drone => Prism Agent as a Bot
+- Book => The Nexus of Light (Talks about the Nexus in Science, Philosophy, Art, and History as a book or series)
 - Orb Drone => UAP inspired craft
-- Arch Legion => Orb and Prism Drones but like FotF
+- Arch Legion => Orb and Prism Drones but like FotF in the real world
 
 ## Phase 4: Bot Work - R&D business built on AIs and User
 - Nexus Theory

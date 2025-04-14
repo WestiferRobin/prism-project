@@ -3,10 +3,16 @@ import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Point
 
+
 def load_weather_data(start_date, end_date):
     print(f"WEATHER DATA FOR {start_date} - {end_date}")
 
-def get_earth_data():
+
+# Path to your downloaded GeoPackage file
+GPKG_FILE = "data/earth_data/natural_earth_vector.gpkg"
+
+
+def load_earth_data():
     # List all layers in the GPKG
     layers = fiona.listlayers(GPKG_FILE)
     print("Available Layers:", layers)
@@ -16,8 +22,9 @@ def get_earth_data():
 
     return world
 
-def get_city_data():
-    # Sample city coordinates (latitude, longitude)
+
+def load_city_data():
+    # Sample city coordinates (latitude, longitude) => Look at calculating top 25 GDP per year for countries and cities
     cities = {
         "New York": (40.7128, -74.0060),
         "London": (51.5074, -0.1278),
@@ -33,8 +40,7 @@ def get_city_data():
     city_gdf = gpd.GeoDataFrame(city_df, geometry="geometry", crs="EPSG:4326")
 
     return city_gdf
-# Path to your downloaded GeoPackage file
-GPKG_FILE = "data/earth_data/natural_earth_vector.gpkg"
+
 
 
 

@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 def run_earth_map_ui(earth_data, city_data):
     # Plot the map with cities
     fig, ax = plt.subplots()

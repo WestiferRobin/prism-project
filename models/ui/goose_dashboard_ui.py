@@ -11,6 +11,7 @@ Daily update:
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
+
 def plot_ticker_chart(ticker: str, df):
     plt.figure(figsize=(12, 6))
     plt.plot(df.index, df['Close'], label='Close Price', linewidth=1.5)
@@ -29,7 +30,7 @@ def plot_ticker_chart(ticker: str, df):
     plt.show()
 
 
-def plot_stock_chart(tickers: list, data_with_indicators):
+def run_goose_dashboard(tickers: list, data_with_indicators):
     for ticker in tickers:
         plot_ticker_chart(ticker, data_with_indicators[ticker])
 

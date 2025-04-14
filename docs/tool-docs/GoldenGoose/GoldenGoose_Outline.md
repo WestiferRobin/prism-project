@@ -19,7 +19,7 @@
   - Planetary Transits (e.g. Jupiter in Aries ♃♈)
   - Eclipses / Solar Events ☀️
 - Output: Clean JSON feed of **daily cosmic conditions**
-
+- NOTE: Consider all astrology ideas with real solar data too
 ---
 
 ### 📉 2. Market Data Feed (The Earth Input)

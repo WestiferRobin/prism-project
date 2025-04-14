@@ -7,12 +7,12 @@ from models.ui.solar_system_ui import run_solar_system_ui
 
 def load_solar_data(start_date: datetime.datetime, end_date: datetime.datetime, is_ui: bool = False):
     # Load ephemeris and timescale
-    planets = load('data/solar_data/de421.bsp')
+    planets = load('data/solar_data/de440s.bsp')
     ts = load.timescale()
 
     # List of all major planets
     planet_names = [
-        'mercury', 'venus', 'earth', 'mars',
+        'mercury barycenter', 'venus barycenter', 'earth barycenter', 'mars barycenter',
         'jupiter barycenter', 'saturn barycenter',
         'uranus barycenter', 'neptune barycenter'
     ]
@@ -59,3 +59,5 @@ def load_solar_data(start_date: datetime.datetime, end_date: datetime.datetime, 
 
     if is_ui:
         run_solar_system_ui(start_date, end_date)
+
+    return df
