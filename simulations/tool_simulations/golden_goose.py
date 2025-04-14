@@ -5,6 +5,7 @@ from fastapi import FastAPI
 
 from configs.goose_config import TEST_TICKERS
 from models.goose.engine.model import run_goose_engine
+from models.ui.solar_system_ui import run_solar_system_ui
 
 goose_api = FastAPI()
 
@@ -16,6 +17,7 @@ def test_goose_engine():
             tzinfo=datetime.UTC
         )
     run_goose_engine(tickers=TEST_TICKERS, start_date=start_date, end_date=end_date)
+    run_solar_system_ui(start_date, end_date)
 
 @goose_api.get("/goose/test")
 async def test_golden_goose():
