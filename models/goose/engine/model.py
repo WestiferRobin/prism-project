@@ -2,12 +2,12 @@ import datetime
 
 from models.data.stock_data import load_stock_data
 from models.data.solar_data import load_solar_data
-from models.data.weather_data import load_weather_data
+from models.data.earth_data import fetch_earth_data
 
 
 def load_physics_data(start_date, end_date):
     solar_data = load_solar_data(start_date, end_date)
-    earth_data = load_weather_data(start_date, end_date)
+    earth_data = fetch_earth_data(start_date, end_date)
     return {
         "solar_data": solar_data,
         "earth_data": earth_data
