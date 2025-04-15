@@ -1,18 +1,18 @@
 import random
 
-from configs.prism_config import PrismConfig
+from configs.prism_config import PrismConfig, MAX_CELL_SIZE
 from models.prisms.prism_parts.brain import PrismBrain
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import torch.nn.functional as F
 
 
 class PrismDrone:
-    drone_count = 0
-
-    def __str__(self):
-        return self.config.title()
 
     def __init__(self, config: PrismConfig = None):
         if config is None:
-            config = PrismConfig()
+            config = PrismConfig("PrismDrone")
         self.config = config
 
         self.brain = PrismBrain(self.config.id)
@@ -21,58 +21,34 @@ class PrismDrone:
 
         self.__apply_brain()
 
+    def __str__(self):
+        return self.config.name
+
     def __apply_brain(self):
-        cells = self.brain.cells()
+        dummy_input = torch.zeros(MAX_CELL_SIZE * MAX_CELL_SIZE * 8)
+        self.state_tensor = self.brain.forward(dummy_input)
 
     def is_alive(self):
         return self.health > 0
 
     def interact(self, target):
-        # TODO: Need to figure this out soon...
-        # if not self.in_range(target):
-        #     return
-        if target.id not in self.network:
-            self.network[target.id] = 0
+        dummy_input = torch.zeros(MAX_CELL_SIZE * MAX_CELL_SIZE * 8)
+        target_state = target.brain.forward(dummy_input)
+        self_output = self.brain.forward(dummy_input)
+        score = F.cosine_similarity(self_output, target_state, dim=0).item()
+        return score
 
-        source_cells = self.brain.cells()
-        target_cells = target.brain.cells()
-        if len(source_cells) != len(target_cells):
-            raise Exception("PrismDrones can't interact due to brain cells")
-
-        social_score = 0
-        total_interactions = 0
-        for i in range(0xF + 1):
-            for j in range(0xF + 1):
-                source_cell = source_cells[i][j].cell
-                source_data = source_cell['data']
-                data_keys = [key for key in source_data.keys()]
-
-                target_cell = target_cells[i][j].cell
-                target_data = target_cell['data']
-
-                for source_key in data_keys:
-                    source_band = source_data[source_key].hex
-                    source_byte = int(source_band[0], 0xF + 1)
-
-                    target_key = random.choice(data_keys)
-                    target_band = target_data[target_key].hex
-                    target_byte = int(target_band[0], 0xF + 1)
-
-                    if source_byte + target_byte <= 0:
-                        byte_score = target_byte + source_byte / 2
-                    else:
-                        byte_score = target_byte / (source_byte + target_byte)
-                    if byte_score > 0.5:
-                        social_score += 1
-                    elif byte_score < 0.5:
-                        social_score -= 1
-
-                total_interactions += 1
-        social_score = social_score / total_interactions
-
-        self.network[target.id] += social_score
-
-        return social_score
+    def train_on_data(self, input_tensor, target_tensor, epochs=10):
+        optimizer = optim.Adam(self.brain.parameters(), lr=0.003)
+        loss_fn = nn.MSELoss()
+        for epoch in range(epochs):
+            optimizer.zero_grad()
+            output = self.brain(input_tensor)
+            loss = loss_fn(output, target_tensor)
+            loss.backward()
+            optimizer.step()
+            if epoch % 10 == 0 or epoch == epochs - 1:
+                print(f"Epoch {epoch}: Loss = {loss.item():.6f}")
 
 
 class PrismFamily:

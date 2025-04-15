@@ -10,21 +10,22 @@ from simulations.tool_simulations.nexus_theory import run_nexus_theory
 
 
 def run_simulation(version: int, sub_version: int):
-    if version == 0: # Foundation and Survival
+    if version == 0:  # Foundation and Survival
         if sub_version == 0:
             run_golden_goose()
         elif sub_version == 1:
             run_mood_wave()
-        elif sub_version == 2:
-            run_prism_drone()
-    elif version == 1: # Market and Share
+    elif version == 1:  # Recreate experiment and build on modular drone architecture
         if sub_version == 0:
-            run_fotf()
+            run_prism_drone()
         elif sub_version == 1:
-            run_prism_scribe()
-        elif sub_version == 2:
+            run_fotf()
+    elif version == 2:  # Market and Share
+        if sub_version == 0:
             run_hedron_hive()
-    elif version == 2: # To Infinity and Beyond.
+        elif sub_version == 2:
+            run_prism_scribe()
+    elif version == 2:  # To Infinity and Beyond.
         if sub_version == 0:
             run_orb_drone()
         elif sub_version == 1:

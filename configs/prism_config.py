@@ -5,6 +5,10 @@ from utils.enums.prism_enums import LegionRank, LifeSpan
 
 DRONE_COUNT = 0
 
+# Constants
+MAX_CELL_SIZE = 16
+MAX_PRISM_SIZE = 64
+
 
 def get_valid_name():
     global DRONE_COUNT

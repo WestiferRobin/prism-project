@@ -1,9 +1,5 @@
 import uuid
 
-# Constants
-MAX_CELL_SIZE = 16
-MAX_PRISM_SIZE = 64
-
 
 # Data Structure for PrismBrain Cells
 def build_data_byte(u_nibble=None, v_nibble=None):
@@ -11,7 +7,7 @@ def build_data_byte(u_nibble=None, v_nibble=None):
     v_value = uuid.uuid4() if v_nibble is None else v_nibble
 
     if len(u_value.bytes) != len(v_value.bytes):
-        raise Exception("build_data_byte in prism_utils.py isn't working here. ")
+        raise Exception("build_data_byte in data_utils.py isn't working here. ")
 
     uv = str()
     vu = str()

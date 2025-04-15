@@ -7,7 +7,7 @@ from models.data.earth_data import fetch_earth_data
 
 def fetch_physics_data(start_date, end_date):
     solar_data = fetch_solar_data(start_date, end_date, is_ui=False)
-    earth_data = fetch_earth_data(start_date, end_date, is_ui=True)
+    earth_data = fetch_earth_data(start_date, end_date, is_ui=False)
     return {
         "solar_data": solar_data,
         "earth_data": earth_data
@@ -37,6 +37,8 @@ def fetch_goose_data(tickers, start_date, end_date):
 def run_goose_engine(tickers: list, start_date: datetime.datetime, end_date: datetime.datetime):
     # STEP 1: Load Engine "Goose" Data
     engine_data = fetch_goose_data(tickers, start_date, end_date)
+
+    prism_investor = PrismInvestor()
 
     """
     TODO:
