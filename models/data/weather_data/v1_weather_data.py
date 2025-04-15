@@ -14,7 +14,7 @@ import fiona
 def fetch_climate_data(latitude, longitude, start_date, end_date):
     url = (
         f"https://archive-api.open-meteo.com/v1/archive?latitude={latitude}&longitude={longitude}"
-        f"&start_date={start_date}&end_date={end_date}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum"
+        f"&start_date={start_date.date()}&end_date={end_date.date()}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum"
         f"&timezone=UTC"
     )
     response = requests.get(url)

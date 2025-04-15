@@ -17,7 +17,6 @@ def test_goose_engine():
             tzinfo=datetime.UTC
         )
     run_goose_engine(tickers=TEST_TICKERS, start_date=start_date, end_date=end_date)
-    run_solar_system_ui(start_date, end_date)
 
 @goose_api.get("/goose/test")
 async def test_golden_goose():

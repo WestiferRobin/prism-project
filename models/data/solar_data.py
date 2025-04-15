@@ -5,7 +5,7 @@ import pandas as pd
 from models.ui.solar_system_ui import run_solar_system_ui
 
 
-def load_solar_data(start_date: datetime.datetime, end_date: datetime.datetime, is_ui: bool = False):
+def fetch_solar_data(start_date: datetime.datetime, end_date: datetime.datetime, is_ui: bool = False):
     # Load ephemeris and timescale
     planets = load('data/solar_data/de440s.bsp')
     ts = load.timescale()
