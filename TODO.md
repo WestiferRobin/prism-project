@@ -1,5 +1,4 @@
 
-1. Change drive for data transfer on external drive between the two
 2. Fix the data scrappers to be dynamic
    - Try without data
    - Try with data
