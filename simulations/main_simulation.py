@@ -4,17 +4,13 @@ from simulations.app_simulations.prism_scribe import run_prism_scribe
 from simulations.bot_simulations.arch_legion import run_arch_legion
 from simulations.bot_simulations.orb_drone import run_orb_drone
 from simulations.bot_simulations.prism_drone import run_prism_drone
-from simulations.tool_simulations.golden_goose import run_golden_goose
 from simulations.tool_simulations.mood_wave import run_mood_wave
 from simulations.tool_simulations.nexus_theory import run_nexus_theory
 
 
 def run_simulation(version: int, sub_version: int):
     if version == 0:  # Foundation and Survival
-        if sub_version == 0:
-            run_golden_goose()
-        elif sub_version == 1:
-            run_mood_wave()
+        run_mood_wave()
     elif version == 1:  # Recreate experiment and build on modular drone architecture
         if sub_version == 0:
             run_prism_drone()
@@ -23,7 +19,7 @@ def run_simulation(version: int, sub_version: int):
     elif version == 2:  # Market and Share
         if sub_version == 0:
             run_hedron_hive()
-        elif sub_version == 2:
+        elif sub_version == 1:
             run_prism_scribe()
     elif version == 2:  # To Infinity and Beyond.
         if sub_version == 0:
