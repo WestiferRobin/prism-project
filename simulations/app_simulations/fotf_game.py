@@ -4,13 +4,13 @@ from configs.game_config import (
     TILE_WIDTH, TILE_HEIGHT,
     MAP_WIDTH, MAP_HEIGHT
 )
-# from src.models.legions.model import AdminLegion
-# from src.models.solars.galaxy import UniverseGalaxy
 
 class Game:
     def __init__(self, name: str):
         pygame.init()
-        self.screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+        self.screen = pygame.display.set_mode((pygame.display.Info().current_w, pygame.display.Info().current_h), pygame.RESIZABLE)
+        global WINDOW_WIDTH, WINDOW_HEIGHT
+        WINDOW_WIDTH, WINDOW_HEIGHT = self.screen.get_size()
         pygame.display.set_caption(name)
         self.clock = pygame.time.Clock()
         self.running = True
@@ -19,6 +19,39 @@ class Game:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.running = False
+
+        keys = pygame.key.get_pressed()
+        move_x, move_y = 0, 0
+
+        # 8-directional movement mapped for isometric logic
+        if keys[pygame.K_w] and keys[pygame.K_d]:  # Up-Right
+            move_x, move_y = 0, -1
+        elif keys[pygame.K_w] and keys[pygame.K_a]:  # Up-Left
+            move_x, move_y = -1, 0
+        elif keys[pygame.K_s] and keys[pygame.K_d]:  # Down-Right
+            move_x, move_y = 1, 0
+        elif keys[pygame.K_s] and keys[pygame.K_a]:  # Down-Left
+            move_x, move_y = 0, 1
+        elif keys[pygame.K_w]:  # Up
+            move_x, move_y =  -1, -1
+        elif keys[pygame.K_s]:  # Down
+            move_x, move_y = 1, 1
+        elif keys[pygame.K_a]:  # Left
+            move_x, move_y = -1, 1
+        elif keys[pygame.K_d]:  # Right
+            move_x, move_y = 1, -1
+
+        # Add a cooldown to slow down movement speed
+        if not hasattr(self, 'move_timer'):
+            self.move_timer = 0
+
+        if self.move_timer <= 0:
+            new_x = max(0, min(MAP_WIDTH - 1, self.player_pos[0] + move_x))
+            new_y = max(0, min(MAP_HEIGHT - 1, self.player_pos[1] + move_y))
+            self.player_pos = [new_x, new_y]
+            self.move_timer = 10  # frames between moves
+        else:
+            self.move_timer -= 1
 
     def update(self):
         pass
@@ -32,78 +65,40 @@ class Game:
             self.update()
             self.draw()
             self.clock.tick(60)
+        print("Exiting Fotf Game")
         pygame.quit()
 
 
 class Fotf(Game):
     def __init__(self):
         super().__init__("FotF")
-        # self.board = UniverseGalaxy()
-        # self.player_faction = AdminLegion("Federation")
-        # self.enemy_faction = AdminLegion("Empire")
         self.selector = None
         self.tilemap = self.generate_tilemap()
+        self.player_pos = [5, 5]
 
     def generate_tilemap(self):
         tilemap = []
         for y in range(MAP_HEIGHT):
             row = []
             for x in range(MAP_WIDTH):
-                if x == 3 and y == 2:
-                    row.append("resource")
-                elif x == 5 and y == 5:
-                    row.append("building")
-                elif x == 7 and y == 4:
-                    row.append("unit")
-                else:
-                    row.append("grass")
+                row.append("grass")
             tilemap.append(row)
         return tilemap
 
     def iso_coords(self, x, y):
-        screen_x = (x - y) * TILE_WIDTH // 2 + WINDOW_WIDTH // 2
-        screen_y = (x + y) * TILE_HEIGHT // 2
+        map_pixel_width = (MAP_WIDTH + MAP_HEIGHT) * TILE_WIDTH // 2
+        map_pixel_height = (MAP_WIDTH + MAP_HEIGHT) * TILE_HEIGHT // 2
+        offset_x = (WINDOW_WIDTH - map_pixel_width) // 2
+        offset_y = (WINDOW_HEIGHT - map_pixel_height) // 2
+        screen_x = (x - y) * TILE_WIDTH // 2 + offset_x + map_pixel_width // 2
+        screen_y = (x + y) * TILE_HEIGHT // 2 + offset_y
         return screen_x, screen_y
-
-    def get_tile_from_screen(self, screen_x, screen_y):
-        dx = screen_x - WINDOW_WIDTH // 2
-        dy = screen_y
-
-        x = (dy / TILE_HEIGHT + dx / TILE_WIDTH)
-        y = (dy / TILE_HEIGHT - dx / TILE_WIDTH)
-
-        x = int(x // 2)
-        y = int(y // 2)
-
-        if 0 <= x < MAP_WIDTH and 0 <= y < MAP_HEIGHT:
-            return x, y
-        return None
-
-    def handle_events(self):
-        super().handle_events()
-        if pygame.mouse.get_pressed()[0]:  # Left click
-            mouse_x, mouse_y = pygame.mouse.get_pos()
-            tile = self.get_tile_from_screen(mouse_x, mouse_y)
-            if tile:
-                self.selector = tile
 
     def draw_grid(self):
         for y in range(MAP_HEIGHT):
             for x in range(MAP_WIDTH):
                 screen_pos = self.iso_coords(x, y)
-                tile_type = self.tilemap[y][x]
-
-                if tile_type == "grass":
-                    color = (34, 139, 34)  # Green
-                elif tile_type == "resource":
-                    color = (0, 191, 255)  # Blue
-                elif tile_type == "building":
-                    color = (169, 169, 169)  # Gray
-                elif tile_type == "unit":
-                    color = (255, 215, 0)  # Gold
-                else:
-                    color = (255, 255, 255)
-
+                color = (34, 139, 34)
                 points = [
                     (screen_pos[0], screen_pos[1] + TILE_HEIGHT // 2),
                     (screen_pos[0] + TILE_WIDTH // 2, screen_pos[1]),
@@ -111,21 +106,20 @@ class Fotf(Game):
                     (screen_pos[0] + TILE_WIDTH // 2, screen_pos[1] + TILE_HEIGHT),
                 ]
                 pygame.draw.polygon(self.screen, color, points)
+                pygame.draw.polygon(self.screen, (50, 50, 50), points, 1)  # grid lines
 
-        if self.selector:
-            sel_x, sel_y = self.selector
-            screen_pos = self.iso_coords(sel_x, sel_y)
-            points = [
-                (screen_pos[0], screen_pos[1] + TILE_HEIGHT // 2),
-                (screen_pos[0] + TILE_WIDTH // 2, screen_pos[1]),
-                (screen_pos[0] + TILE_WIDTH, screen_pos[1] + TILE_HEIGHT // 2),
-                (screen_pos[0] + TILE_WIDTH // 2, screen_pos[1] + TILE_HEIGHT),
-            ]
-            pygame.draw.polygon(self.screen, (255, 0, 0), points, 2)
+    def draw_player(self):
+        x, y = self.player_pos
+        screen_x, screen_y = self.iso_coords(x, y)
+        center_x = screen_x + TILE_WIDTH // 2
+        center_y = screen_y + TILE_HEIGHT // 2
+        pygame.draw.circle(self.screen, (255, 0, 0), (center_x, center_y), 10)
 
     def draw(self):
-        super().draw()
+        self.screen.fill((0, 0, 0))
         self.draw_grid()
+        self.draw_player()
+        pygame.display.flip()
 
 """
 THIS IS AN RTS GAME ON DIFFERENT DIMENSIONS. COLLECT TRADE AND FIGHT. thats the game. a game for the masculine spirit
