@@ -49,6 +49,11 @@ class FotfGame:
         return int(tile_x), int(tile_y)
 
     def handle_mouse_events(self, event):
+        # DEBUG: log where you're clicking and what tile it's being interpreted as
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            mouse_x, mouse_y = pygame.mouse.get_pos()
+            tile_x, tile_y = self.screen_to_tile(mouse_x, mouse_y)
+            print(f"[DEBUG] Click at ({mouse_x}, {mouse_y}) → Tile: ({tile_x}, {tile_y})")
         if event.type == pygame.MOUSEBUTTONDOWN:
             if event.button == 1:
                 mouse_x, mouse_y = pygame.mouse.get_pos()
