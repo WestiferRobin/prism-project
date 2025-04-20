@@ -1,7 +1,7 @@
 from models.prisms.model import PrismDrone
 from models.fotf.legions.legionfleet import AdminFleet, LegionFleet
 from models.fotf.ships.star_ships.star_ships import StarCruiser, StarFrigate, StarCapital
-from utils.fotf_utils.armada_utils import find_armada_ship, find_armada_ships_by_type
+from utils.fotf_utils.unit_utils.armada_utils import find_armada_ship, find_armada_ships_by_type
 from utils.enums.prism_enums import LegionRank
 from utils.fotf_utils.population_utils import build_armada_population
 

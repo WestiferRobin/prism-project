@@ -1,4 +1,4 @@
-from utils.fotf_utils.fleet_utils import find_fleet_ships_by_type, find_fleet_ship
+from utils.fotf_utils.unit_utils.fleet_utils import find_fleet_ships_by_type, find_fleet_ship
 
 
 def find_armada_fleet(armada, fleet_id):

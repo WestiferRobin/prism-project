@@ -1,7 +1,7 @@
 from models.prisms.model import PrismDrone
 from models.fotf.ships.star_ships.star_ships import StarCapital, StarFrigate, StarCruiser, StarShip, StarDreadnought
 from utils.enums.prism_enums import LEGION_RANKS, LegionRank
-from utils.fotf_utils.fleet_utils import find_fleet_ships_by_type
+from utils.fotf_utils.unit_utils.fleet_utils import find_fleet_ships_by_type
 
 
 class LegionFleet:

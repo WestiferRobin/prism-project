@@ -4,7 +4,7 @@ from models.fotf.ships.star_ships.star_ships import StarShip, StarCruiser, StarF
 from models.fotf.solars.moon import Moon
 from models.fotf.solars.planet import Planet
 from utils.enums.prism_enums import LegionRank
-from utils.fotf_utils.legion_utils import find_fleet_leaders, find_base_leaders, find_legion_ship, find_legion_base
+from utils.fotf_utils.unit_utils.legion_utils import find_fleet_leaders, find_base_leaders, find_legion_ship, find_legion_base
 from utils.fotf_utils.population_utils import build_legion_population
 
 
