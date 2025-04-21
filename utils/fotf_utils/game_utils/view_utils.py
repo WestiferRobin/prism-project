@@ -3,8 +3,8 @@ from configs.game_config import MAP_WIDTH, MAP_HEIGHT, TILE_WIDTH, TILE_HEIGHT
 def iso_coords(x, y, game):
     map_pixel_width = (MAP_WIDTH + MAP_HEIGHT) * TILE_WIDTH // 2
     map_pixel_height = (MAP_WIDTH + MAP_HEIGHT) * TILE_HEIGHT // 2
-    offset_x = (game.window_width - map_pixel_width) // 2 + game.game_manager.camera_manager.offset[0]
-    offset_y = (game.window_height - map_pixel_height) // 2 + game.game_manager.camera_manager.offset[1]
+    offset_x = (game.screen_width - map_pixel_width) // 2 + game.game_manager.camera_manager.offset[0]
+    offset_y = (game.screen_height - map_pixel_height) // 2 + game.game_manager.camera_manager.offset[1]
     screen_x = (x - y) * TILE_WIDTH // 2 + offset_x + map_pixel_width // 2
     screen_y = (x + y) * TILE_HEIGHT // 2 + offset_y
     return screen_x, screen_y
@@ -12,8 +12,8 @@ def iso_coords(x, y, game):
 def screen_to_tile(screen_x, screen_y, game):
     map_pixel_width = (MAP_WIDTH + MAP_HEIGHT) * TILE_WIDTH // 2
     map_pixel_height = (MAP_WIDTH + MAP_HEIGHT) * TILE_HEIGHT // 2
-    offset_x = (game.window_width - map_pixel_width) // 2 + game.game_manager.camera_manager.offset[0]
-    offset_y = (game.window_height - map_pixel_height) // 2 + game.game_manager.camera_manager.offset[1]
+    offset_x = (game.screen_width - map_pixel_width) // 2 + game.game_manager.camera_manager.offset[0]
+    offset_y = (game.screen_height - map_pixel_height) // 2 + game.game_manager.camera_manager.offset[1]
     offset_x += map_pixel_width // 2
 
     temp_x = screen_x - offset_x
