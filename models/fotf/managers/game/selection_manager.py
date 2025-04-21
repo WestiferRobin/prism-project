@@ -33,3 +33,6 @@ class SelectionManager:
     def is_selected(self, unit_index):
         return unit_index in self.selected_unit_indexes
 
+    def render(self, screen):
+        if self.selection_box:
+            pygame.draw.rect(screen, (0, 255, 255), self.selection_box, 1)
