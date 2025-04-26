@@ -1,4 +1,4 @@
-# Inspiration Notes
+d# Inspiration Notes
 RTS Game:
 - Age of Empires => Resources, Theme, and Buildings
   - Resources:

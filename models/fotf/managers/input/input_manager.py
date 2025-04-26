@@ -1,25 +1,24 @@
 import pygame
-
 from configs.game_config import MAP_WIDTH, MAP_HEIGHT
-from utils.fotf_utils.game_utils.view_utils import screen_to_tile
-
+from utils.fotf_utils.game_utils.map_utils import screen_to_tile
 
 class InputManager:
     def __init__(self, game):
         self.game = game
 
     def handle_mouse(self, event):
-        mouse_x, mouse_y = pygame.mouse.get_pos()
-        tile_x, tile_y = screen_to_tile(mouse_x, mouse_y, self.game)
-        tile_x = max(0, min(MAP_WIDTH - 1, tile_x))
-        tile_y = max(0, min(MAP_HEIGHT - 1, tile_y))
-        self.game.debug_selected_tile = (tile_x, tile_y)
-
-        units = self.game.game_manager.unit_manager.units
-        targets = self.game.game_manager.unit_manager.unit_targets
-        selected_indexes = self.game.game_manager.selection_manager.selected_unit_indexes
+        if event.type in (pygame.MOUSEMOTION, pygame.MOUSEBUTTONDOWN, pygame.MOUSEBUTTONUP):
+            mouse_x, mouse_y = pygame.mouse.get_pos()
+            tile_x, tile_y = screen_to_tile(mouse_x, mouse_y, self.game)
+            tile_x = max(0, min(MAP_WIDTH - 1, tile_x))
+            tile_y = max(0, min(MAP_HEIGHT - 1, tile_y))
+            self.game.hovered_tile = (tile_x, tile_y)
 
         if event.type == pygame.MOUSEBUTTONDOWN:
+            units = self.game.game_manager.unit_manager.units
+            targets = self.game.game_manager.unit_manager.unit_targets
+            selected_indexes = self.game.game_manager.selection_manager.selected_unit_indexes
+
             if event.button == 1:
                 for i, unit in enumerate(units):
                     if int(unit[0]) == tile_x and int(unit[1]) == tile_y:
@@ -43,4 +42,12 @@ class InputManager:
                 self.game.game_manager.selection_manager.finalize_selection(self.game.game_manager.unit_manager)
 
     def handle_keys(self):
-        self.game.game_manager.camera_manager.handle_keys()
+        # Continuous movement (WASD)
+        self.game.game_manager.camera_manager.handle_movement_keys()
+
+    def handle_zoom(self, event):
+        # Zoom on key press (KEYDOWN)
+        if event.key == pygame.K_EQUALS:
+            self.game.game_manager.camera_manager.zoom_in()
+        elif event.key == pygame.K_MINUS:
+            self.game.game_manager.camera_manager.zoom_out()

@@ -1,7 +1,5 @@
 import pygame
 from configs.game_config import TILE_WIDTH, TILE_HEIGHT
-from utils.fotf_utils.game_utils.view_utils import iso_coords
-
 
 class UnitManager:
     def __init__(self, game, units=None, speed=0.125):
@@ -29,14 +27,17 @@ class UnitManager:
             self.unit_targets[i] = target_pos
 
     def is_selected(self, index):
-        selection_manager = self.game.game_manager.selection_manager
-        return selection_manager.is_selected(index)
+        return self.game.game_manager.selection_manager.is_selected(index)
 
     def render(self):
+        offset_x, offset_y = self.game.game_manager.camera_manager.offset
         for i, unit in enumerate(self.units):
-            screen_x, screen_y = iso_coords(*unit, self.game)
-            center_x = screen_x + TILE_WIDTH // 2
-            center_y = screen_y + TILE_HEIGHT // 2
+            screen_x = unit[0] * TILE_WIDTH + offset_x
+            screen_y = unit[1] * TILE_HEIGHT + offset_y
+            center_x = int(screen_x + TILE_WIDTH // 2)
+            center_y = int(screen_y + TILE_HEIGHT // 2)
+
             pygame.draw.circle(self.game.screen, (0, 200, 255), (center_x, center_y), 10)
+
             if self.is_selected(i):
                 pygame.draw.circle(self.game.screen, (255, 255, 0), (center_x, center_y), 14, 2)
