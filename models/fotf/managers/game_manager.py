@@ -27,10 +27,6 @@ class GameManager:
             else:
                 self.input_manager.handle_mouse(event)
 
-            # Handle zoom keys
-            if event.type == pygame.KEYDOWN:
-                self.input_manager.handle_zoom(event)
-
         # Continuous movement
         self.input_manager.handle_keys()
 

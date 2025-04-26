@@ -7,7 +7,7 @@ class InputManager:
         self.game = game
 
     def handle_mouse(self, event):
-        if event.type in (pygame.MOUSEMOTION, pygame.MOUSEBUTTONDOWN, pygame.MOUSEBUTTONUP):
+        if event.type in (pygame.MOUSEMOTION, pygame.MOUSEBUTTONDOWN, pygame.MOUSEBUTTONUP, pygame.MOUSEWHEEL):
             mouse_x, mouse_y = pygame.mouse.get_pos()
             tile_x, tile_y = screen_to_tile(mouse_x, mouse_y, self.game)
             tile_x = max(0, min(MAP_WIDTH - 1, tile_x))
@@ -41,13 +41,18 @@ class InputManager:
             if self.game.game_manager.selection_manager.selection_box:
                 self.game.game_manager.selection_manager.finalize_selection(self.game.game_manager.unit_manager)
 
+        elif event.type == pygame.MOUSEWHEEL:
+            self.handle_mouse_wheel(event)
+
     def handle_keys(self):
         # Continuous movement (WASD)
         self.game.game_manager.camera_manager.handle_movement_keys()
 
-    def handle_zoom(self, event):
-        # Zoom on key press (KEYDOWN)
-        if event.key == pygame.K_EQUALS:
-            self.game.game_manager.camera_manager.zoom_in()
-        elif event.key == pygame.K_MINUS:
-            self.game.game_manager.camera_manager.zoom_out()
+    def handle_mouse_wheel(self, event):
+        # Handle zooming with mouse wheel
+        mouse_pos = pygame.mouse.get_pos()
+
+        if event.y > 0:
+            self.game.game_manager.camera_manager.zoom_in(mouse_pos)
+        elif event.y < 0:
+            self.game.game_manager.camera_manager.zoom_out(mouse_pos)

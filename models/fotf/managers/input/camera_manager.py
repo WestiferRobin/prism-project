@@ -30,8 +30,24 @@ class CameraManager:
                 (rect_or_pos[1] + self.offset[1]) * self.zoom
             )
 
-    def zoom_in(self, amount=0.05):
-        self.zoom = min(2.0, self.zoom + amount)
+    def zoom_in(self, mouse_pos, amount=0.05):
+        self.zoom_at(mouse_pos, amount)
 
-    def zoom_out(self, amount=0.05):
-        self.zoom = max(0.5, self.zoom - amount)
+    def zoom_out(self, mouse_pos, amount=0.05):
+        self.zoom_at(mouse_pos, -amount)
+
+    def zoom_at(self, mouse_pos, zoom_amount):
+        old_zoom = self.zoom
+        new_zoom = self.zoom + zoom_amount
+        new_zoom = max(0.5, min(2.0, new_zoom))
+
+        if new_zoom != old_zoom:
+            mx, my = mouse_pos
+
+            scale = new_zoom / old_zoom
+
+            self.offset[0] = (self.offset[0] - mx) * scale + mx
+            self.offset[1] = (self.offset[1] - my) * scale + my
+
+            self.zoom = new_zoom
+
