@@ -1,30 +1,21 @@
-from simulations.app_simulations.fotf_game import run_fotf
-from simulations.app_simulations.hedron_hive import run_hedron_hive
-from simulations.app_simulations.prism_scribe import run_prism_scribe
-from simulations.bot_simulations.arch_legion import run_arch_legion
-from simulations.bot_simulations.orb_drone import run_orb_drone
-from simulations.bot_simulations.prism_drone import run_prism_drone
-from simulations.tool_simulations.mood_wave import run_mood_wave
-from simulations.tool_simulations.nexus_theory import run_nexus_theory
+from simulations.biology_simulation import run_biology_simulation
+from simulations.chemistry_simulation import run_chemistry_simulation
+from simulations.physics_simulation import run_physics_simulation
+from utils.exceptions import VersionException
 
 
-def run_simulation(version: int, sub_version: int):
-    if version == 0:  # Foundation and Survival
-        run_mood_wave()
-    elif version == 1:  # Recreate experiment and build on modular drone architecture
-        if sub_version == 0:
-            run_prism_drone()
-        elif sub_version == 1:
-            run_fotf()
-    elif version == 2:  # Market and Share
-        if sub_version == 0:
-            run_hedron_hive()
-        elif sub_version == 1:
-            run_prism_scribe()
-    elif version == 2:  # To Infinity and Beyond.
-        if sub_version == 0:
-            run_orb_drone()
-        elif sub_version == 1:
-            run_arch_legion()
+def run_full_simulation(version: int):
+    raise VersionException(3, version)
+
+
+def run_simulation(version: int = 0, sub_version: int = 0):
+    if version == 0:  # Chemistry
+        run_chemistry_simulation(version=sub_version)
+    elif version == 1:  # Physics
+        run_physics_simulation(version=sub_version)
+    elif version == 2:  # Biology
+        run_biology_simulation(version=sub_version)
+    elif version == 3:  # All with AI
+        run_full_simulation(version=sub_version)
     else:
-        run_nexus_theory()
+        raise VersionException(version, sub_version)

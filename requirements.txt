@@ -1,42 +1,25 @@
-# Core dependencies
-pydantic>=2.0.0
-pydantic-settings>=2.0.0
+# === Core Scientific Stack ===
+numpy
+scipy
+sympy
+pandas
 
-# Data Science and Computational Analysis
-numpy>=1.23.0
-pandas>=1.5.0
-scipy>=1.9.0
-matplotlib>=3.6.0
-yfinance>=0.2.0
-# seaborn>=0.12.0  # Uncomment if needed
+# === AI / Agent Modeling ===
+torch
+scikit-learn
+networkx
 
-# Machine Learning & LLM Development
-torch>=2.0.0
-transformers>=4.30.0
-sentencepiece>=0.1.97
-scikit-learn>=1.5.0
+# === Visualization ===
+matplotlib
+plotly
+vpython           # 3D physics & molecule visualizer
+pygame            # 2D sandbox and sim UI
 
-# FastAPI for API exposure and model deployment
-fastapi>=0.100.0
-uvicorn[standard]>=0.22.0
+# === Interactive UI ===
+streamlit         # Optional dashboard control panel
 
-# Async and Utilities
-httpx>=0.23.0
+# === Advanced Chemistry / Quantum (optional) ===
+quimb             # For quantum states & tensor networks
 
-# Optional: Model evaluation and dataset handling
-datasets>=2.7.0
-evaluate>=0.4.0
-
-# Optional: Jupyter Notebook support for visualization and testing
-jupyterlab>=3.5.0
-pytest>=7.0.0
-
-# Game Development
-pygame>=2.1.0
-
-python-dateutil~=2.9.0.post0
-skyfield~=1.53
-Cartopy~=0.24.1
-geopandas~=1.0.1
-fiona~=1.10.1
-shapely~=2.1.0
+# === Compatibility & Misc ===
+tqdm              # Progress bars
