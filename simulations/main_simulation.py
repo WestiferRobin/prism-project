@@ -1,7 +1,7 @@
 from simulations.biology_simulation import run_biology_simulation
 from simulations.chemistry_simulation import run_chemistry_simulation
 from simulations.physics_simulation import run_physics_simulation
-from utils.exceptions import VersionException
+from src.utils.exceptions import VersionException
 
 
 def run_full_simulation(version: int):

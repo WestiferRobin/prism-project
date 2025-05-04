@@ -1,4 +1,4 @@
-from utils.exceptions import VersionException
+from src.utils.exceptions import VersionException
 
 
 def run_physics_simulation(version: int):

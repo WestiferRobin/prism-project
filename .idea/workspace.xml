@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/nexus-lab-engine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chemistry/atoms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/atom.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/molecule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/physics/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/physics/classical_mechanics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/physics/quantum_mechanics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/cli.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/periodic_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visualizer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visualizer/plotter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visualizer/renderers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visualizer/renderers/renderer2d.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visualizer/renderers/renderer3d.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nexus-framework.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agents/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biology/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/agents/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chemistry/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/agents/base_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/biology/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/physics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chemistry/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/biology_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/biology_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/chemistry_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/chemistry_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/main_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/main_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/physics_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/physics_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chemistry/molecules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chemistry/reactions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/__init__.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2wbueQB6NvsfKY2M8xuOCHxpuGk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.atoms.executor": "Run",
+    "Python.compound.executor": "Run",
+    "Python.elements.executor": "Debug",
+    "Python.main.executor": "Run",
+    "Python.molecule.executor": "Run",
+    "Python.molecules.executor": "Run",
+    "Python.quantum_mechanics.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/wesleywebb/Dev/NexusProject/nexus-lab-engine"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/src/chemistry" />
+      <recent name="$PROJECT_DIR$/src/visualizer/renderers" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.molecules">
+    <configuration name="atoms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chemistry" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chemistry/atoms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="molecules" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chemistry" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chemistry/molecules.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.atoms" />
+      <item itemvalue="Python.molecules" />
+      <item itemvalue="Python.main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.molecules" />
+        <item itemvalue="Python.atoms" />
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="" />
+      <created>1746322688557</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746322688557</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/chemistry/molecules.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
