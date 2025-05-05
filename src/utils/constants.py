@@ -2,6 +2,7 @@ import os
 
 LAB_VERSION = 0
 
+GRAVITY = 9.8
 SAMPLE_MOLECULES_NAMES = {
     "H2O": "Water",
     "CO2": "Carbon Dioxide",
