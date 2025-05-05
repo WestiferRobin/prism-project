@@ -34,6 +34,9 @@ class Atom:
         self.ion_charge = 0
         self.isotope_charge = 0
 
+    def __str__(self):
+        return f"{self.symbol}-{self.atomic_number}: <{self.electrons}, {self.protons}, {self.neutrons}>"
+
     @property
     def symbol(self) -> str:
         return self.identity.symbol

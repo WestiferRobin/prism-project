@@ -5,45 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/nexus-lab-engine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chemistry/atoms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/atom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/molecule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/physics/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/physics/classical_mechanics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/physics/quantum_mechanics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/cli.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/periodic_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visualizer/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visualizer/plotter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visualizer/renderers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visualizer/renderers/renderer2d.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visualizer/renderers/renderer3d.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nexus-framework.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agents/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/biology/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/agents/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chemistry/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/agents/base_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/biology/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/physics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chemistry/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulations/biology_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/biology_simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulations/chemistry_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/chemistry_simulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulations/physics_simulations/classical_mechanics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulations/physics_simulations/electromagnetic_mechanics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulations/physics_simulations/newtonian_mechanics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulations/physics_simulations/nexus_mechanics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulations/physics_simulations/quantum_mechanics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulations/physics_simulations/relativistic_mechanics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulations/physics_simulations/statistical_mechanics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulations/physics_simulations/thermo_dynamics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simulations/physics_simulations/wave_mechanics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/reaction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/visualizer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/visualizer/plotter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/visualizer/renderers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/visualizer/renderers/renderer2d.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/visualizer/renderers/renderer3d.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/exceptions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/exceptions/chemistry_exceptions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/exceptions/chemistry_exceptions/atom_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/exceptions/chemistry_exceptions/reaction_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/exceptions/simulation_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/mass_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/reaction_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/biology_simulation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/chemistry_simulation.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/simulations/main_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/main_simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulations/physics_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/physics_simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chemistry/molecules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chemistry/reactions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualizer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/physics_simulation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chemistry/atoms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chemistry/atoms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chemistry/reactions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/chemistry/reactions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/atom.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/atom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/molecule.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/molecule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/physics/quantum_mechanics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/quantum_mechanics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visualizer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/chemistry_simulations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visualizer/plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/chemistry_simulations/atom_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visualizer/renderers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/chemistry_simulations/molecule_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visualizer/renderers/renderer2d.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/chemistry_simulations/reaction_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visualizer/renderers/renderer3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/physics_simulations/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +60,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2wbueQB6NvsfKY2M8xuOCHxpuGk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -77,6 +77,7 @@
     "Python.molecule.executor": "Run",
     "Python.molecules.executor": "Run",
     "Python.quantum_mechanics.executor": "Run",
+    "Python.reactions.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -85,36 +86,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ui" />
+      <recent name="$PROJECT_DIR$/src/utils/exceptions/chemistry_exceptions" />
       <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/src/chemistry" />
-      <recent name="$PROJECT_DIR$/src/visualizer/renderers" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.molecules">
-    <configuration name="atoms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="nexus-lab-engine" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chemistry" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chemistry/atoms.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
@@ -137,37 +116,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="molecules" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="nexus-lab-engine" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/chemistry" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/chemistry/molecules.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.atoms" />
-      <item itemvalue="Python.molecules" />
-      <item itemvalue="Python.main" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.molecules" />
-        <item itemvalue="Python.atoms" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>

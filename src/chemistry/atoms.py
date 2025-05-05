@@ -1,6 +1,6 @@
+from src.utils.exceptions.chemistry_exceptions.atom_exceptions import AtomNotFound
 from src.utils.periodic_table import PERIODIC_TABLE
 from src.models.atom import Atom
-from src.utils.exceptions import AtomNotFound
 
 def get_atom_by_symbol(symbol: str) -> Atom:
     if symbol in PERIODIC_TABLE:

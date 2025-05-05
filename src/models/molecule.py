@@ -1,4 +1,3 @@
-from src.chemistry.atoms import get_atom_by_symbol
 from src.models.atom import Atom
 
 
@@ -8,10 +7,14 @@ class Molecule:
         self.elements = elements  # {'H': 2, 'O': 1}
 
     def __str__(self):
-        return f"{self.name} at {self.mass()} g/mol"
+        breakdown = {}
+        for atom in self.elements:
+            breakdown[atom.symbol] = breakdown.get(atom.symbol, 0) + 1
+        breakdown_str = ''.join(f"{k}{v if v > 1 else ''}" for k, v in sorted(breakdown.items()))
+        return f"{breakdown_str} at {self.mass():.3f} g/mol"
 
     # Molecule mass is molar_mass (g/mol)
-    def mass(self):
+    def mass(self) -> float:
         count_table = {}
         atom_table = {}
         for element in self.elements:
@@ -30,14 +33,3 @@ class Molecule:
             total += count * atomic_mass
 
         return total
-
-if __name__ == "__main__":
-    water_atoms = [
-        get_atom_by_symbol('H'),
-        get_atom_by_symbol('H'),
-        get_atom_by_symbol('O')
-    ]
-    formula = "H20"
-    water_molecule = Molecule(name=formula, elements=water_atoms)
-    molecule_mass = water_molecule.mass()
-    print(water_molecule.name, molecule_mass)
