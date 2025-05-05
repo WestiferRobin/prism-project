@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ui/plotter/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/plotter/force_plotter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/plotter/kinematics_plotter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/visualizer/newton_simulator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/exceptions/physics_exceptions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/exceptions/physics_exceptions/dimension_exceptions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulations/physics_simulations/newtonian_mechanics.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/physics_simulations/newtonian_mechanics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/physics/classical_mechanics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/angular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/physics/quantum_mechanics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/energy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/forces/friction_force.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/forces/gravity_force.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/visualizer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/forces/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/visualizer/plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/forces/spring_force.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/visualizer/renderers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/kinematics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/visualizer/renderers/renderer2d.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/momentum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/visualizer/renderers/renderer3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/orbital.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
