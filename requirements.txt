@@ -1,25 +1,13 @@
-# === Core Scientific Stack ===
-numpy
-scipy
-sympy
-pandas
+# Core Simulation & Data Modeling
+numpy>=1.24
+pydantic>=2.0
+PyYAML>=6.0
 
-# === AI / Agent Modeling ===
-torch
-scikit-learn
-networkx
+# Visualization
+matplotlib>=3.7
 
-# === Visualization ===
-matplotlib
-plotly
-vpython           # 3D physics & molecule visualizer
-pygame            # 2D sandbox and sim UI
+# AI Assistant (PrismDrone using GPT API)
+openai>=1.0
 
-# === Interactive UI ===
-streamlit         # Optional dashboard control panel
-
-# === Advanced Chemistry / Quantum (optional) ===
-quimb             # For quantum states & tensor networks
-
-# === Compatibility & Misc ===
-tqdm              # Progress bars
+# Optional: Local Model Training (PrismDrone via PyTorch)
+torch>=2.0

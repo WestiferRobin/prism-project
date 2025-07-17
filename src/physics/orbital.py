@@ -1,4 +1,0 @@
-
-"""
-Gravitation & Orbits
-"""

@@ -36,6 +36,10 @@ NexusLab is the core simulation tool behind the **NexusTheory Project**, develop
 - 🔮 **Theoretical Inquiry**: Explore entropy, emergence, and the nature of intelligence  
 - 🛠 **Educational**: A sandbox for learning physics, chemistry, and complex systems modeling  
 
+
+### Project Silver
+
+aka make a scientific model of what this is https://www.youtube.com/watch?v=LN22jK34usA&t=1s
 ---
 
 

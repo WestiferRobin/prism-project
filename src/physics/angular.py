@@ -1,4 +1,0 @@
-
-"""
-Rotational Motion
-"""

@@ -1,4 +1,0 @@
-
-"""
-Momentum & Impulse
-"""
