@@ -1,13 +1,13 @@
 # Core Simulation & Data Modeling
-numpy>=1.24
-pydantic>=2.0
-PyYAML>=6.0
+numpy
+pydantic
+PyYAML
 
 # Visualization
-matplotlib>=3.7
+matplotlib
 
 # AI Assistant (PrismDrone using GPT API)
-openai>=1.0
+openai
 
 # Optional: Local Model Training (PrismDrone via PyTorch)
-torch>=2.0
+torch

@@ -18,14 +18,14 @@ NexusLab is the core simulation tool behind the **NexusTheory Project**, develop
 
 ## 🧪 Features
 
-| Module              | Description                                                                 |
-|---------------------|-----------------------------------------------------------------------------|
-| `physics/`          | Classical & quantum mechanics (gravity, EM, wavefunctions, fields)          |
-| `chemistry/`        | Atoms, molecules, reaction dynamics, thermodynamics                         |
-| `biology/`          | Prebiotic conditions, self-replicating systems, and metabolic rules         |
-| `agents/`           | Simulated intelligent systems with perception, memory, and action cycles    |
-| `visualizer/`       | 2D/3D rendering of environments, particles, molecules, and agent behaviors  |
-| `ui/`               | Interactive frontend or CLI to explore and manipulate simulation states     |
+Able to interact with the model with code or actions for simulations on a rigidbody system.
+
+Support: Export File versions
+- File Support: .txt, .json, .png, .svg, .obj, .stl
+- Web Support: .txt, .json, .png, .svg, .obj?
+- Blender Support: .obj
+- Gimp Support: .png, .svg
+- FreeCAD Support: .stl
 
 ---
 
@@ -37,9 +37,9 @@ NexusLab is the core simulation tool behind the **NexusTheory Project**, develop
 - 🛠 **Educational**: A sandbox for learning physics, chemistry, and complex systems modeling  
 
 
-### Project Silver
+## Project Silver
 
-aka make a scientific model of what this is https://www.youtube.com/watch?v=LN22jK34usA&t=1s
+- Goal: Make a scientific model of what this is https://www.youtube.com/watch?v=LN22jK34usA&t=1s
 ---
 
 
