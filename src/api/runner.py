@@ -15,5 +15,5 @@ def build_controlled_simulation(version: int = 0) -> Simulation:
 
 def run_controlled_experiment(vehicle: Vehicle, version: int = 0) -> None:
     controlled_experiment = build_controlled_simulation(version)
-    controlled_experiment.add_vehicle(vehicle)
+    controlled_experiment.add_model(vehicle)
     controlled_experiment.run()

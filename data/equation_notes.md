@@ -9,10 +9,10 @@ and core classical mechanics equations guiding all Project Silver simulations.
 Dimensional Definitions (Topological Mechanics Framework)
 -------------------------------
 
-Position      : 1-D for { x, y, z, w }
-Velocity      : 2-D for { xy, zw, ... }
-Acceleration  : 3-D for { xyz, wxyz }
-Time          : 4-D (ONLY): t = i * τ   (imaginary time layer)
+- Position      : 1-D for { x, y, z, w }
+- Velocity      : 2-D for { xy, zw, ... }
+- Acceleration  : 3-D for { xyz, wxyz }
+- Time          : 4-D (ONLY): t = i * τ   (imaginary time layer)
 
 This layering allows motion modeling under 1–5D perspectives, where:
 5D = 4D (imaginary time) + 1D (spatial extension)

@@ -9,7 +9,7 @@ def handle_input(root_path: str) -> bool:
     if len(command) == 0:
         return True
     elif len(command) == 1:
-        return command[0].lower() == 'e'
+        return command[0].lower() != 'e'
     else:
-        return command.lower() == 'exit'
+        return command.lower() != 'exit'
 

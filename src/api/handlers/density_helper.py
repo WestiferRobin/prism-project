@@ -1,7 +1,7 @@
 from typing import List
 
 from src.exceptions import EngineException
-from src.materials import Metal, METALS
+from src.models.materials import Metal, METALS
 
 
 def metals_list() -> List[Metal]:
