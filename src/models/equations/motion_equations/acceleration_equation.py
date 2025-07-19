@@ -1,4 +1,4 @@
-from src.api.equations import Equation
+from src.models.equations import Equation
 
 
 class Acceleration(Equation):
@@ -12,7 +12,10 @@ class Acceleration(Equation):
     def __str__(self):
         return f"{self.initial_acceleration} "
 
-    def calculate(self, time: float = 0) -> float:
+    def to_string(self) -> str:
+        return f"a(t)"
+
+    def calculate(self, t: float = 0) -> float:
         final_acceleration = self.initial_acceleration
         # TODO: time = i * tau
         return final_acceleration

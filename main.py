@@ -1,9 +1,11 @@
+from src.api.builders.graph_builder import build_graph, build_equation_graph
 from src.api.builders.vehicle_builder import build_speeder
-from src.api.equations.force_equations.gravity_forces import GravityForce
+from src.api.plotters.graph_plotter import plot_graph
+from src.models.equations.force_equations.gravity_forces import GravityForce
+from src.models.graphs import Graph
 from src.models.vehicles import Vehicle
 
 """
-
 MISSION: Finish equation models
 
 F(t) = m(t) * a(t), when a(t) = a + i*t
@@ -12,26 +14,18 @@ m(t) = density(t) * volume(t)
 
 F = m(t) * integral(velocity(t))
 """
-def validate_equations(vehicle: Vehicle):
-    vehicle_mass = vehicle.mass
-    print(vehicle_mass)  # "1 kg"
 
-    gravity_force = GravityForce(vehicle_mass)
-    gravity_force_unit = gravity_force
-    print(f"F(t) = m(t) * g = {gravity_force_unit}")
-
-
-    # TODO: Finish the following
-    # print(f"W(t) = F(t) * Length(t) ")
-    # density of said mass
-    # look and do validation_test
+def simulate(vehicle: Vehicle) -> Graph:
+    gravity_force = GravityForce(vehicle.mass)
+    return build_equation_graph(gravity_force)
 
 
 def main():
     orb_speeder = build_speeder(1)
-    validate_equations(orb_speeder)
+
+    force_graph = simulate(orb_speeder)
+    plot_graph(force_graph)
 
 
 if __name__ == "__main__":
     main()
-

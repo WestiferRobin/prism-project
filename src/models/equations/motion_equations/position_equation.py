@@ -1,6 +1,6 @@
-from src.api.equations import Equation
-from src.api.equations.motion_equations.acceleration_equation import Acceleration
-from src.api.equations.motion_equations.velocity_equation import Velocity
+from src.models.equations import Equation
+from src.models.equations.motion_equations.acceleration_equation import Acceleration
+from src.models.equations.motion_equations.velocity_equation import Velocity
 
 
 class Position(Equation):
@@ -23,10 +23,13 @@ class Position(Equation):
             acceleration=acceleration
         )
 
-    def calculate(self, time: float) -> float:
+    def to_string(self) -> str:
+        return f"s(t) = {self.inital_position} + {self.velocity.initial_velocity} * t + 0.5 * {self.acceleration.initial_acceleration} t^2"
+
+    def calculate(self, t: float = 0) -> float:
         initial_position = self.initial_position
-        initial_velocity = self.velocity.calculate(0) * time
-        initial_acceleration = 0.5 * self.acceleration.calculate(time) * (time ** 2)
+        initial_velocity = self.velocity.calculate(0) * t
+        initial_acceleration = 0.5 * self.acceleration.calculate(t) * (t ** 2)
         final_position = initial_position + initial_velocity + initial_acceleration
         return final_position
 
