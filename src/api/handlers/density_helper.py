@@ -1,6 +1,6 @@
 from typing import List
 
-from src.exceptions import EngineException
+from src.exceptions import NexusException
 from src.models.materials import Metal, METALS
 
 
@@ -10,7 +10,7 @@ def metals_list() -> List[Metal]:
 
 def find_metal(metal_name: str) -> Metal:
     if metal_name.lower() not in METALS:
-        raise EngineException("Unknown metal '{}'".format(metal_name))
+        raise NexusException("Unknown metal '{}'".format(metal_name))
     return METALS[metal_name.lower()]
 
 

@@ -1,17 +1,20 @@
 from src.configs.vehicle_config import VehicleConfig
 from src.enums import VehicleType
-from src.models.vehicles import Speeder, Shuttle, Vehicle
+from src.models.mass import Mass
+from src.models.vehicles import Vehicle
+from src.models.vehicles.shuttle import Shuttle
+from src.models.vehicles.speeder import Speeder
 
 
-def build_vehicle(vehicle_type: VehicleType, mass_amount: float) -> Vehicle:
-    config = VehicleConfig(vehicle_type=vehicle_type, mass_amount=mass_amount)
+def build_vehicle(vehicle_type: VehicleType, mass: Mass) -> Vehicle:
+    config = VehicleConfig(vehicle_type=vehicle_type, mass=mass)
     return Vehicle(config=config)
 
 
-def build_speeder(mass_amount: float) -> Speeder:
-    return Speeder(mass_amount=mass_amount)
+def build_speeder(config: VehicleConfig) -> Speeder:
+    return Speeder(config=config)
 
 
-def build_shuttle(mass_amount: float) -> Shuttle:
-    return Shuttle(mass_amount=mass_amount)
+def build_shuttle(config: VehicleConfig) -> Shuttle:
+    return Shuttle(config=config)
 

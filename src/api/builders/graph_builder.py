@@ -2,23 +2,15 @@ from typing import List
 
 import numpy as np
 
-from src.models.equations import Equation
-from src.models.graphs import Graph, GraphAxis
-from src.models.variable import Variable
+from src.models.equation import Equation
+from src.models.graph import Graph, GraphAxis
 
 
-def build_graph_axis(symbol: str, label: str, data: np.array) -> GraphAxis:
+def build_axis(symbol: str, label: str, data: np.array) -> GraphAxis:
     return GraphAxis(
         symbol=symbol,
         label=label,
         data=data,
-    )
-
-def build_variable_axis(variable: Variable, variable_data: np.array) -> GraphAxis:
-    return build_graph_axis(
-        symbol=variable.symbol,
-        label=variable.label,
-        data=variable_data
     )
 
 
@@ -45,8 +37,8 @@ def build_equation_graph(equation: Equation) -> Graph:
     input_data = np.linspace(-10, 10)
     output_data = equation.evaluate(input_data)
 
-    input_axis = build_variable_axis(variable=equation.input_variable, variable_data=input_data)
-    output_axis = build_variable_axis(variable=equation.output_variable, variable_data=output_data)
+    input_axis = build_axis(symbol="x", label="X Axis", data=input_data)
+    output_axis = build_axis(symbol="y", label="Y Axis", data=output_data)
 
     equation_title = f"{equation}"
     return build_2d_graph(

@@ -5,19 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/builders/unit_builders/mass_builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/validators/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/validators/equation_validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/validators/vehicle_validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/density.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/equation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/force.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/mass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/vehicles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/vehicles/shuttle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/vehicles/speeder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_equations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_project_silver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nexus-lab-engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nexus-lab-engine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/simulators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/simulators/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/simulators/force_simulator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/force_equations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/force_equations/gravity_forces.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/motion_equations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/motion_equations/acceleration_equation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/motion_equations/position_equation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/motion_equations/velocity_equation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/materials.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/meshs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/graph_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/graph_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/variable_builder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/vehicle_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/vehicle_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/handlers/density_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/handlers/density_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/plotters/graph_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/plotters/graph_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/printers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/runner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/simulators/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/vehicle_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/vehicle_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/unit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/variable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/vehicles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulations/shuttle_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulations/speeder_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/equation_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/force_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/unit_builders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/utils/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/utils/validators/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +74,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_acceptance.py.executor": "Run",
+    "Python tests.Python tests in tests.executor": "Run",
     "Python.__init__.executor": "Run",
     "Python.atoms.executor": "Run",
     "Python.compound.executor": "Run",
     "Python.elements.executor": "Debug",
     "Python.example_plotter.executor": "Run",
     "Python.kinematics.executor": "Run",
-    "Python.main.executor": "Debug",
+    "Python.main.executor": "Run",
     "Python.molecule.executor": "Run",
     "Python.molecules.executor": "Run",
     "Python.newton_simulator.executor": "Run",
@@ -67,14 +99,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/models" />
-      <recent name="$PROJECT_DIR$/src/enums/unit_enums" />
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/api/builders/unit_builders" />
       <recent name="$PROJECT_DIR$/src/api" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Python tests in test_project_silver.py">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
@@ -141,40 +173,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="newton_simulator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_project_silver.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ui/visualizer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ui/visualizer/newton_simulator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_project_silver.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.__init__" />
       <item itemvalue="Python.example_plotter" />
-      <item itemvalue="Python.newton_simulator" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python tests.Python tests in test_project_silver.py" />
+      <item itemvalue="Python tests.Python tests in tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_project_silver.py" />
+        <item itemvalue="Python tests.Python tests in tests" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.example_plotter" />
         <item itemvalue="Python.__init__" />
-        <item itemvalue="Python.newton_simulator" />
       </list>
     </recent_temporary>
   </component>
@@ -200,34 +242,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/chemistry/molecules.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/configs/__init__.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/api/handlers/controller_handler.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/models/equations/force_equations/__init__.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/models/equations/force_equations/__init__.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

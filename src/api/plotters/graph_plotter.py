@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 
-from src.models.graphs import Graph
+from src.models.graph import Graph
 
 
 def plot_graph(graph: Graph):

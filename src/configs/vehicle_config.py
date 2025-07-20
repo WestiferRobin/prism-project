@@ -1,25 +1,18 @@
 from src.enums import VehicleType
 from src.configs import Config
+from src.models.mass import Mass
 
 
 class VehicleConfig(Config):
     type: VehicleType
-    mass_amount: float
+    mass: Mass
 
-    def __init__(self, vehicle_type: VehicleType, mass_amount: float):
+    def __init__(self, vehicle_type: VehicleType, mass: Mass, name: str = None):
+        if name is None:
+            name = vehicle_type.name
         super().__init__(
-            name=vehicle_type.name,
+            name=name,
             type=vehicle_type,
-            mass_amount=mass_amount
+            mass=mass
         )
-
-
-class SpeederConfig(VehicleConfig):
-    def __init__(self, mass_amount: float):
-        super().__init__(VehicleType.Speeder, mass_amount)
-
-
-class ShuttleConfig(VehicleConfig):
-    def __init__(self, mass_amount: float):
-        super().__init__(VehicleType.Shuttle, mass_amount)
 
