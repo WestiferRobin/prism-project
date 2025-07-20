@@ -1,9 +1,5 @@
-from src.api.builders.graph_builder import build_graph, build_equation_graph
 from src.api.builders.vehicle_builder import build_speeder
-from src.api.plotters.graph_plotter import plot_graph
-from src.models.equations.force_equations.gravity_forces import GravityForce
-from src.models.graphs import Graph
-from src.models.vehicles import Vehicle
+from src.api.simulators import simulate
 
 """
 MISSION: Finish equation models
@@ -15,17 +11,11 @@ m(t) = density(t) * volume(t)
 F = m(t) * integral(velocity(t))
 """
 
-def simulate(vehicle: Vehicle) -> Graph:
-    gravity_force = GravityForce(vehicle.mass)
-    return build_equation_graph(gravity_force)
-
 
 def main():
     orb_speeder = build_speeder(1)
-
-    force_graph = simulate(orb_speeder)
-    plot_graph(force_graph)
-
+    print(orb_speeder)
+    # simulate(orb_speeder)
 
 if __name__ == "__main__":
     main()
