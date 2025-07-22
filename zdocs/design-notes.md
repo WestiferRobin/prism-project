@@ -1,0 +1,34 @@
+- Idea:
+    - CRUD for LabSimulation on Project with Python
+      - because of cases: SimulationEngine Acceptance Tests
+        - ForgeSimulation on Project with Python also UI-3D, UI-2D, and GPT Interfaces
+        - StudioSimulation on Project with Python also UI-2D and GPT Interfaces
+        - ScribeSimulation on .txt with UI-Text and GPT Interfaces
+        - GameSimulation on Save with Python for training 
+    - Local is TestSimulation on Model
+
+
+- Implement Endpoints:
+    - /v0/labs
+      - /projects => Views of PrismForge with Scribe/Docs, Records, Labs, Studio support
+        - /scribe => .txt, .doc, .docx, .beta
+          - /{prism_id} read and write to file and chat with user
+        - /records => .csv, .xlsx, .gamma
+          - /{prism_id} read and write to file and chat with user
+        - /labs => .json, xml, html
+          - json
+          - xhtml:
+            - ui
+            - html
+            - xml
+          - /{prism_id} read and write to file and chat with user
+        - /studio
+          - ?filter=all = { .wav, .mp3, .mp4, .svg, .png, .gif } and scribe support
+          - ?filter=text => scribe support
+          - ?filter=audio = { .wav, .mp3, .mp4 }
+          - ?filter=video = { .mp4, .gif }
+          - ?filter=image = { .png, .svg }
+        - /game/conquest
+          - /{save_id}
+          - /{player_id}/{command_id}
+          - /{enemy_id}/{enemy_id}

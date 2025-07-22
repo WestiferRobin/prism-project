@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package prism;
+
+service StatusService {
+  rpc GetStatus (StatusRequest) returns (StatusResponse);
+}
+
+message StatusRequest {
+  string request_id = 1;
+}
+
+message StatusResponse {
+  string response_id = 1;
+  string status = 2;
+}

@@ -1,0 +1,6 @@
+
+# seconds * mins = hours
+EXPIRED_USER_SECONDS = 60 * 60
+EXPIRED_ACCOUNT_SECONDS = 60 * 30
+EXPIRED_JOB_SECONDS = 60 * 5
+

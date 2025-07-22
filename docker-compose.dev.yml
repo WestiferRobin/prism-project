@@ -1,0 +1,36 @@
+services:
+  lab-engine-postgres:
+    image: postgres:15
+    container_name: lab-engine-postgres
+    ports:
+      - "5434:5432"  # avoid local conflict with default Postgres
+    environment:
+      POSTGRES_USER: lab-engine
+      POSTGRES_PASSWORD: lab-engine
+      POSTGRES_DB: lab-engine-db
+    volumes:
+      - prism_content_pgdata:/var/lib/postgresql/data
+
+  lab-engine-redis:
+    image: redis:7
+    container_name: lab-engine-redis
+    ports:
+      - "6379:6379"  # avoid conflict with other local Redis services
+
+  lab-engine-queue:
+    image: rabbitmq:3-management
+    container_name: lab-engine-queue
+    ports:
+      - "5672:5672"     # AMQP
+      - "15672:15672"   # Management UI
+    environment:
+      RABBITMQ_DEFAULT_USER: lab-engine
+      RABBITMQ_DEFAULT_PASS: lab-engine
+
+volumes:
+  prism_content_pgdata:
+
+networks:
+  default:
+    name: prism-net
+    external: true
