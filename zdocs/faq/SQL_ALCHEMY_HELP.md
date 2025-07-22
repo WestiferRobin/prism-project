@@ -49,7 +49,7 @@ async def create_channel(db: AsyncSession, name: str, username: str):
     )
     db.add(new_channel)
     await db.commit()
-    await db.refresh(new_channel)  # loads data from DB (e.g., defaults)
+    await db.refresh(new_channel)  # loads dependencies from DB (e.g., defaults)
     return new_channel
 ```
 

@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from utils.configs import Config
+from app.configs import Config
 from utils.enums.prism_enums import AgeType, GenderType, RankType
 
 

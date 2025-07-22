@@ -15,14 +15,14 @@ logger = get_logger(__name__)
 
 # TODO: Finish after unit tests are completed
 # @asynccontextmanager
-# async def lifespan(target_app: FastAPI):
+# queues def lifespan(target_app: FastAPI):
 #     # Create DB tables
 #     await init_db()
 #     logger.info("[DB] Tables initialized")
 #
 #     logger.info("[LIFESPAN] Starting prism-content-service...")
 #
-#     grpc_server = await serve()  # Await async serve, which starts and returns the server
+#     grpc_server = await serve()  # Await queues serve, which starts and returns the server
 #     grpc_task = asyncio.create_task(grpc_server.wait_for_termination())
 #
 #     # Start RabbitMQ consumers in background

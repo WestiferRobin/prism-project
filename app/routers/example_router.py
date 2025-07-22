@@ -14,6 +14,6 @@ class ExampleModel(BaseModel):
 # Example POST endpoint
 @router.post("/process", response_model=ExampleModel)
 async def process_example(data: ExampleModel):
-    # Simulate async processing with external services
+    # Simulate queues processing with external services
     data.processed = True
     return data

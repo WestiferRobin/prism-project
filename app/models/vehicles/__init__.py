@@ -1,6 +1,6 @@
 from typing import List, Dict
 
-from utils.configs import VehicleConfig
+from app.configs import VehicleConfig
 from utils.enums import VehicleType
 from app.models import Model
 from app.models.equations.physics import Force

@@ -1,0 +1,16 @@
+- First we need a model of PrismCo
+- It's f(y)=m*x+b to Physics to Model to Application
+- Application is API for Web, Mobile, Terminal, Game, and UI
+- Goals:
+  - Arch Legion trained on FotF Rules in Simulations
+  - Simulation must be made to run on platform to train prisms
+  - Idea: 1000 years of war in the blink of a command
+  - Speeder Model -> Arch Legion Model
+  - Fighter Model -> Speeder Model
+  - Shuttle Model -> Arch Legion Model
+  - Ship Model -> Fighter, Shuttle, and Arch Legion Model
+- AC:
+  - Model of Math, Science, and Engineering with GraphView in Nexus Labs
+  - Model of Shuttle, Speeder, and Ship as projects in Nexus Labs
+  - Model of Colony, Ship, and Legion as projects in Nexus Labs 
+  - Save files and open then with prism-forge with prism-scribe and prism-tablet cases

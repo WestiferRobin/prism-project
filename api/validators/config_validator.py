@@ -1,5 +1,5 @@
-from utils.configs import Config
-from utils.configs.vehicle_config import VehicleConfig
+from app.configs import Config
+from app.configs.vehicle_config import VehicleConfig
 
 
 def validate_config(config: Config):

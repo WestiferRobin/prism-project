@@ -9,8 +9,11 @@
       - service
       - view
 - finish unit tests and project setup for fast-api, gpt-api, and torch/prism-api
+
+
+
+## Backlog
 - Implement a valid cleanup strategy:
-  - rename nexus-lab-engine to lab-engine-service
   - update current prism-docs to be cleared
   - will start with following in prism-docs
     - README.md on how to operate PrismCo as a machine
@@ -23,15 +26,15 @@
         - React => Some TS API => UI Component with server support
         - Unreal => Some C++ API => AI Movie with .wav and .mp4 with FL, GarageBand, Notation, Audio Waves
   - clean up enums for those using (str, Enum) vs (Enum) vs (object, Enum) for all cases
-- FINAL:
+  - rename mood to studio and rename nexus-lab-engine to lab-engine-service
   - Move Solar Conquest to solar-conquest-proto repo by test_solar_conquest
   - Make new branch "feature/official-draft" and merge into master
   - README.md has setup template from prism-docs
   - README.md is polished for lab-engine-service
-  - AC:
-    - nexus-lab-engine and company-site with company-service and site-service are on aws
-    - dev environment is Tier Iron and has Grade A
-    - test environment is Tier Silver and has Grade A
-    - prod environment is Tier Gold and has Grade A
-    - Note: assume bi-weekley deployments
+- AC:
+  - nexus-lab-engine and company-site with company-service and site-service are on aws
+  - dev environment is Tier Iron and has Grade A
+  - test environment is Tier Silver and has Grade A
+  - prod environment is Tier Gold and has Grade A
+  - Note: assume bi-weekley deployments
   

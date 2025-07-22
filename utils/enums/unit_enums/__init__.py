@@ -2,7 +2,7 @@ from enum import Enum
 
 
 class UnitType(str, Enum):
-    NONE = "none" # numbers? just data
+    NONE = "none" # numbers? just dependencies
     NEWTON = "newton" # force
     METER = "meter" # length
     GRAM = "gram" # mass

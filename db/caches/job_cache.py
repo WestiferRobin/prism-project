@@ -2,8 +2,8 @@ from typing import List, Optional
 from uuid import UUID
 
 from db.caches import get_redis
-from utils.cache_utils import EXPIRED_ACCOUNT_SECONDS, EXPIRED_USER_SECONDS
-from utils.cache_utils import (
+from db.cache_utils import EXPIRED_ACCOUNT_SECONDS, EXPIRED_USER_SECONDS
+from db.cache_utils import (
     build_user_jobs_key,
     build_job_key,
     build_account_jobs_key,

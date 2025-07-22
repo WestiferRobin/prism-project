@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from utils.configs import PrismConfig
+from app.configs import PrismConfig
 
 
 """

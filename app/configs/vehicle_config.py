@@ -1,5 +1,5 @@
 from utils.enums import VehicleType
-from utils.configs import Config
+from app.configs import Config
 from app.models.equations.chemistry.mass import Mass
 
 

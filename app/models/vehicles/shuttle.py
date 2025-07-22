@@ -1,4 +1,4 @@
-from utils.configs import VehicleConfig
+from app.configs import VehicleConfig
 from app.models.vehicles import Vehicle
 
 

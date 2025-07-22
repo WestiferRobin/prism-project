@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: lab-engine
       POSTGRES_DB: lab-engine-db
     volumes:
-      - prism_content_pgdata:/var/lib/postgresql/data
+      - prism_content_pgdata:/var/lib/postgresql/dependencies
 
   lab-engine-redis:
     image: redis:7
