@@ -5,144 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/builders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/app_models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/models/db_models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mvp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nexus-lab-engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nexus-lab-engine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/builders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/builders/config_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/builders/equation_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/equation_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/builders/force_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/force_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/builders/graph_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/graph_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/builders/prism_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/prism_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/builders/unit_builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/builders/unit_builders/mass_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/unit_builders/mass_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/builders/vehicle_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/vehicle_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/controllers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/game_controllers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/controllers/game_controllers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/converters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/unit_builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/converters/unit_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/converters/unit_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/converters/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/handlers/area_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/handlers/area_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/handlers/controller_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/handlers/controller_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/handlers/density_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/handlers/density_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/handlers/mass_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/handlers/mass_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/handlers/si_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/handlers/si_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/handlers/volume_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/handlers/volume_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/helpers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/handlers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/helpers/random_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/helpers/random_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/plotters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/helpers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/plotters/example_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/plotters/example_plotter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/plotters/graph_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/plotters/graph_plotter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/validators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/plotters/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/validators/config_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/config_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/validators/equation_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/equation_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/validators/vehicle_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/vehicle_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/configs/faction_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/faction_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/configs/prism_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/prism_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/configs/vehicle_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/vehicle_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/commands/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/commands/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/commands/faction_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/commands/faction_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/commands/prism_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/commands/prism_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/commands/requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/commands/requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/commands/responses.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/commands/responses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/data_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/data_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/drones/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/drones/bot_drone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/drones/bot_drone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/drones/prism_drone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/drones/prism_drone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/chemistry/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/services/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/chemistry/mass.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/chemistry/mass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/math/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/math/algerbra/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/math/algerbra/expression.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/math/algerbra/expression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/math/algerbra/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/math/algerbra/variables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/math/geomitry/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/drones/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/physics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/chemistry/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/physics/density.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/physics/density.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/physics/energy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/physics/energy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/physics/force.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/physics/force.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/physics/momentum.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/physics/momentum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/equations/physics/motion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/physics/motion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/military/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/math/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/prisms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/prisms/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/simulations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/simulations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/simulations/arch_legion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/simulations/arch_legion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/simulations/bot_simulations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/math/algerbra/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/simulations/bot_simulations/prism_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/simulations/bot_simulations/prism_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/simulations/games/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/math/geomitry/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/simulations/games/solar_conquest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/simulations/games/solar_conquest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/simulations/prism_drone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/simulations/prism_drone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/simulations/solar_conquest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/simulations/solar_conquest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/simulations/speeder_simulations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/equations/physics/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/simulations/speeder_simulations/drone_speeder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/simulations/speeder_simulations/drone_speeder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/sprites/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/sprites/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/unit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/vehicles/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/vehicles/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/vehicles/ships.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/vehicles/ships.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/vehicles/shuttle.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/vehicles/shuttle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/vehicles/speeder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/vehicles/speeder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/military/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routers/example_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/routers/example_router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/simulations/bot_simulations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/requests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schemas/requests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/simulations/games/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/grid/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/app_models/simulations/speeder_simulations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layout/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schemas/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/map/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/grid/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sprites/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/sprites/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/ui/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/layout/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/caches/account_cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/caches/account_cache.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/caches/job_cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/caches/job_cache.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance_tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance_tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance_tests/test_versions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration_tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/map/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration_tests/api_tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/ui/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration_tests/app_tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance_tests/test_mvp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration_tests/app_tests/route_tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration_tests/app_tests/service_tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/api_tests/simulation_tests/test_project_silver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/api_tests/simulation_tests/test_project_silver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_absolute_equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_absolute_equations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_distance_equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_distance_equations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_exponential_equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_exponential_equations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_linear_equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_linear_equations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_logarithmic_equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_logarithmic_equations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_piecewise_equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_piecewise_equations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_polynomial_equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_polynomial_equations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_rational_equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_rational_equations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_trigonometric_equations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_trigonometric_equations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/physics_equation_tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/app_tests/equation_tests/physics_equation_tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests/project_silver_tests/test_vehicle.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests/project_silver_tests/test_vehicle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/command_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/command_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/faction_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/faction_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/legion_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/legion_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/prism_enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/prism_enums/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/prism_enums/personality_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/prism_enums/personality_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/test_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/test_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/unit_enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/unit_enums/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/unit_enums/prefix_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/unit_enums/prefix_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/util_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/util_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/enums/vehicle_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/vehicle_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/exceptions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/exceptions/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/exceptions/equation_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/exceptions/equation_exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/exceptions/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/exceptions/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/exceptions/test_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/exceptions/test_exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/notes/design-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/zdocs/notes/design-notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/wiki/master-page.md" beforeDir="false" afterPath="$PROJECT_DIR$/zdocs/wiki/master-page.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,33 +38,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation.executor": "Run",
-    "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation.executor": "Run",
-    "Python tests.Python tests in test_acceptance.py.executor": "Run",
-    "Python tests.Python tests in tests.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python.atoms.executor": "Run",
-    "Python.compound.executor": "Run",
-    "Python.elements.executor": "Debug",
-    "Python.example_plotter.executor": "Run",
-    "Python.kinematics.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.molecule.executor": "Run",
-    "Python.molecules.executor": "Run",
-    "Python.newton_simulator.executor": "Run",
-    "Python.physics_variables.executor": "Run",
-    "Python.quantum_mechanics.executor": "Run",
-    "Python.reactions.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/wesleywebb/Dev/PrismCo/platform-layer/engine-services/nexus-lab-engine/net/servers",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_acceptance.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.atoms.executor&quot;: &quot;Run&quot;,
+    &quot;Python.compound.executor&quot;: &quot;Run&quot;,
+    &quot;Python.elements.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.example_plotter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.kinematics.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.molecule.executor&quot;: &quot;Run&quot;,
+    &quot;Python.molecules.executor&quot;: &quot;Run&quot;,
+    &quot;Python.newton_simulator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.physics_variables.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quantum_mechanics.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reactions.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wesleywebb/Dev/PrismCo/platform-layer/engine-services/nexus-lab-engine&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/net/servers" />
@@ -210,6 +78,76 @@
       <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/src/api" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

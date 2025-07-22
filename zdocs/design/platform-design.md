@@ -27,7 +27,7 @@
       - platform-notification-service => Notifications primarily for platform-layer
       - platform-auth-service => Proxy for platform to app and inner layer to layer
   - engine-layer:
-    - lab-engine-service
+    - nexus-lab-engine
     - studio-engine-service
     - forge-engine-service
 - app-layer:
