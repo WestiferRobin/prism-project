@@ -1,6 +1,6 @@
-from api.builders.vehicle_builder import build_vehicle
-from api.helpers.random_helper import random_vehicle_type, random_vehicle_mass
-from api.validators.vehicle_validator import validate_vehicle
+from src.api.builders import build_vehicle
+from src.api.helpers import random_vehicle_type, random_vehicle_mass
+from src.api.validators import validate_vehicle
 
 
 def test_vehicle():

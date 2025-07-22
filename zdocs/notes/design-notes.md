@@ -1,4 +1,4 @@
-- First we need a model of PrismCo
+- First we need a model of PrismMvp
 - It's f(y)=m*x+b to Physics to Model to Application
 - Application is API for Web, Mobile, Terminal, Game, and UI
 - Goals:

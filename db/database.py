@@ -28,8 +28,6 @@ async def get_async_session() -> AsyncSession:
 
 
 async def init_db():
-    import app.models
-
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
 

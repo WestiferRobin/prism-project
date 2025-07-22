@@ -8,7 +8,7 @@ from db.cache_utils import (
     build_job_key,
     build_account_jobs_key,
 )
-from app.schemas.job_schemas import JobSchema
+from src.app.schemas import JobSchema
 
 class RedisJobCache:
     def __init__(self):

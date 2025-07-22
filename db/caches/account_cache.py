@@ -4,7 +4,7 @@ from uuid import UUID
 from db.caches import get_redis
 from db.cache_utils import EXPIRED_ACCOUNT_SECONDS, EXPIRED_USER_SECONDS
 from db.caches.keys.account_keys import build_account_key, build_user_accounts_key
-from app.schemas.account_schemas import AccountSchema
+from src.app.schemas import AccountSchema
 
 
 class RedisAccountCache:

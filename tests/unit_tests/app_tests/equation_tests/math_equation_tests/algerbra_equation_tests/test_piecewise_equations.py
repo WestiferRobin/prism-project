@@ -1,5 +1,5 @@
-from api.builders.equation_builder import build_equation
-from api.validators.equation_validator import validate_equation
+from src.api.builders.equation_builder import build_equation
+from src.api.validators.equation_validator import validate_equation
 
 
 def test_piecewise_equation():
