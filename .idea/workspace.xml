@@ -5,49 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/builders/unit_builders/mass_builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/equation_validator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/vehicle_validator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/density.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/equation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/force.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/mass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/vehicles/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/vehicles/shuttle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/vehicles/speeder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_equations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_project_silver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nexus-lab-engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nexus-lab-engine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/exceptions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/exceptions/equation_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/exceptions/test_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_absolute_equations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_distance_equations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_exponential_equations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_linear_equations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_logarithmic_equations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_piecewise_equations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_polynomial_equations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_rational_equations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_trigonometric_equations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/math_equation_tests/test_geometry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/equation_tests/physics_equation_tests/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/graph_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/graph_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/variable_builder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/vehicle_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/vehicle_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/handlers/density_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/handlers/density_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/plotters/graph_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/plotters/graph_plotter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/printers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/runner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/simulators/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs/vehicle_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/vehicle_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exceptions/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/unit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/variable.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/vehicles.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulations/shuttle_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulations/speeder_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/equation_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/force_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/unit_builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/utils/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/utils/validators/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/equation_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/equation_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/density.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/density.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/equation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/mass.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/mass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_equations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_project_silver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_project_silver.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +57,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation.executor": "Run",
+    "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation.executor": "Run",
     "Python tests.Python tests in test_acceptance.py.executor": "Run",
     "Python tests.Python tests in tests.executor": "Run",
     "Python.__init__.executor": "Run",
@@ -106,51 +91,7 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_project_silver.py">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="nexus-lab-engine" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/api/equations" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/api/equations/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="example_plotter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="nexus-lab-engine" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/api/plotters" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/api/plotters/example_plotter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
@@ -171,6 +112,36 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests in test_project_silver.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -204,19 +175,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.__init__" />
-      <item itemvalue="Python.example_plotter" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation" />
+      <item itemvalue="Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation" />
       <item itemvalue="Python tests.Python tests in test_project_silver.py" />
       <item itemvalue="Python tests.Python tests in tests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_project_silver.py" />
+        <item itemvalue="Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation" />
+        <item itemvalue="Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation" />
         <item itemvalue="Python tests.Python tests in tests" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.example_plotter" />
-        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python tests.Python tests in test_project_silver.py" />
       </list>
     </recent_temporary>
   </component>
@@ -244,6 +215,26 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/models/equation.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/api/validators/equation_validator.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/api/validators/equation_validator.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_linear_equations.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

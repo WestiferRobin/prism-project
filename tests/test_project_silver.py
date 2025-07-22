@@ -1,13 +1,7 @@
 from src.api.builders.config_builder import build_speeder_config, build_shuttle_config
-from src.api.builders.unit_builders.mass_builder import build_mass, build_kilo_mass
+from src.api.builders.unit_builders.mass_builder import build_kilo_mass
 from src.api.builders.vehicle_builder import build_speeder, build_shuttle
 from src.api.validators.vehicle_validator import validate_speeder, validate_shuttle
-from tests.test_equations import test_math_equations, test_physics_equations
-
-
-def test_equations():
-    test_math_equations()
-    test_physics_equations()
 
 
 def test_speeder():
