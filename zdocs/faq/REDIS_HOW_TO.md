@@ -8,7 +8,7 @@ Here’s a quick guide for **common Redis data structures** using **async Python
 
 ```python
 import redis.asyncio as redis
-from db import settings  # assuming settings.cache_url = "redis://localhost:6379"
+from src.db import settings  # assuming settings.cache_url = "redis://localhost:6379"
 
 r = redis.from_url(settings.cache_url, decode_responses=True)
 ```

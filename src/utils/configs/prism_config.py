@@ -22,5 +22,5 @@ class PrismConfig(Config):
     @property
     def age_value(self) -> int:
         age_type = self.age_type
-        return age_type.value
+        return age_type.percent_value
 

@@ -52,7 +52,16 @@ class RaceType(str, Enum):
             race_list = [
                 RaceType.Slug
             ]
-        elif faction ==
+        elif faction == FactionType.Confederacy:
+            pass
+        elif faction == FactionType.Pirate:
+            pass
+        elif faction == FactionType.Raider:
+            pass
+        elif faction == FactionType.Union:
+            pass
+        elif faction == FactionType.Guild:
+            pass
         else:
             return RaceType.Human
 
@@ -75,7 +84,7 @@ class AgeType(int, Enum):
     @staticmethod
     def find_type(age: int) -> "AgeType":
         if age < 0:
-            raise NexusException("Age value cannot be negative")
+            raise NexusException("Age percent_value cannot be negative")
         elif AgeType.Baby.age <= age < AgeType.Child.age:
             return AgeType.Baby
         elif AgeType.Child.age <= age < AgeType.Teen.age:

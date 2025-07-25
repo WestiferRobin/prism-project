@@ -1,7 +1,7 @@
-from src.api.builders.config_builder import build_speeder_config, build_shuttle_config
-from src.api.builders.unit_builders.mass_builder import build_kilo_mass
-from src.api.builders.vehicle_builder import build_speeder, build_shuttle
-from src.api.validators.vehicle_validator import validate_speeder, validate_shuttle
+from zlegacy.api.builders import build_speeder_config, build_shuttle_config
+from zlegacy.api.builders import build_kilo_mass
+from zlegacy.api.builders.vehicle_builder import build_speeder, build_shuttle
+from zlegacy.api.validators import validate_speeder, validate_shuttle
 
 
 def test_speeder():

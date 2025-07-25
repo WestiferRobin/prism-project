@@ -1,6 +1,6 @@
-from src.api.builders import build_vehicle
-from src.api.helpers import random_vehicle_type, random_vehicle_mass
-from src.api.validators import validate_vehicle
+from zlegacy.api.builders import build_vehicle
+from zlegacy.api.helpers import random_vehicle_type, random_vehicle_mass
+from zlegacy.api.validators import validate_vehicle
 
 
 def test_vehicle():

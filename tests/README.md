@@ -1,8 +1,76 @@
+# Test Strategy: Acceptance Tests
 
-Goal: Model Nexus Labs, Prism Drone, and Arch Legion as Game and Blueprints in Simulations
+- Note: integration_tests <= platform_tests
+- mvp_tests:
+  - prism_tests
+  - drone_tests
+  - vehicle_tests
+  - legion_tests
+  - bot_tests
+- app_tests:
+  - tool_tests:
+    - test_prism_forge: PC and Web
+      - test_prism_scribe
+      - test_prism_pad
+      - test_prism_board
+      - test_prism_planner
+    - test_prism_reflect: Mobile and Web
+      - test_prism_journal
+      - test_prism_chat
+      - test_prism_planner
+  - game_tests: Mobile and PC
+    - test_solar_conquest
+    - test_forge_projects:
+      - test_avatar_legion
+      - test_legion_vehicles
+      - test_drone_factions
+      - test_prism_studio
+- platform_tests:
+  - test_pc_platforms
+  - test_web_platforms
+  - test_mobile_platforms
+  - test_bot_platforms
 
+# Wiki
 
-
-
-
-
+- legion_tests:
+  - legion_trooper: Prism
+  - legion_fighter: Fighter
+  - legion_ship: Ship
+- app_tests:
+  - solar_conquest: App at Game
+  - prism_forge: App at Forge
+  - prism_studio: App at Studio
+  - prism_hive: App at Hive
+- bot_tests:
+  - prism_tests
+  - legion_tests
+  - sim_tests
+- vehicle_tests:
+  - legion_speeder: Speeder
+  - legion_shuttle: Shuttle
+  - legion_fighter: Fighter
+- platform_tests:
+  - optimization_tests
+  - pc_tests:
+    - .NET
+    - Unity
+    - Unreal
+  - web_tests:
+    - back_end: SpringBoot and FastAPI
+    - front_end: React, Next.js, and Tailwind
+    - data_base: Postgres, Redis
+    - comms: gRPC, Rabbit-MQ
+    - cloud: AWS and DevOps Cases
+  - mobile_tests:
+    - React Native
+    - Unity Game
+    - Unreal Game
+  - bot_tests:
+    - company_tests:
+    - leader_tests
+    - board_tests
+    - director_tests
+    - manager_tests
+    - worker_tests
+    - trade_tests
