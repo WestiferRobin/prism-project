@@ -1,7 +1,7 @@
-from src.utils.exceptions import NexusException
+from src.utils.exceptions import PrismException
 
 
-class EquationException(NexusException):
+class EquationException(PrismException):
     def __init__(self, message):
         super().__init__(message)
 

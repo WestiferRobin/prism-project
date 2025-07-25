@@ -1,4 +1,4 @@
-from src.prism_net import PrismNet
+from src import PrismNet
 
 
 def build_prism_net(version: int) -> PrismNet:

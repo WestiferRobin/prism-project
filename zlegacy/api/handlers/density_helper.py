@@ -1,6 +1,6 @@
 from typing import List
 
-from src.utils.exceptions import NexusException
+from src.utils.exceptions import PrismException
 from zlegacy.app.models import Metal, METALS
 
 
@@ -10,7 +10,7 @@ def metals_list() -> List[Metal]:
 
 def find_metal(metal_name: str) -> Metal:
     if metal_name.lower() not in METALS:
-        raise NexusException("Unknown metal '{}'".format(metal_name))
+        raise PrismException("Unknown metal '{}'".format(metal_name))
     return METALS[metal_name.lower()]
 
 

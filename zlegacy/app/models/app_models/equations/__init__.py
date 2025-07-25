@@ -5,7 +5,7 @@ from sympy import Function as SymFunction
 
 from zlegacy.app.models import Expression
 from zlegacy.app.models import Variable
-from src.utils.exceptions import NexusException
+from src.utils.exceptions import PrismException
 
 # TODO: Need to validate equation class....
 """
@@ -62,7 +62,7 @@ class Function(Equation, SymFunction):
     ):
         parameter_label = ""
         if len(parameters) == 0:
-            raise NexusException(f"No parameters for this function {symbol}")
+            raise PrismException(f"No parameters for this function {symbol}")
         else:
             for index in range(len(parameters) - 1):
                 parameter_label += f"{parameters[index]}, "

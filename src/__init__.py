@@ -1,36 +1,37 @@
-"""
+from typing import List
 
-TODO: We're doing a major refactor
-
--
-
-my-service/
-├── src/                         # 🔧 Internal Python logic
-│   ├── core/                   # - Core domain logic
-│   ├── models/                 # - Pydantic or ORM models
-│   ├── services/               # - Internal service logic
-│   └── app.py                  # - App factory or entrypoint logic
-│
-├── api/                         # 🌐 REST or gRPC definitions
-│   ├── routers/               # - FastAPI routers or gRPC handlers
-│   ├── grpc/                  # - Protobuf .proto files and generated stubs
-│   └── websocket/             # - WebSocket handlers if needed
-│
-├── tests/                      # ✅ Pytest tests
-│   └── unit/                  # - Unit tests
-│   └── integration/           # - Service or gRPC tests
-│
-├── Dockerfile                  # 🐳 Docker build
-├── requirements.txt            # 📦 Runtime deps
-├── pyproject.toml              # 🧱 Build system
-├── .env                        # 🔐 Env vars (for dev)
-├── README.md                   # 📘 Docs
-├── alembic/                    # 🧬 DB migrations
-├── grpc_tools.sh               # 🛠️ Proto compiler
-├── scripts/                    # 🧪 DevOps scripts (e.g. run, test)
-└── deployment/                 # 🚀 Kubernetes, Docker Compose, etc.
+from pydantic import BaseModel
 
 
+class PrismNet(BaseModel):
+    version: int
 
+    apps: List[App]
+    bots: List[Bots]
 
-"""
+    @property
+    def games(self) -> List[Game]:
+        game_list = list(filter(lambda app : isinstance(app, Game), self.apps))
+        return game_list
+
+    @property
+    def tools(self) -> List[Tool]:
+        tool_list = list(filter(lambda app : isinstance(app, Tool), self.apps))
+        return tool_list
+
+    @property
+    def prisms(self) -> List[Prism]:
+        prisms = []
+
+        for app in self.apps:
+            app_drones = app.drones
+            for app_drone in app_drones:
+                prisms.append(app_drone.prism)
+
+        for tool in self.tools:
+            tool_drones = tool.drones
+            for tool_drone in tool_drones:
+                prisms.append(tool_drone.prism)
+
+        return prisms
+

@@ -1,5 +1,6 @@
 from uuid import UUID
 
+from src.models.date import Date
 from src.utils.configs import Config
 from src.utils.enums.prism_enums import AgeType, GenderType, RankType
 
@@ -10,6 +11,8 @@ class PrismConfig(Config):
     age: AgeType
     gender: GenderType
     rank: RankType
+    birth_date: Date
+    death_date: Date = None
 
 
     def __init__(self, **kwargs):

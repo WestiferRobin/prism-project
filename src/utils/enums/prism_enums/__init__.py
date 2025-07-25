@@ -2,7 +2,7 @@ from enum import Enum
 from random import choice
 
 from src.utils.enums.faction_enums import FactionType
-from src.utils.exceptions import NexusException
+from src.utils.exceptions import PrismException
 
 
 
@@ -84,7 +84,7 @@ class AgeType(int, Enum):
     @staticmethod
     def find_type(age: int) -> "AgeType":
         if age < 0:
-            raise NexusException("Age percent_value cannot be negative")
+            raise PrismException("Age percent_value cannot be negative")
         elif AgeType.Baby.age <= age < AgeType.Child.age:
             return AgeType.Baby
         elif AgeType.Child.age <= age < AgeType.Teen.age:
