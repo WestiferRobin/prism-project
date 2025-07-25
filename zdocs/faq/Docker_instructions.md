@@ -5,7 +5,7 @@
 Create a shared Docker network so services like `mood-engine-service` and `prism-content-service` can talk to the same RabbitMQ container:
 
 ```bash
-docker network create prism-net
+docker network create prism-web
 ````
 
 ---
@@ -30,7 +30,7 @@ Make sure your `docker-compose.local.yml` files are set to use the shared networ
 networks:
   default:
     external:
-      name: prism-net
+      name: prism-web
 ```
 
 And remove individual `networks:` from each service unless needed for advanced config.

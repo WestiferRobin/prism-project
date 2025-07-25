@@ -2,7 +2,7 @@ from uuid import uuid4, UUID
 
 from zlegacy.api.builders.prism_builder import build_prism
 from zlegacy.api.builders.vehicle_builder import build_speeder, build_shuttle
-from src.mvp import Mvp
+from src.prism_net import Mvp
 from zlegacy.app.models.app_models.prisms import Prism
 from zlegacy.app.models import Shuttle
 from zlegacy.app.models.app_models.vehicles.speeder import Speeder
