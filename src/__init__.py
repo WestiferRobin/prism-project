@@ -15,6 +15,9 @@ class PrismNet(BaseModel):
     apps: List[App]
     bots: List[Bot]
 
+    def __str__(self):
+        return f"Prism.net: version {self.version}"
+
     @property
     def games(self) -> List[Game]:
         game_list = list(filter(lambda app : isinstance(app, Game), self.apps))

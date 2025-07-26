@@ -5,87 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/equations/math/function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/equations/physics/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/vehicles/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/vehicles/shuttle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/vehicles/speeder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/vehicle_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/enums/color_enums.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/enums/prefix_enums.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/enums/vehicle_enums.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/mass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/iot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/iot_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/bot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/faction_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/faction_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/legion_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/legion_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/platform_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/platform_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/prism_builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/prism_builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/prism_builders/avatar_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/prism_builders/avatar_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/user_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/user_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/drone_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/drone_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/prism_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/prism_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/date.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/date.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/drones/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/drones/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/prisms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/prisms/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/bot_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/bot_configs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/bot_configs/server_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/bot_configs/server_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/drone_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/drone_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/faction_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/faction_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/prism_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/prism_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/user_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/api_tests/simulation_tests/test_project_silver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/api_tests/simulation_tests/test_project_silver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/builders/vehicle_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/vehicle_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/converters/unit_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/converters/unit_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/data_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/chemistry/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/vehicle_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/chemistry/mass.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/mass/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/algerbra/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/algerbra/expression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/algerbra/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/math/variables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/geomitry/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/math/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/math/expression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/density.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/physics/density.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/energy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/physics/energy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/force.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/physics/force.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/momentum.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/physics/momentum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/motion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/physics/motion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/unit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/ships.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/shuttle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/speeder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/models/db_models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/configs/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/configs/faction_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/configs/vehicle_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/constants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/command_enums.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/legion_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/legion_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/test_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/grade_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/unit_enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/unit_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/unit_enums/prefix_enums.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/util_enums.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/vehicle_enums.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/exceptions/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/exceptions/equation_exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/exceptions/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/exceptions/test_exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,33 +41,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_acceptance.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.atoms.executor&quot;: &quot;Run&quot;,
-    &quot;Python.compound.executor&quot;: &quot;Run&quot;,
-    &quot;Python.elements.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.example_plotter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.kinematics.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.molecule.executor&quot;: &quot;Run&quot;,
-    &quot;Python.molecules.executor&quot;: &quot;Run&quot;,
-    &quot;Python.newton_simulator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.physics_variables.executor&quot;: &quot;Run&quot;,
-    &quot;Python.quantum_mechanics.executor&quot;: &quot;Run&quot;,
-    &quot;Python.reactions.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/wesleywebb/Dev/PrismCo/prism-project/tests/acceptance/legion_tests/bot_tests&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation.executor": "Run",
+    "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation.executor": "Run",
+    "Python tests.Python tests in __init__.py.executor": "Run",
+    "Python tests.Python tests in test_acceptance.py.executor": "Run",
+    "Python tests.Python tests in tests.executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.atoms.executor": "Run",
+    "Python.compound.executor": "Run",
+    "Python.elements.executor": "Debug",
+    "Python.example_plotter.executor": "Run",
+    "Python.kinematics.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.molecule.executor": "Run",
+    "Python.molecules.executor": "Run",
+    "Python.newton_simulator.executor": "Run",
+    "Python.physics_variables.executor": "Run",
+    "Python.quantum_mechanics.executor": "Run",
+    "Python.reactions.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/wesleywebb/Dev/PrismCo/prism-project/tests/acceptance/legion_tests/bot_tests",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/acceptance/legion_tests/bot_tests" />
@@ -149,14 +78,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/api" />
+      <recent name="$PROJECT_DIR$/src/ui" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/utils/enums" />
       <recent name="$PROJECT_DIR$/src/models/equations/physics" />
-      <recent name="$PROJECT_DIR$/src/utils" />
-      <recent name="$PROJECT_DIR$/src/models/equations" />
-      <recent name="$PROJECT_DIR$/src/models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
@@ -179,9 +108,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in __init__.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/__init__.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Python tests in tests" />
+        <item itemvalue="Python tests.Python tests in __init__.py" />
       </list>
     </recent_temporary>
   </component>
@@ -220,6 +181,16 @@
           <url>file://$PROJECT_DIR$/tests/unit/app_tests/equation_tests/math_equation_tests/algerbra_equation_tests/test_linear_equations.py</url>
           <line>17</line>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

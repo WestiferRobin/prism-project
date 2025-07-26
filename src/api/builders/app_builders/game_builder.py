@@ -10,11 +10,16 @@ def build_game(config: GameConfig) -> Game:
 
 
 def build_solar_conquest(platform: PlatformType = PlatformType.PC, version: int = 0) -> Game:
-    game_config = build_game_config(name="Solar Conquest", platform=platform)
+    game_config = build_game_config(
+        version=version,
+        name="Solar Conquest",
+        alias="solar-conquest",
+        platform=platform
+    )
 
-    players = [ build_wes_config() ]
+    players = [ build_wes_config(version=version) ]
     if version >= 1:
-        players.append(build_max_config())
+        players.append(build_max_config(version=version))
 
     solar_conquest = build_game(config=game_config)
     return solar_conquest
