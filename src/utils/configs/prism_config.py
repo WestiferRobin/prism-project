@@ -2,21 +2,19 @@ from uuid import UUID
 
 from src.models.date import Date
 from src.utils.configs import Config
-from src.utils.enums.prism_enums import AgeType, GenderType, RankType
+from src.utils.enums.prism_enums import AgeType, GenderType, RankType, RaceType
 
 
 class PrismConfig(Config):
     dna: UUID
-    name: str
     age: AgeType
     gender: GenderType
+    race: RaceType
     rank: RankType
     birth_date: Date
-    death_date: Date = None
 
-
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self, **prism_data):
+        super().__init__(**prism_data)
 
     @property
     def id(self) -> UUID:

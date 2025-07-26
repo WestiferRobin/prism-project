@@ -2,8 +2,8 @@ from typing import List
 
 import numpy as np
 
-from zlegacy.app.models import Equation
-from zlegacy.app.models import Graph, GraphAxis
+from zlegacy.models import Equation
+from zlegacy.models import Graph, GraphAxis
 
 
 def build_axis(symbol: str, label: str, data: np.array) -> GraphAxis:

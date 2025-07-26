@@ -1,5 +1,5 @@
 from src.utils.enums import PrefixType
-from zlegacy.app.models.app_models.equations.chemistry.mass import Mass
+from zlegacy.models.app_models import Mass
 
 
 def build_mass(amount: float, prefix: PrefixType) -> Mass:

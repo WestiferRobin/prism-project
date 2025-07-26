@@ -1,6 +1,6 @@
 from src.utils.enums import VehicleType
 from src.utils.configs import Config
-from zlegacy.app.models.app_models.equations.chemistry.mass import Mass
+from zlegacy.models.app_models import Mass
 
 
 class VehicleConfig(Config):

@@ -1,73 +1,32 @@
 from enum import Enum
-from random import choice
-
-from src.utils.enums.faction_enums import FactionType
+from random import choice, randint
 from src.utils.exceptions import PrismException
 
-
-
-
 class RaceType(str, Enum):
-    Human = "Human" # White, Brown, Black with Blue, Green, Blue and Red, Blonde, Brown, Black
-    Aeon = "Aeon" # Vulkans / Snow Elves
-    Archon = "Ethereal" # Sith / Blood Elves
+    Human = "human"
+    Aeon = "aeon"
+    Archon = "archon"
 
-    Slug = "Slug" # Hutts but Tank
-    Bug = "Bug" # Rodians
-    Reptile = "Reptile" # Reptilians, Abadoys, Trandosians
+    Slug = "slug"
+    Bug = "bug"
+    Reptile = "reptile"
 
-    Mammal = "Mammal" # Wookies, Klingon, Vikings
-    Ape = "Ape" # Confederacy of the Apes
-    Raptor = "Raptor" # Birds, Parrots, Crows, Ravens
+    Mammal = "mammal"
+    Ape = "ape"
+    Raptor = "raptor"
 
-    Shark = "Shark" # Atlantis and King Shark
-    Fish = "Fish" # Mon Kalimari
-    Squid = "Squid" # Dathomearians
+    Shark = "shark"
+    Fish = "fish"
+    Squid = "squid"
 
-    Droid = "Droid" # B1 Battle Droid / Protocol Droid
-    Android = "Android" # Commander Data / Terminator / Greys
-    Cyborg = "Cyborg" # Droid Union taking Organics into Cyborgs, Droids, and Androids
-
+    Droid = "droid"
+    Android = "android"
+    Cyborg = "cyborg"
 
     @staticmethod
-    def random_faction_race(faction: FactionType) -> "RaceType":
-        race_list = []
-        if faction == FactionType.Federation:
-            race_list = [
-                RaceType.Aeon,
-                RaceType.Human,
-                RaceType.Mammal,
-                RaceType.Raptor,
-                RaceType.Fish,
-            ]
-        elif faction == FactionType.Empire:
-            race_list = [
-                RaceType.Aeon,
-                RaceType.Human,
-                RaceType.Mammal,
-                RaceType.Raptor,
-                RaceType.Fish,
-            ]
-        elif faction == FactionType.Exchange:
-            race_list = [
-                RaceType.Slug
-            ]
-        elif faction == FactionType.Confederacy:
-            pass
-        elif faction == FactionType.Pirate:
-            pass
-        elif faction == FactionType.Raider:
-            pass
-        elif faction == FactionType.Union:
-            pass
-        elif faction == FactionType.Guild:
-            pass
-        else:
-            return RaceType.Human
-
-        return choice(race_list)
-
-
+    def random_race() -> "RaceType":
+        races = [race for race in RaceType]
+        return choice(races)
 
 
 class AgeType(int, Enum):
@@ -78,13 +37,24 @@ class AgeType(int, Enum):
     Senior = 80
     Ancient = 120
 
-    def __init__(self, age: int):
+    def __init__(self, age: int = None):
+        if age is None:
+            age = AgeType.Adult.value
         self.age = age
+
+    @staticmethod
+    def random_age(min_age: int = None, max_age: int = None) -> "AgeType":
+        if min_age is None:
+            min_age = AgeType.Baby.value
+        if max_age is None:
+            max_age = AgeType.Ancient.value
+        age = randint(min_age, max_age)
+        return AgeType.find_type(age=age)
 
     @staticmethod
     def find_type(age: int) -> "AgeType":
         if age < 0:
-            raise PrismException("Age percent_value cannot be negative")
+            raise PrismException(message="Age percent_value cannot be negative", code=500)
         elif AgeType.Baby.age <= age < AgeType.Child.age:
             return AgeType.Baby
         elif AgeType.Child.age <= age < AgeType.Teen.age:
@@ -100,30 +70,38 @@ class AgeType(int, Enum):
 
 
 class GenderType(str, Enum):
-    Male = "Male"
-    Female = "Female"
-    Unknown = "Unknown"
+    Male = "male"
+    Female = "female"
+    Unknown = "unknown"
+
+    @staticmethod
+    def random_gender() -> "GenderType":
+        genders = [gender for gender in GenderType]
+        return choice(genders)
 
 
-class RankType(str, Enum):
-    # Worker Ranks
-    Cadet = "Cadet" # Family's make Babies that become kids in academy, teens in university, adults in legion system
-    Private = "Private" # Able to do Trade, Battle, and Stories for FactionLegion
+class RankType(int, Enum):
+    # Standard Worker/Trooper Ranks
+    Private = 0 # Able to do Trade, Battle, and Stories for FactionLegion
+    Lance = 1 # Able to choose Primary Specialty
+    Corporal = 2 # Able to be drivers
 
-    # Trooper Ranks
-    Lance = "Lance" # Able to choose Primary Specialty
-    Corporal = "Corporal" # Able to be drivers
+    # Advanced Worker/Trooper Ranks
+    Ensign = 3 # Able to choose Secondary Speciality
+    Sergeant = 4 # Able to lead trooper or fighter squadron
+    Lieutenant = 5 # Able to lead trooper or ship officer
 
-    # Officer Ranks => Manager Ranks
-    Ensign = "Ensign" # Able to be pilots
-    Sergeant = "Sergeant" # Able to lead trooper or fighter squadron
-    Lieutenant = "Lieutenant"
+    # Manager/Officer Ranks
+    Commander = 6 # Leader of Outpost and Cruiser
+    Captain = 7 # Leader of Outpost and Frigate
+    Major = 8 # Leader of City and Capital
+    Colonel = 9 # Leader of City and
 
-    # Gold Ranks
-    Commander = "Commander" # Leader of Outpost and Cruiser
-    Captain = "Captain" # Leader of Outpost and Frigate
-    Major = "Major" # Leader of City and Capital
-    Colonel = "Colonel"
+    # Leader Ranks
+    Arch = 10  # Arch is a General/Admiral with Atlantean or Ethereal Magic. Admin is an Arch for Legion
 
-    # Diamond Ranks
-    Arch = "Arch"  # Arch is a General/Admiral with Atlantean or Etheral Magic
+    @staticmethod
+    def random_rank() -> "RankType":
+        ranks = [rank for rank in RankType]
+        return choice(ranks)
+

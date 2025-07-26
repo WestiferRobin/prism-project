@@ -1,7 +1,7 @@
 from typing import List
 
 from src.utils.exceptions import PrismException
-from zlegacy.app.models import Metal, METALS
+from zlegacy.models import Metal, METALS
 
 
 def metals_list() -> List[Metal]:

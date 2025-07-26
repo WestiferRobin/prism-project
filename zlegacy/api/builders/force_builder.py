@@ -1,5 +1,5 @@
-from zlegacy.app.models import Equation
-from zlegacy.app.models import Force
+from zlegacy.models import Equation
+from zlegacy.models import Force
 
 
 def build_force(equation: Equation) -> Force:

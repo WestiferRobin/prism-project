@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from zlegacy.app.models import Model
+from zlegacy.models import Model
 
 
 class View(BaseModel):

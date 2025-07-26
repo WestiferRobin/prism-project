@@ -1,6 +1,6 @@
 from typing import Set, Dict, List
 
-from zlegacy.app.models import Equation
+from zlegacy.models import Equation
 
 
 def validate_expression(expression: str):

@@ -1,5 +1,5 @@
 from zlegacy.api.controllers import Controller
-from zlegacy.app.models import Command
+from zlegacy.models import Command
 
 
 class GameController(Controller):

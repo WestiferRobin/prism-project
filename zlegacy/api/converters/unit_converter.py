@@ -1,5 +1,5 @@
 from src.utils.enums.unit_enums.prefix_enums import PrefixType
-from zlegacy.app.models.app_models.unit import Unit
+from zlegacy.models.app_models.unit import Unit
 
 
 def convert_unit(unit: Unit, prefix: PrefixType) -> Unit:

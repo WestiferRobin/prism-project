@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 
-from zlegacy.app.models import Graph
+from zlegacy.models import Graph
 
 
 def plot_graph(graph: Graph):

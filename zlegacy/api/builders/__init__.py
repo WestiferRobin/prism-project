@@ -3,9 +3,9 @@ from uuid import uuid4, UUID
 from zlegacy.api.builders.prism_builder import build_prism
 from zlegacy.api.builders.vehicle_builder import build_speeder, build_shuttle
 from src.prism_net import Mvp
-from zlegacy.app.models.app_models.prisms import Prism
-from zlegacy.app.models import Shuttle
-from zlegacy.app.models.app_models.vehicles.speeder import Speeder
+from zlegacy.models.app_models import Prism
+from zlegacy.models import Shuttle
+from zlegacy.models.app_models import Speeder
 
 
 def build_prism_mvp(version: int) -> Mvp:
@@ -46,7 +46,7 @@ def build_arch_legion(admin_id: UUID = None) -> Legion:
     return legion
 
 
-def build_solar_conquest(owner_id: UUID = None) -> Game:
+def build_solar_conquest(owner_id: UUID = None, version: int = 0) -> Game:
     if owner_id is None:
         owner_id = uuid4()
     solar_conquest = build_game(owner_id=owner_id)

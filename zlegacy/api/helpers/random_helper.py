@@ -3,7 +3,7 @@ from typing import Any
 
 from zlegacy.api.builders.unit_builders.mass_builder import build_mass
 from src.utils.enums import VehicleType, UnitType, PrefixType
-from zlegacy.app.models.app_models.equations.chemistry.mass import Mass
+from zlegacy.models.app_models import Mass
 
 
 def random_item(item_list: list) -> Any:

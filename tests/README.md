@@ -9,51 +9,51 @@
   - Prism Forge => Labs and Studio
   - Prism Hive => Forge
 
-- test_cases:
-  - mvp_tests:
-    - prism_tests for the AI Mind
-    - drone_tests for the AI Body
-    - vehicle_tests for Legion
-    - legion_tests for Game and Avatar
-    - bot_tests with Drone made in Lab, Forge, Hive
-  - app_tests:
-    - test_prism_hive: PC, Web, and Mobile
+## Test Cases
+- mvp_tests:
+  - prism_tests for the AI Mind
+  - drone_tests for the AI Body
+  - vehicle_tests for Legion
+  - legion_tests for Game and Avatar
+  - bot_tests with Drone made in Lab, Forge, Hive
+- app_tests:
+  - test_prism_hive: PC, Web, and Mobile
+    - test_prism_chat
+    - test_prism_social
+    - test_prism_market
+    - test_prism_club
+  - tool_tests:
+    - test_prism_studio: PC and Web
+      - studio_test_cases:
+        - test_text_cases
+        - test_music_cases
+        - test_image_cases
+        - test_video_cases
+      - test_prism_board
+      - test_prism_planner
+    - test_prism_lab: PC and Web
+      - test_lab_simulator
+      - test_lab_terminal
+      - test_prism_board
+      - test_prism_scribe
+    - test_prism_forge: PC and Web
+      - test_prism_scribe
+      - test_prism_pad
+      - test_prism_board
+      - test_prism_planner
+    - test_prism_reflect: Mobile and Web
+      - test_prism_journal
       - test_prism_chat
-      - test_prism_social
-      - test_prism_market
-      - test_prism_club
-    - tool_tests:
-      - test_prism_studio: PC and Web
-        - studio_test_cases:
-          - test_text_cases
-          - test_music_cases
-          - test_image_cases
-          - test_video_cases
-        - test_prism_board
-        - test_prism_planner
-      - test_prism_lab: PC and Web
-        - test_lab_simulator
-        - test_lab_terminal
-        - test_prism_board
-        - test_prism_scribe
-      - test_prism_forge: PC and Web
-        - test_prism_scribe
-        - test_prism_pad
-        - test_prism_board
-        - test_prism_planner
-      - test_prism_reflect: Mobile and Web
-        - test_prism_journal
-        - test_prism_chat
-        - test_prism_board
-        - test_prism_planner
-    - game_tests: Mobile and PC
-      - test_solar_conquest
-      - test_faction_legion
-      - test_galaxy_map
-      - test_classic_game
-  - platform_tests: Support for Model to API model (assume we can do this all in a repo and refactor)
-    - test_pc_platforms: Python, Java, C#, C++, TS, JS, Assembly
-    - test_web_platforms: Python, Java, TS, JS
-    - test_mobile_platforms: C#, C++, TS, JS
-    - test_bot_platforms: Python, Java, C++, Assembly
+      - test_prism_board
+      - test_prism_planner
+  - game_tests: Mobile and PC
+    - test_solar_conquest
+    - test_faction_legion
+    - test_galaxy_map
+    - test_classic_game
+- platform_tests: Support for Model to API model (assume we can do this all in a repo and refactor)
+  - test_pc_platforms: Python, Java, C#, C++, TS, JS, Assembly
+  - test_web_platforms: Python, Java, TS, JS
+  - test_mobile_platforms: C#, C++, TS, JS
+  - test_iot_platforms: Python, Java, C++, Assembly
 

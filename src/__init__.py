@@ -2,12 +2,18 @@ from typing import List
 
 from pydantic import BaseModel
 
+from src.app import App
+from src.app.bot import Bot
+from src.app.game import Game
+from src.app.tools import Tool
+from src.models.prisms import Prism
+
 
 class PrismNet(BaseModel):
     version: int
 
     apps: List[App]
-    bots: List[Bots]
+    bots: List[Bot]
 
     @property
     def games(self) -> List[Game]:

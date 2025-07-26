@@ -20,3 +20,11 @@
 - Faction: Legion
   - resources: List[Resource]
 """
+
+from pydantic import BaseModel
+from src.models.prisms import Prism
+
+
+class Legion(BaseModel):
+    admin: Prism # TODO: Change to LegionDrone
+

@@ -1,6 +1,6 @@
-from zlegacy.app.models.app_models.prisms import Prism
-from zlegacy.app.models import Shuttle
-from zlegacy.app.models.app_models.vehicles.speeder import Speeder
+from zlegacy.models.app_models import Prism
+from zlegacy.models import Shuttle
+from zlegacy.models.app_models import Speeder
 
 
 def validate_legion_drone(drone: Prism):

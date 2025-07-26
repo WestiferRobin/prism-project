@@ -1,9 +1,9 @@
 from src.utils.configs.vehicle_config import VehicleConfig
 from src.utils.enums import VehicleType
-from zlegacy.app.models.app_models.equations.chemistry.mass import Mass
-from zlegacy.app.models.app_models.vehicles import Vehicle
-from zlegacy.app.models import Shuttle
-from zlegacy.app.models.app_models.vehicles.speeder import Speeder
+from zlegacy.models.app_models import Mass
+from zlegacy.models.app_models import Vehicle
+from zlegacy.models import Shuttle
+from zlegacy.models.app_models import Speeder
 
 
 def build_vehicle(vehicle_type: VehicleType, mass: Mass) -> Vehicle:

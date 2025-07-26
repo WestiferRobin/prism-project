@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 
 from pydantic import BaseModel
 
-from zlegacy.app.models import Model
-from zlegacy.app.models import Command
+from zlegacy.models import Model
+from zlegacy.models import Command
 
 
 class Controller(BaseModel, ABC):
