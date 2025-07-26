@@ -1,7 +1,9 @@
-from typing import Dict
+from datetime import datetime
+from random import randint
 
 from pydantic import BaseModel
 
+from src.utils.enums.prism_enums import AgeType
 from src.utils.exceptions.date_exceptions import DateException
 
 
@@ -12,6 +14,15 @@ class Date(BaseModel):
     hour: int = 0
     minute: int = 0
     second: int = 0
+
+    @staticmethod
+    def random_date() -> "Date":
+        current_date = datetime.now()
+        return Date(
+            year=randint(current_date.year - AgeType.Ancient.value, 2025),
+            month=randint(1, 12),
+            day=randint(1, 28),
+        )
 
     def add(self, tag: str, value: int = 1):
         if tag.lower() == "year":
@@ -29,7 +40,4 @@ class Date(BaseModel):
         else:
             raise DateException(f"Unknown date tag: {tag}")
 
-    def add_value(self, value: Dict[str, int]):
-        for key, value in value.items():
-            self.add(key, value)
 

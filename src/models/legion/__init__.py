@@ -22,9 +22,13 @@
 """
 
 from pydantic import BaseModel
-from src.models.prisms import Prism
+
+from src.models.drones.legion_drone import LegionDrone
 
 
 class Legion(BaseModel):
-    admin: Prism # TODO: Change to LegionDrone
+    admin: LegionDrone
+    vice: LegionDrone
+    general: LegionDrone
+    admiral: LegionDrone
 

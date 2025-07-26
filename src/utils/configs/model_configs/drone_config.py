@@ -12,6 +12,7 @@ class DroneConfig(Config):
             version=prism.version,
             name=prism.name,
             alias=prism.alias,
+            prism=prism,
             **prism_data
         )
 

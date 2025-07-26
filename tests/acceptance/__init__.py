@@ -1,10 +1,12 @@
+from src.api import build_wes_config
 from src.api.builders.app_builders import build_prism_hive
 from src.api.builders.app_builders.game_builder import build_solar_conquest
-from src.api.builders.app_builders.iot_builder import build_hedron_bot, build_hive_server, build_avatar_legion
+from src.api.builders.app_builders.iot_builder import build_hedron_bot, build_avatar_legion, build_hedron_hive
 from src.api.builders.app_builders.tool_builders import build_prism_reflect, build_prism_forge, build_prism_studio, \
     build_prism_lab
 from src.api.builders.model_builders.platform_builder import build_platform
 from src.api.validators.platform_validator import validate_platform
+from src.utils.constants import CURRENT_VERSION
 from src.utils.enums.platform_enums import PlatformType
 
 
@@ -44,9 +46,9 @@ def test_mobile_apps():
 def test_iot_apps():
     iot_platform = build_platform(platform_type=PlatformType.Iot)
 
-    iot_platform.load_app(app=build_hive_server())
+    iot_platform.load_app(app=build_hedron_hive())
     iot_platform.load_app(app=build_hedron_bot())
-    iot_platform.load_app(app=build_avatar_legion())
+    iot_platform.load_app(app=build_avatar_legion(avatar_config=build_wes_config(version=CURRENT_VERSION)))
 
     validate_platform(platform=iot_platform, expected_type=PlatformType.Iot)
 

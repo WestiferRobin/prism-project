@@ -1,4 +1,4 @@
-from src.api.builders.prism_builders import build_prism
+from src.api.builders.model_builders.prism_builders import build_prism
 from src.models.prisms import Prism
 from src.models.legion import Legion
 from src.utils.enums.game_enums.faction_enums import FactionType

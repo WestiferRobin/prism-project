@@ -1,6 +1,7 @@
 from uuid import UUID, uuid4
 
 from src.api.helpers.alias_helper import create_alias
+from src.utils.constants import CURRENT_YEAR
 from src.utils.date import Date
 from src.utils.configs.model_configs.prism_config import PrismConfig
 from src.utils.enums.prism_enums import AgeType, GenderType, RaceType, RankType
@@ -29,6 +30,9 @@ def build_prism_config(
         race = RaceType.random_race()
     if rank is None:
         rank = RankType.random_rank()
+    if date is None:
+        date = Date.random_date()
+        date.year = CURRENT_YEAR - age.value
     return PrismConfig(
         version=version,
         name=name,
