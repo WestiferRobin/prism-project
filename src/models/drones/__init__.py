@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 from src.models.prisms import Prism
-from src.utils.configs.drone_config import DroneConfig
+from src.utils.configs.model_configs.drone_config import DroneConfig
 
 
 class Drone(BaseModel):

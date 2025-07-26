@@ -2,7 +2,7 @@ from uuid import UUID
 
 from src.api.validators.prism_validator import validate_prism
 from src.app.drone import Drone
-from src.utils.configs.drone_config import DroneConfig
+from src.utils.configs.model_configs.drone_config import DroneConfig
 
 
 def validate_drone(drone: Drone) -> None:

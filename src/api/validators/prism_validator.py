@@ -1,7 +1,7 @@
 from uuid import UUID
 
 from src.models.prisms import Prism
-from src.utils.configs.prism_config import PrismConfig
+from src.utils.configs.model_configs.prism_config import PrismConfig
 
 
 def validate_prism(prism: Prism) -> None:

@@ -1,6 +1,6 @@
 from zlegacy.api.builders import build_speeder_config, build_shuttle_config
 from zlegacy.api.builders import build_kilo_mass
-from zlegacy.api.builders.vehicle_builder import build_speeder, build_shuttle
+from src.api.builders.model_builders.vehicle_builder import build_speeder, build_shuttle
 from zlegacy.api.validators import validate_speeder, validate_shuttle
 
 

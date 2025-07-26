@@ -5,131 +5,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/drones/bot_drone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/drones/prism_drone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/factions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/hive_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/schemas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/tool_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/bot_configs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/bot_configs/server_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/faction_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/enums/platform_enums.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/enums/prism_enums/age_enums.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/app_tests/test_prism_hive.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/app_tests/tool_tests/test_prism_lab.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/app_tests/tool_tests/test_prism_studio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/drones/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/drones/prism_drone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/chemistry/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/algerbra/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/geomitry/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/military/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/simulations/arch_legion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/simulations/bot_simulations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/simulations/games/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/simulations/prism_drone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/simulations/solar_conquest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/simulations/speeder_simulations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/simulations/speeder_simulations/drone_speeder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/equations/math/function.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/equations/physics/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/vehicles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/vehicles/shuttle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/vehicles/speeder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/vehicle_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/enums/color_enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/enums/prefix_enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/enums/vehicle_enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zlegacy/models/app_models/mass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastapi_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fastapi_sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/getters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/getters/user_getter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/drone.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/legion/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/legion/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/platform/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/platform/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schemas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schemas/requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/schemas/requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/schemas/responses.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/schemas/responses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/bot_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/drone_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/drone_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/prism_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/prism_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/user_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/user_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/enums/age_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/iot_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/enums/environment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/enums/grade_score.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/enums/prism_enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/prism_enums/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/tests/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/iot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/iot_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/bot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/faction_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/faction_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/legion_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/legion_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/platform_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/platform_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/prism_builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/prism_builders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/prism_builders/avatar_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/prism_builders/avatar_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/user_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/user_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/drone_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/drone_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/prism_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/prism_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/date.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/date.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/drones/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/drones/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/prisms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/prisms/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/bot_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/bot_configs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/bot_configs/server_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/bot_configs/server_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/drone_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/drone_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/faction_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/faction_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/prism_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/prism_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/user_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/acceptance/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/app_tests/game_tests/test_solar_conquest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/app_tests/game_tests/test_solar_conquest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/legion_tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/legion_tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/api_tests/simulation_tests/test_project_silver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/api_tests/simulation_tests/test_project_silver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zlegacy/api/builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/builders/config_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/builders/config_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/builders/equation_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/builders/equation_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/builders/force_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/builders/force_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/builders/graph_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/builders/graph_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/builders/unit_builders/mass_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/builders/unit_builders/mass_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/builders/vehicle_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/builders/vehicle_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/controllers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/controllers/game_controllers.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/controllers/game_controllers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/api/builders/vehicle_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/vehicle_builder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zlegacy/api/converters/unit_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/converters/unit_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/handlers/density_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/handlers/density_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/helpers/random_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/helpers/random_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/plotters/graph_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/plotters/graph_plotter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/validators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/validators/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/validators/equation_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/validators/equation_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/api/validators/vehicle_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/api/validators/vehicle_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/commands/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/commands/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/commands/faction_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/commands/faction_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/commands/prism_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/commands/prism_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/commands/requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/commands/requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/commands/responses.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/commands/responses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/data_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/data_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/drones/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/bot_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/drones/bot_drone.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/drones/bot_drone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/drones/prism_drone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/chemistry/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/bot_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/chemistry/mass.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/chemistry/mass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/math/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/math/algerbra/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/math/algerbra/expression.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/algerbra/expression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/math/algerbra/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/algerbra/variables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/math/geomitry/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/faction_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/physics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/legion_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/physics/density.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/density.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/physics/energy.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/energy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/physics/force.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/force.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/physics/momentum.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/momentum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/equations/physics/motion.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/motion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/military/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/platform_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/prisms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/prisms/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/simulations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/simulations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/simulations/arch_legion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/prism_builders/avatar_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/simulations/bot_simulations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/prism_builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/simulations/bot_simulations/prism_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/simulations/bot_simulations/prism_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/simulations/games/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/user_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/simulations/games/solar_conquest.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/simulations/games/solar_conquest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/simulations/prism_drone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/helpers/alias_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/simulations/solar_conquest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/platform_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/simulations/speeder_simulations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/helpers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/simulations/speeder_simulations/drone_speeder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/drones/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/sprites/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/sprites/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/unit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/vehicles/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/vehicles/ships.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/ships.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/vehicles/shuttle.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/shuttle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/app_models/vehicles/speeder.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/speeder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/models/db_models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/models/db_models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/app/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/app/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlegacy/utils/configs/vehicle_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlegacy/utils/configs/vehicle_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/data_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/chemistry/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/vehicle_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/chemistry/mass.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/mass/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/algerbra/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/algerbra/expression.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/algerbra/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/math/variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/math/geomitry/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/math/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/math/expression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/density.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/physics/density.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/energy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/physics/energy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/force.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/physics/force.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/momentum.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/physics/momentum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/equations/physics/motion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/physics/motion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/unit.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/unit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/ships.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/shuttle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/app_models/vehicles/speeder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/models/db_models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/configs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/configs/faction_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/configs/vehicle_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/command_enums.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/legion_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/legion_enums.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/test_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/grade_enums.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/unit_enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/unit_enums.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/unit_enums/prefix_enums.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/util_enums.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/enums/vehicle_enums.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/exceptions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/exceptions/equation_exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/exceptions/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/exceptions/test_exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlegacy/utils/logger.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,11 +149,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils/enums" />
+      <recent name="$PROJECT_DIR$/src/models/equations/physics" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/models/equations" />
       <recent name="$PROJECT_DIR$/src/models" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/models/drones" />
-      <recent name="$PROJECT_DIR$/zlegacy" />
-      <recent name="$PROJECT_DIR$/src/utils/enums/prism_enums" />
     </key>
   </component>
   <component name="RunManager">

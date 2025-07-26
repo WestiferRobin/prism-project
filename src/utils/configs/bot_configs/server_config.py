@@ -1,5 +1,5 @@
 from src.utils.configs.bot_configs import BotConfig
-from src.utils.configs.drone_config import DroneConfig
+from src.utils.configs.model_configs.drone_config import DroneConfig
 
 
 class ServerConfig(BotConfig):

@@ -2,8 +2,8 @@ from typing import List
 
 from src.api.builders.config_builders.user_configs import build_wes_config, build_emma_config, build_mary_config, \
     build_max_config
-from src.api.builders.user_builder import build_user
-from src.models.user import User
+from src.api.builders.model_builders.user_builder import build_user
+from src.utils.user import User
 
 
 def get_mvp_users() -> List[User]:

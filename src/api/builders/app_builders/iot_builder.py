@@ -1,11 +1,11 @@
-from src.api.builders.bot_builder import build_bot_drone
+from src.api.builders.model_builders.bot_builder import build_bot_drone
 from src.api.builders.config_builders.bot_configs import build_server_config, build_bot_config
-from src.api.builders.legion_builder import build_legion
+from src.api.builders.model_builders.legion_builder import build_legion
 from src.api.builders.prism_builders.avatar_builder import build_avatar
 from src.models.drones.bot_drone import BotDrone
 from src.models.hive_server import HiveServer
 from src.models.legion import Legion
-from src.utils.configs.user_config import UserConfig
+from src.utils.configs.model_configs.user_config import UserConfig
 
 
 def build_hedron_hive(version: int = 0) -> HiveServer:

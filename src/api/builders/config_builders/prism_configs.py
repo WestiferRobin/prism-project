@@ -1,8 +1,8 @@
 from uuid import UUID, uuid4
 
 from src.api.helpers.alias_helper import create_alias
-from src.models.date import Date
-from src.utils.configs.prism_config import PrismConfig
+from src.utils.date import Date
+from src.utils.configs.model_configs.prism_config import PrismConfig
 from src.utils.enums.prism_enums import AgeType, GenderType, RaceType, RankType
 
 

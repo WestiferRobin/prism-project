@@ -1,6 +1,6 @@
 from uuid import UUID, uuid4
 
-from src.utils.configs.user_config import UserConfig
+from src.utils.configs.model_configs.user_config import UserConfig
 from src.utils.constants import AVATAR_ID
 
 

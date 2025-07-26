@@ -1,7 +1,7 @@
 from uuid import UUID
 
 from src.utils.configs import Config
-from src.utils.configs.drone_config import DroneConfig
+from src.utils.configs.model_configs.drone_config import DroneConfig
 
 
 class BotConfig(Config):

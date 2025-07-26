@@ -1,7 +1,7 @@
 from src import PrismNet
 from src.api.builders.app_builders.iot_builder import build_hedron_bot, build_avatar_legion, build_hedron_hive
 from src.api.builders.app_builders.tool_builders import build_prism_lab, build_prism_reflect, build_prism_forge
-from src.utils.configs.user_config import UserConfig
+from src.utils.configs.model_configs.user_config import UserConfig
 from zlegacy.api.builders import build_solar_conquest
 
 
