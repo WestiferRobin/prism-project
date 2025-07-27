@@ -5,40 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validators/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validators/bot_configs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validators/drone_configs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validators/legion_configs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validators/prism_configs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validators/server_configs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/legion_validator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/validators/server_validator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/drones/legion_drone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/prism_net.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/legion_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/test_mvp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/builders/model_builders/drone_builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/helpers/name_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/constants/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/constants/name_constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/iot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/iot_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/legion_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/legion_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/prism_builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/prism_builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/prism_builders/avatar_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/prism_builders/avatar_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/app_validators/tool_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/app_validators/tool_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/bot_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/bot_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/drone_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/drone_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/bot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/drones/prism_drone.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/hive_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/hive_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/legion/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/legion/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/bot_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/bot_configs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/bot_configs/server_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/bot_configs/server_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/drone_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/drone_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/date.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/date.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/prism_builders/avatar_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/prism_builders/avatar_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/tools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/drones/legion_drone.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/drones/legion_drone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/acceptance/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +97,7 @@
       <recent name="$PROJECT_DIR$/src/utils/enums" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Python tests for acceptance.test_mvp.test_dev_version">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
@@ -198,8 +182,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Python tests for acceptance.test_mvp.test_dev_version" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Python tests for test_dev_version" />
         <item itemvalue="Python tests.Python tests in __init__.py" />
         <item itemvalue="Python tests.Python tests in tests" />

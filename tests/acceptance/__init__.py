@@ -1,9 +1,8 @@
 from src.api import build_wes_config
-from src.api.builders.app_builders import build_prism_hive
+from src.api.builders.app_builders import build_prism_hive, build_prism_reflect
 from src.api.builders.app_builders.game_builder import build_solar_conquest
 from src.api.builders.app_builders.iot_builder import build_hedron_bot, build_avatar_legion, build_hedron_hive
-from src.api.builders.app_builders.tool_builders import build_prism_reflect, build_prism_forge, build_prism_studio, \
-    build_prism_lab
+from src.api.builders.app_builders.tool_builders import build_prism_forge, build_prism_studio, build_prism_lab
 from src.api.builders.model_builders.platform_builder import build_platform
 from src.api.validators.platform_validator import validate_platform
 from src.utils.constants import CURRENT_VERSION

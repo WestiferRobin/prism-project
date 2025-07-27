@@ -12,3 +12,7 @@ class App(BaseModel):
     def id(self) -> UUID:
         return self.config.app_id
 
+    @property
+    def name(self) -> str:
+        return self.config.name
+
