@@ -1,4 +1,4 @@
-from acceptance.test_platforms import test_platform
+from acceptance.test_net.test_platforms import test_platform
 from src.api import build_wes_config
 from src.api.builders import build_mvp
 from src.api.validators import validate_mvp

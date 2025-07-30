@@ -38,8 +38,10 @@ def build_prism_config(
         alias = create_alias(name=name)
     return PrismConfig(
         version=version,
+        config_id=dna,
         name=name,
         alias=alias,
+
         dna=dna,
         age=age,
         gender=gender,

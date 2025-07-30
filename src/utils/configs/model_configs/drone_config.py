@@ -13,6 +13,7 @@ class DroneConfig(Config):
             name=prism_config.name,
             alias=prism_config.alias,
             prism=prism_config,
+            prism_config=prism_config,
             **prism_data
         )
 

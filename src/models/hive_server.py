@@ -11,7 +11,7 @@ from src.utils.user import User
 
 class HedronServer(BaseModel):
     config: ServerConfig
-    registry: Dict[UUID, Drone]
+    registry: Dict[UUID, Drone] = {}
 
     @property
     def id(self) -> UUID:

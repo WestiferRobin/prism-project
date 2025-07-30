@@ -1,7 +1,7 @@
-from acceptance.test_bots import test_bot_drone, test_bot_speeder, test_bot_legion, test_hedron_server
-from acceptance.test_mobile_apps import test_prism_reflect, test_prism_cook
-from acceptance.test_solar_conquest import test_solar_conquest
-from acceptance.test_web_apps import test_prism_labs, test_prism_studio, test_prism_tables, test_prism_scribe, \
+from acceptance.test_net.test_bots import test_bot_drone, test_bot_speeder, test_bot_legion, test_hedron_server
+from acceptance.test_apps.test_mobile_apps import test_prism_reflect, test_prism_cook
+from acceptance.test_apps.test_solar_conquest import test_solar_conquest
+from acceptance.test_apps.test_web_apps import test_prism_labs, test_prism_studio, test_prism_tables, test_prism_scribe, \
     test_prism_forge, test_prism_hive
 from src.utils.constants import CURRENT_VERSION
 from src.utils.enums.platform_enums import PlatformType
