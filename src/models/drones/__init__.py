@@ -13,5 +13,5 @@ class Drone(BaseModel):
 
     @property
     def prism(self) -> Prism:
-        prism_config = self.config.prism
+        prism_config = self.config.prism_config
         return Prism(config=prism_config)

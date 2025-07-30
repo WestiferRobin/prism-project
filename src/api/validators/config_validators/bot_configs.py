@@ -6,10 +6,11 @@ from src.utils.configs.bot_configs import BotConfig
 from src.utils.configs.model_configs.drone_config import DroneConfig
 
 
-def validate_bot_config(config: BotConfig):
+def validate_bot_config(config: BotConfig, expected_value: BotConfig) -> None:
     assert config is not None
+    assert expected_value is not None
     assert isinstance(config, BotConfig)
-    validate_config(config=config)
+    validate_config(config=config, expected_value=expected_value)
 
     assert config.drone is not None
     assert isinstance(config.drone, DroneConfig)

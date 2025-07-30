@@ -25,7 +25,7 @@
 #     await init_db()
 #     logger.info("[DB] Tables initialized")
 #
-#     logger.info("[LIFESPAN] Starting prism-content-service...")
+#     logger.info("[LIFESPAN] Starting prism_config-content-service...")
 #
 #     grpc_server = await serve()  # Await queues serve, which starts and returns the server
 #     grpc_task = asyncio.create_task(grpc_server.wait_for_termination())
@@ -35,7 +35,7 @@
 #
 #     yield  # App is running
 #
-#     logger.info("[LIFESPAN] Shutting down prism-content-service...")
+#     logger.info("[LIFESPAN] Shutting down prism_config-content-service...")
 #     consumer_task.cancel()  # Optional: cancel background tasks gracefully
 #
 #     logger.info("[gRPC] Shutting down gRPC server...")

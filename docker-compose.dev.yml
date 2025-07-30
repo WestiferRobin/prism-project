@@ -32,5 +32,5 @@ volumes:
 
 networks:
   default:
-    name: prism-web
+    name: prism_config-web
     external: true

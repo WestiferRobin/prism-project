@@ -15,7 +15,7 @@ class StatusServiceStub(object):
             channel: A grpc.Channel.
         """
         self.GetStatus = channel.unary_unary(
-                '/prism.StatusService/GetStatus',
+                '/prism_config.StatusService/GetStatus',
                 request_serializer=status__pb2.StatusRequest.SerializeToString,
                 response_deserializer=status__pb2.StatusResponse.FromString,
                 )
@@ -40,7 +40,7 @@ def add_StatusServiceServicer_to_server(servicer, server):
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'prism.StatusService', rpc_method_handlers)
+            'prism_config.StatusService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
@@ -59,7 +59,7 @@ class StatusService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/prism.StatusService/GetStatus',
+        return grpc.experimental.unary_unary(request, target, '/prism_config.StatusService/GetStatus',
             status__pb2.StatusRequest.SerializeToString,
             status__pb2.StatusResponse.FromString,
             options, channel_credentials,

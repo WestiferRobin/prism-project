@@ -9,16 +9,16 @@ def build_tool(config: ToolConfig) -> Tool:
 
 
 def build_prism_lab(platform: PlatformType = PlatformType.Web, version: int = 0) -> Tool:
-    config = build_tool_config(version=version, alias="prism-lab", name="Prism Lab", platform=platform)
+    config = build_tool_config(version=version, alias="prism_config-lab", name="Prism Lab", platform=platform)
     return build_tool(config=config)
 
 
 def build_prism_forge(platform: PlatformType = PlatformType.Web, version: int = 0) -> Tool:
-    config = build_tool_config(version=version, alias="prism-forge", name="Prism Forge", platform=platform)
+    config = build_tool_config(version=version, alias="prism_config-forge", name="Prism Forge", platform=platform)
     return build_tool(config=config)
 
 
 def build_prism_studio(platform: PlatformType = PlatformType.Web, version: int = 0) -> Tool:
-    config = build_tool_config(version=version, alias="prism-studio", name="Prism Studio", platform=platform)
+    config = build_tool_config(version=version, alias="prism_config-studio", name="Prism Studio", platform=platform)
     return build_tool(config=config)
 

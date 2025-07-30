@@ -5,22 +5,26 @@ from src.utils.configs.model_configs.prism_config import PrismConfig
 
 
 class DroneConfig(Config):
-    prism: PrismConfig
+    prism_config: PrismConfig
 
-    def __init__(self, prism: PrismConfig, **prism_data):
+    def __init__(self, prism_config: PrismConfig, **prism_data):
         super().__init__(
-            version=prism.version,
-            name=prism.name,
-            alias=prism.alias,
-            prism=prism,
+            version=prism_config.version,
+            name=prism_config.name,
+            alias=prism_config.alias,
+            prism=prism_config,
             **prism_data
         )
 
     @property
+    def version(self) -> int:
+        return self.prism_config.version
+
+    @property
     def id(self) -> UUID:
-        return self.prism.id
+        return self.prism_config.id
 
     @property
     def name(self) -> str:
-        return self.prism.name
+        return self.prism_config.name
 

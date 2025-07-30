@@ -9,7 +9,7 @@ def validate_drone_config(config: DroneConfig):
     assert isinstance(config, DroneConfig)
     validate_config(config=config)
 
-    assert config.prism is not None
-    assert isinstance(config.prism, PrismConfig)
-    validate_prism_config(config=config.prism)
+    assert config.prism_config is not None
+    assert isinstance(config.prism_config, PrismConfig)
+    validate_prism_config(config=config.prism_config)
 

@@ -28,5 +28,5 @@ def build_drone_config(
         rank=rank,
         date=date,
     )
-    return DroneConfig(prism=prism_config)
+    return DroneConfig(prism_config=prism_config)
 

@@ -9,11 +9,11 @@ def build_app(config: AppConfig) -> App:
 
 
 def build_prism_reflect(version: int, platform: PlatformType = PlatformType.Mobile) -> App:
-    config = build_app_config(version=version, name="Prism Reflect", alias="prism-reflect", platform=platform)
+    config = build_app_config(version=version, name="Prism Reflect", alias="prism_config-reflect", platform=platform)
     return build_app(config=config)
 
 
 def build_prism_hive(version: int, platform: PlatformType = PlatformType.Web) -> App:
-    config = build_app_config(version=version, name="Prism Hive", alias="prism-hive", platform=platform)
+    config = build_app_config(version=version, name="Prism Hive", alias="prism_config-hive", platform=platform)
     return build_app(config=config)
 
