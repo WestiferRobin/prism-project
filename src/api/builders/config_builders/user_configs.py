@@ -33,6 +33,7 @@ def build_wes_config(version: int) -> UserConfig:
     return build_user_config(
         version=version,
         name="Wes Webb",
+        alias="wes-black",
         age=AgeType.find_type(age=32),
         gender=GenderType.Male,
         birth_date=Date(year=1993, month=3, day=12),

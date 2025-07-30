@@ -1,27 +1,27 @@
-from acceptance.test_net.test_bots import test_bot_drone, test_bot_speeder, test_bot_legion, test_hedron_server
-from acceptance.test_apps.test_mobile_apps import test_prism_reflect, test_prism_cook
-from acceptance.test_apps.test_solar_conquest import test_solar_conquest
-from acceptance.test_apps.test_web_apps import test_prism_labs, test_prism_studio, test_prism_tables, test_prism_scribe, \
-    test_prism_forge, test_prism_hive
 from src.utils.constants import CURRENT_VERSION
 from src.utils.enums.platform_enums import PlatformType
+from unit.test_apps.test_mobile_apps import test_prism_cook, test_prism_reflect
+from unit.test_apps.test_solar_conquest import test_solar_conquest
+from unit.test_apps.test_web_apps import test_prism_labs, test_prism_tables, test_prism_studio, test_prism_scribe, \
+    test_prism_forge, test_prism_hive
+from unit.test_net.test_bots import test_hedron_server, test_bot_drone, test_bot_speeder, test_bot_legion
 
 
 def test_pc_games(version: int = CURRENT_VERSION) -> None:
-    # only one game
+    # only one game... when finished or team or studio we make videos
     test_solar_conquest(platform=PlatformType.PC, version=version)
 
 
 def test_web_apps(version: int = CURRENT_VERSION) -> None:
-    # stem-simulator
-    test_prism_labs(platform=PlatformType.Web, version=version)
-    test_prism_tables(platform=PlatformType.Web, version=version)
+    # stem-simulator: tool vs widget apps
+    test_prism_labs(platform=PlatformType.Web, version=version, is_tool=True)
+    test_prism_tables(platform=PlatformType.Web, version=version, is_tool=False)
 
-    # media-generator
+    # media-generator: tool vs widget apps
     test_prism_studio(platform=PlatformType.Web, version=version)
     test_prism_scribe(platform=PlatformType.Web, version=version)
 
-    # ai workflow
+    # ai workflow: tool vs social/market/money apps
     test_prism_forge(platform=PlatformType.Web, version=version)
     test_prism_hive(platform=PlatformType.Web, version=version)
 

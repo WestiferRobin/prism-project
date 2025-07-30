@@ -5,19 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/constants/date_constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/test_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/test_versions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/iot_builder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/bot_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/bot_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/hive_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/hive_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/bot_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/bot_configs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/bot_configs/server_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/bot_configs/server_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/drone_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/drone_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/date.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/date.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/tools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prism_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prism_net.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_apps/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/widgets/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_apps/test_mobile_apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_apps/test_solar_conquest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_apps/test_web_apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_net/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/legion/bot_legion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_net/test_bots.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_net/test_platforms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_versions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/legion/drone_legion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_versions/test_mvp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_mvp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_net/test_platforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_net/test_platforms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_versions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/widget_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_versions/test_mvp.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +61,7 @@
     "Python tests.Python tests for test_dev_version.executor": "Run",
     "Python tests.Python tests in __init__.py.executor": "Run",
     "Python tests.Python tests in test_acceptance.py.executor": "Run",
+    "Python tests.Python tests in test_mvp.py.executor": "Run",
     "Python tests.Python tests in tests.executor": "Run",
     "Python.__init__.executor": "Run",
     "Python.atoms.executor": "Run",
@@ -61,7 +69,7 @@
     "Python.elements.executor": "Debug",
     "Python.example_plotter.executor": "Run",
     "Python.kinematics.executor": "Run",
-    "Python.main.executor": "Debug",
+    "Python.main.executor": "Run",
     "Python.molecule.executor": "Run",
     "Python.molecules.executor": "Run",
     "Python.newton_simulator.executor": "Run",
@@ -72,24 +80,24 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/wesleywebb/Dev/PrismCo/prism-project/tests/acceptance/legion_tests/bot_tests",
+    "last_opened_file_path": "/Users/wesleywebb/Dev/PrismCo/prism-project/tests/unit",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/unit" />
       <recent name="$PROJECT_DIR$/tests/acceptance/legion_tests/bot_tests" />
       <recent name="$PROJECT_DIR$/zlegacy/utils" />
       <recent name="$PROJECT_DIR$/net/servers" />
       <recent name="$PROJECT_DIR$/zdocs/faq" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/unit" />
+      <recent name="$PROJECT_DIR$/tests/acceptance/test_versions" />
+      <recent name="$PROJECT_DIR$/tests/acceptance/test_net" />
+      <recent name="$PROJECT_DIR$/tests/acceptance/test_apps" />
       <recent name="$PROJECT_DIR$/src/api/validators/model_validators" />
-      <recent name="$PROJECT_DIR$/tests/acceptance" />
-      <recent name="$PROJECT_DIR$/tests/acceptance/legion_tests" />
-      <recent name="$PROJECT_DIR$/tests/acceptance/hold" />
-      <recent name="$PROJECT_DIR$/src/api/builders/model_builders" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -115,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for acceptance.test_bots.test_bot_drone" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for acceptance.test_net.test_bots.test_bot_drone" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,11 +134,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;acceptance.test_bots.test_bot_drone&quot;" />
+      <option name="_new_target" value="&quot;acceptance.test_net.test_bots.test_bot_drone&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for acceptance.test_mvp.test_dev_version" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for acceptance.test_versions.test_mvp.test_dev_version" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,7 +149,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;acceptance.test_mvp.test_dev_version&quot;" />
+      <option name="_new_target" value="&quot;acceptance.test_versions.test_mvp.test_dev_version&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -160,7 +168,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in __init__.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_mvp.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,17 +179,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/__init__.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/unit/test_mvp.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python tests.Python tests for acceptance.test_bots.test_bot_drone" />
-        <item itemvalue="Python tests.Python tests for acceptance.test_mvp.test_dev_version" />
+        <item itemvalue="Python tests.Python tests in test_mvp.py" />
+        <item itemvalue="Python tests.Python tests for acceptance.test_net.test_bots.test_bot_drone" />
+        <item itemvalue="Python tests.Python tests for acceptance.test_versions.test_mvp.test_dev_version" />
         <item itemvalue="Python tests.Python tests for test_dev_version" />
-        <item itemvalue="Python tests.Python tests in __init__.py" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +215,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/acceptance/test_mvp.py</url>
+          <url>file://$PROJECT_DIR$/tests/acceptance/test_versions/test_mvp.py</url>
           <line>8</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

@@ -1,8 +1,18 @@
+from typing import List
+
 from acceptance.test_net.test_platforms import test_platform
 from src.api import build_wes_config
 from src.api.builders import build_mvp
 from src.api.validators import validate_mvp
-from src.utils.constants import DEV_VERSION, DEMO_VERSION, FINAL_VERSION
+from src.utils.constants import DEV_VERSION, DEMO_VERSION, FINAL_VERSION, CURRENT_VERSION
+from src.utils.user import User
+
+
+def test_prism_net(users: List[User], version: int = CURRENT_VERSION):
+    prism_net = build_mvp(users=users)
+    validate_mvp(mvp=prism_net)
+
+
 
 
 def test_dev_version():
