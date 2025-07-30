@@ -9,20 +9,21 @@ from src.app.tools import Tool
 from src.app.widgets import Widget
 from src.models.drones import Drone
 from src.models.drones.bot_drone import BotDrone
-from src.models.hive_server import HedronServer
-from src.models.legion import Legion
+from src.models.hedron_server import HedronServer
 from src.models.legion.bot_legion import BotLegion
-from src.models.prisms import Prism
 from src.utils.configs.net_config import NetConfig
 
 
 class PrismNet(BaseModel):
     config: NetConfig
 
-    apps: List[App]
+    apps: List[App] = []
     hedron: HedronServer
     speeder: BotDrone
     legion: BotLegion
+
+    def __init__(self, **net_data):
+        super().__init__(**net_data)
 
     def __str__(self):
         return f"Prism.net: version {self.version}"

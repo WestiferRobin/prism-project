@@ -5,26 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/test_users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/test_versions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/services/user_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/constants/math_constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/constants/physics_contstants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/tools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/bot_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/bot_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/model_validators/server_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/model_validators/server_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/hive_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/hedron_server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/prism_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prism_net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_apps/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/widgets/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_apps/test_mobile_apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_apps/test_solar_conquest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_apps/test_web_apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_net/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/legion/bot_legion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_net/test_bots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_net/test_platforms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_versions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/legion/drone_legion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_versions/test_mvp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_mvp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/net_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/net_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants/date_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/date_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/date.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/date.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/test_users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_versions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/test_versions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_apps/test_solar_conquest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_apps/test_solar_conquest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_apps/test_web_apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_apps/test_web_apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_mvp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_mvp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_net/test_bots.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_net/test_bots.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/unit/test_net/test_platforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_net/test_platforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_versions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/widget_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_versions/test_mvp.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -3,7 +3,7 @@ from src.api.builders.config_builders.user_configs import build_user_config
 from src.api.validators.config_validators.bot_configs import validate_bot_config
 from src.api.validators.config_validators.server_configs import validate_server_config
 from src.models.drones.bot_drone import BotDrone
-from src.models.hive_server import HedronServer
+from src.models.hedron_server import HedronServer
 
 
 def validate_server(server: HedronServer, expected_value: HedronServer) -> None:

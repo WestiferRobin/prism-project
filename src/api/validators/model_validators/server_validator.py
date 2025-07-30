@@ -2,7 +2,7 @@ from src.api import build_user
 from src.api.builders import build_hedron_hive
 from src.api.builders.config_builders.user_configs import build_user_config
 from src.api.validators.config_validators.server_configs import validate_server_config
-from src.models.hive_server import HedronServer
+from src.models.hedron_server import HedronServer
 from src.utils.configs.bot_configs.server_config import ServerConfig
 from src.utils.user import User
 

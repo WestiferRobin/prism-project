@@ -23,8 +23,4 @@ def validate_mvp(mvp: PrismNet, expected_version: int):
     for app in mvp.apps:
         validate_app(app=app, expected_platform=app.platform)
 
-    for bot in mvp.bots:
-        validate_bot(bot=bot)
-
-    validate_server(server=mvp.server)
 

@@ -7,13 +7,13 @@ from src.utils.exceptions.date_exceptions import DateException
 
 
 class Date(BaseModel):
-    year: int = date_constants.MIN_YEAR
-    month: int = date_constants.MIN_MONTH
-    week: int = date_constants.MIN_WEEK
-    day: int = date_constants.MIN_DAY
-    hour: int = date_constants.MIN_HOUR
-    minute: int = date_constants.MIN_MINUTE
-    second: int = date_constants.MIN_SECOND
+    year: int = date_constants.CURRENT_YEAR
+    month: int = date_constants.CURRENT_MONTH
+    week: int = date_constants.CURRENT_WEEK
+    day: int = date_constants.CURRENT_DAY
+    hour: int = date_constants.CURRENT_HOUR
+    minute: int = date_constants.CURRENT_MINUTE
+    second: int = date_constants.CURRENT_SECOND
 
     @staticmethod
     def random_date() -> "Date":

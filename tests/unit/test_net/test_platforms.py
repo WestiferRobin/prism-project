@@ -1,4 +1,4 @@
-from src.utils.constants import CURRENT_VERSION
+from src.utils.constants import INITIAL_VERSION
 from src.utils.enums.platform_enums import PlatformType
 from unit.test_apps.test_mobile_apps import test_prism_cook, test_prism_reflect
 from unit.test_apps.test_solar_conquest import test_solar_conquest
@@ -7,12 +7,12 @@ from unit.test_apps.test_web_apps import test_prism_labs, test_prism_tables, tes
 from unit.test_net.test_bots import test_hedron_server, test_bot_drone, test_bot_speeder, test_bot_legion
 
 
-def test_pc_games(version: int = CURRENT_VERSION) -> None:
+def test_pc_games(version: int = INITIAL_VERSION) -> None:
     # only one game... when finished or team or studio we make videos
     test_solar_conquest(platform=PlatformType.PC, version=version)
 
 
-def test_web_apps(version: int = CURRENT_VERSION) -> None:
+def test_web_apps(version: int = INITIAL_VERSION) -> None:
     # stem-simulator: tool vs widget apps
     test_prism_labs(platform=PlatformType.Web, version=version, is_tool=True)
     test_prism_tables(platform=PlatformType.Web, version=version, is_tool=False)
@@ -26,7 +26,7 @@ def test_web_apps(version: int = CURRENT_VERSION) -> None:
     test_prism_hive(platform=PlatformType.Web, version=version)
 
 
-def test_mobile_apps(version: int = CURRENT_VERSION) -> None:
+def test_mobile_apps(version: int = INITIAL_VERSION) -> None:
     # only mobile app specific
     test_prism_cook(platform=PlatformType.Mobile, version=version)
     test_prism_reflect(platform=PlatformType.Mobile, version=version)
@@ -39,14 +39,14 @@ def test_mobile_apps(version: int = CURRENT_VERSION) -> None:
     test_solar_conquest(platform=PlatformType.Mobile, version=version)
 
 
-def test_bots(version: int = CURRENT_VERSION) -> None:
+def test_bots(version: int = INITIAL_VERSION) -> None:
     test_hedron_server(version=version)
     test_bot_drone(version=version)
     test_bot_speeder(version=version)
     test_bot_legion(version=version)
 
 
-def test_platform(version: int = CURRENT_VERSION):
+def test_platform(version: int = INITIAL_VERSION):
     test_pc_games(version=version)
     test_web_apps(version=version)
     test_mobile_apps(version=version)
