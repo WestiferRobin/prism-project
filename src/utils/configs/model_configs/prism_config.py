@@ -6,8 +6,6 @@ from src.utils.enums.prism_enums import AgeType, GenderType, RankType, RaceType
 
 
 class PrismConfig(Config):
-    dna: UUID
-    age: AgeType
     gender: GenderType
     race: RaceType
     rank: RankType
@@ -17,11 +15,14 @@ class PrismConfig(Config):
         super().__init__(**prism_data)
 
     @property
-    def id(self) -> UUID:
-        return self.dna
+    def dna(self) -> UUID:
+        return self.id
 
     @property
-    def age_value(self) -> int:
-        age_type = self.age_type
-        return age_type.percent_value
+    def age(self) -> AgeType:
+        # alias of
+        return Date.convert_age(self.birth_date)
+
+
+    
 

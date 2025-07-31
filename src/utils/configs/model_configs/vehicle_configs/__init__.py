@@ -1,24 +1,24 @@
-from src.models.equations.mass import Mass
+from uuid import UUID
+
 from src.utils.configs import Config
+from src.utils.configs.model_configs.drone_config import DroneConfig
 from src.utils.enums.vehicle_enums import VehicleType
 
 
 class VehicleConfig(Config):
+    pilot_config: DroneConfig
     type: VehicleType
-    mass: Mass
+    # mass: Mass TODO: Apply this when we're doing labs
 
     def __init__(self,
+        pilot_config: DroneConfig,
         vehicle_type: VehicleType,
-        mass: Mass,
-        name: str = None,
         **vehicle_data
     ):
-        if name is None:
-            name = vehicle_type.name
         super().__init__(
-            name=name,
+            config_id=pilot_config.id,
+            pilot_config=pilot_config,
             type=vehicle_type,
-            mass=mass,
             **vehicle_data
         )
 

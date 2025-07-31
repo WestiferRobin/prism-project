@@ -27,19 +27,7 @@ CURRENT_DAY = (NET_TIME.day % 7) + 1
 
 MIN_WEEK = 1
 MAX_WEEK = 4
-
-def current_week():
-    current_day = NET_TIME.day
-
-    for week in range(MIN_WEEK, MAX_WEEK):
-        min_day = week * MIN_DAY
-        max_day = week * MAX_DAY
-        if min_day < current_day < max_day:
-            return week
-
-    raise DateException(message="WEEK isn't working in constants")
-
-CURRENT_WEEK = current_week()
+CURRENT_WEEK = int(NET_TIME.day / 31) % MAX_WEEK
 
 MIN_MONTH = 1
 MAX_MONTH = 4

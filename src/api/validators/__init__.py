@@ -1,3 +1,5 @@
+from typing import List
+
 from src.api.builders.config_builders import build_net_config
 from src.api.validators.bot_validator import validate_bot
 from src.api.validators.model_validators.bot_validator import validate_bot_drone
@@ -9,9 +11,10 @@ from src.api.validators.app_validators.game_validator import validate_game
 from src.api.validators.app_validators.tool_validator import validate_tool
 from src.api.validators.model_validators.drone_validator import validate_drone
 from src.prism_net import PrismNet
+from src.utils.user import User
 
 
-def validate_mvp(mvp: PrismNet, expected_version: int):
+def validate_mvp(version: int, mvp: PrismNet, users: List[User]):
     assert isinstance(mvp, PrismNet)
 
     expected_value = build_net_config(version=expected_version)

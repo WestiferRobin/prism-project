@@ -5,26 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/services/user_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/constants/math_constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/constants/physics_contstants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/converters/data_converter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/converters/uuid_converter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/vehicles/speeders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/vehicles/speeders/bot_speeder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/vehicle_configs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/vehicle_configs/shuttle_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/vehicle_configs/speeder_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/test_api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/test_models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/test_ui/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/bot_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/bot_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/user_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/user_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/services/user_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/validators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/bot_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/bot_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/model_validators/server_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/model_validators/server_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/hive_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/hedron_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/vehicles/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/vehicles/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/vehicles/speeder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platform/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platform/web/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/converters/date_converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platform/web/queues/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platform/web/rpc/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/helpers/id_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platform/web/rpc/status_pb2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platform/web/rpc/status_pb2_grpc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platform/web/servers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platform/web/servers/job_server.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/prism_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prism_net.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/prism_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/prism_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/vehicle_config.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/configs/net_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/net_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/constants/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/constants/date_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/date_constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/date.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/date.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/test_users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_users.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/acceptance/test_versions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/test_versions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/unit/test_apps/test_solar_conquest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_apps/test_solar_conquest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/unit/test_apps/test_web_apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_apps/test_web_apps.py" afterDir="false" />
@@ -82,6 +102,8 @@
     "Python.physics_variables.executor": "Run",
     "Python.quantum_mechanics.executor": "Run",
     "Python.reactions.executor": "Run",
+    "Python.uuid_converter.executor": "Run",
+    "Python.uuid_helper.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -99,11 +121,11 @@
       <recent name="$PROJECT_DIR$/zdocs/faq" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/api/converters" />
       <recent name="$PROJECT_DIR$/tests/unit" />
       <recent name="$PROJECT_DIR$/tests/acceptance/test_versions" />
       <recent name="$PROJECT_DIR$/tests/acceptance/test_net" />
       <recent name="$PROJECT_DIR$/tests/acceptance/test_apps" />
-      <recent name="$PROJECT_DIR$/src/api/validators/model_validators" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -121,6 +143,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="uuid_converter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/api/helpers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/api/converters/uuid_converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,21 +203,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_dev_version" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="nexus-lab-engine" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_dev_version&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests in test_mvp.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
@@ -192,10 +221,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.uuid_converter" />
         <item itemvalue="Python tests.Python tests in test_mvp.py" />
         <item itemvalue="Python tests.Python tests for acceptance.test_net.test_bots.test_bot_drone" />
         <item itemvalue="Python tests.Python tests for acceptance.test_versions.test_mvp.test_dev_version" />
-        <item itemvalue="Python tests.Python tests for test_dev_version" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +254,24 @@
           <line>8</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/api/converters/uuid_converter.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>

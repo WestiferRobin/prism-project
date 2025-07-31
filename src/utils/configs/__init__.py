@@ -2,11 +2,11 @@ from uuid import UUID, uuid4
 
 from pydantic import BaseModel
 
-from src.utils.constants import INITIAL_VERSION
+from src.utils.constants import LAMBDA_VERSION
 
 
 class Config(BaseModel):
-    version: int = INITIAL_VERSION
+    version: int
     id: UUID
     name: str
     alias: str
