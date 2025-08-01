@@ -1,16 +1,11 @@
-from src.api.services.user_service import get_users
+from src.api.builders.company_builder import build_prism_co
+from src.api.builders.config_builders.user_configs.wes_config import build_wes_config
 from src.utils.constants import DEBUG_VERSION
+
 
 if __name__ == '__main__':
     mvp_version = DEBUG_VERSION
-    mvp_users = get_users(version=mvp_version)
-    # mvp_apps = get_apps(version=mvp_version)
-    # mvp_bots = get_bots(version=mvp_version)
-    # mvp = build_mvp(
-    #     version=mvp_version,
-    #     users=mvp_users,
-    #     apps=mvp_apps,
-    #     bots=mvp_bots
-    # )
-    # print(mvp)
+    wes_config = build_wes_config(version=mvp_version)
+    prism_co = build_prism_co(version=mvp_version, leader_config=wes_config)
+    print(prism_co)
 

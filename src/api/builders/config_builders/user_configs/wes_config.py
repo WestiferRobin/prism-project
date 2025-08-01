@@ -4,7 +4,6 @@ from src.api.builders.config_builders.drone_configs.celeberty_configs import bui
 from src.api.builders.config_builders.user_configs import build_user_config
 from src.api.converters.date_converter import convert_to_date
 from src.api.helpers.app_helper import configure_apps
-from src.app.tool import Tool
 from src.utils.configs.model_configs.user_config import UserConfig
 from src.utils.constants.user_constants import WES_ID
 from src.utils.enums.prism_enums import AgeType, GenderType, RaceType, RankType

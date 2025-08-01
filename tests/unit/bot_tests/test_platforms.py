@@ -1,10 +1,10 @@
 from src.utils.constants import DEV_VERSION
 from src.utils.enums.platform_enums import PlatformType
-from unit.test_apps.test_mobile_apps import test_prism_cook, test_prism_reflect
-from unit.test_apps.test_solar_conquest import test_solar_conquest
-from unit.test_apps.test_web_apps import test_prism_labs, test_prism_tables, test_prism_studio, test_prism_scribe, \
+from unit.app_tests.test_mobile_apps import test_prism_cook, test_prism_reflect
+from unit.app_tests.test_solar_conquest import test_solar_conquest
+from unit.app_tests.test_web_apps import test_prism_labs, test_prism_tables, test_prism_studio, test_prism_scribe, \
     test_prism_forge, test_prism_hive
-from unit.test_net.test_bots import test_hedron_server, test_bot_drone, test_bot_speeder, test_bot_legion
+from unit.bot_tests.test_bots import test_hedron_server, test_bot_drone, test_bot_speeder, test_bot_legion
 
 
 def test_pc_games(version: int = DEV_VERSION) -> None:

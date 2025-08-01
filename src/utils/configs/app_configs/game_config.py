@@ -4,9 +4,12 @@ from uuid import UUID
 from src.utils.configs.app_configs import AppConfig
 from src.utils.configs.model_configs.account_config import AccountConfig
 from src.utils.configs.model_configs.user_config import UserConfig
+from src.utils.enums.game_enums import GameMode
 
 
 class GameConfig(AppConfig):
+    mode: GameMode
+
     def __init__(self,
         game_id: UUID,
         player_configs: List[AccountConfig],

@@ -5,6 +5,7 @@ from src.api.builders.config_builders.app_configs import build_game_config
 from src.app.game import Game
 from src.utils.configs.app_configs.game_config import GameConfig
 from src.utils.configs.model_configs.account_config import AccountConfig
+from src.utils.enums.game_enums import GameMode
 from src.utils.enums.platform_enums import PlatformType
 
 
@@ -15,6 +16,7 @@ def build_game(config: GameConfig) -> Game:
 def build_solar_conquest(
     version: int = 0,
     game_id: UUID = None,
+    mode: GameMode = GameMode.Classic,
     platform: PlatformType = PlatformType.PC,
     account_configs: List[AccountConfig] = None
 ) -> Game:
