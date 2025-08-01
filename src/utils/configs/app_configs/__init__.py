@@ -1,13 +1,31 @@
+from typing import Dict, List
 from uuid import UUID
 
 from src.utils.configs import Config
+from src.utils.configs.model_configs.account_config import AccountConfig
 from src.utils.enums.platform_enums import PlatformType
 
 
 class AppConfig(Config):
-    app_id: UUID
     platform: PlatformType
+    accounts: Dict[UUID, AccountConfig]
 
-    def __init__(self, **app_data):
-        super().__init__(**app_data)
+    @property
+    def account_configs(self) -> List[AccountConfig]:
+        return list(self.accounts.values())
+
+    def __init__(self,
+        app_id: UUID,
+        account_configs: List[AccountConfig],
+        **app_data
+    ):
+        super().__init__(
+            config_id=app_id,
+            accounts={
+                account_config.id: account_config for account_config in account_configs
+            },
+            config_data=app_data
+        )
+
+
 

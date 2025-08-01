@@ -2,7 +2,7 @@ from uuid import UUID, uuid4
 
 from pydantic import BaseModel
 
-from src.utils.constants import LAMBDA_VERSION
+from src.utils.constants import DEV_VERSION
 
 
 class Config(BaseModel):
@@ -11,20 +11,11 @@ class Config(BaseModel):
     name: str
     alias: str
 
-    def __init__(self,
-        version: int,
-        name: str,
-        alias: str,
-        config_id: UUID = None,
-        **config_data
-    ):
+    def __init__(self, config_id: UUID = None, **config_data):
         if config_id is None:
             config_id = uuid4()
         super().__init__(
-            version=version,
             id=config_id,
-            name=name,
-            alias=alias,
             **config_data
         )
 

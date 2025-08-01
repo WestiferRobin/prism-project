@@ -1,4 +1,5 @@
-from typing import List
+from typing import List, Dict
+from uuid import UUID
 
 from src.utils.user import User
 from src.utils.configs.model_configs.user_config import UserConfig
@@ -15,4 +16,10 @@ def build_user_list(configs: List[UserConfig]) -> List[User]:
         users.append(user)
 
     return users
+
+def build_user_registry(configs: List[UserConfig]) -> Dict[UUID, User]:
+    user_list = build_user_list(configs=configs)
+    registry = { user.id: user for user in user_list }
+    return registry
+
 

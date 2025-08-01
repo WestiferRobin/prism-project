@@ -18,10 +18,9 @@ class PrismConfig(Config):
     def dna(self) -> UUID:
         return self.id
 
-    @property
-    def age(self) -> AgeType:
-        # alias of
-        return Date.convert_age(self.birth_date)
+    def age(self, current_date: Date) -> AgeType:
+        year_difference = current_date.year - self.birth_date.year
+        return AgeType.find_type(age=year_difference)
 
 
     

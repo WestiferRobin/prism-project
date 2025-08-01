@@ -13,7 +13,7 @@ def build_prism_config(
     name: str = None,
     alias: str = None,
     dna: UUID = None,
-    age: AgeType = None,
+    age: AgeType = AgeType.Adult,
     gender: GenderType = None,
     race: RaceType = None,
     rank: RankType = None,
@@ -21,29 +21,27 @@ def build_prism_config(
 ) -> PrismConfig:
     if dna is None:
         dna = uuid4()
-    if age is None:
-        age = AgeType.random_age()
     if gender is None:
         gender = GenderType.random_gender()
     if race is None:
         race = RaceType.random_race()
     if rank is None:
         rank = RankType.random_rank()
-    if date is None:
-        date = Date.random_date()
-        date.year = CURRENT_YEAR - age.value
     if name is None:
         name = create_name(gender=gender, race=race)
     if alias is None:
         alias = create_alias(name=name)
+
+    if date is None:
+        date = Date.random_date()
+        date.year = CURRENT_YEAR - age.value
+
     return PrismConfig(
         version=version,
         config_id=dna,
         name=name,
         alias=alias,
 
-        dna=dna,
-        age=age,
         gender=gender,
         race=race,
         rank=rank,

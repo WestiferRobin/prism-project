@@ -1,128 +1,55 @@
-from uuid import UUID, uuid4
+from typing import List
 
+from src.api.builders.config_builders.drone_configs import build_drone_config
+from src.api.builders.model_builders.prism_builders.avatar_builder import build_avatar_drone
 from src.api.converters.date_converter import convert_to_date
-from src.api.helpers.id_helper import create_user_id
+from src.api.helpers.app_helper import configure_apps
+from src.utils.configs.app_configs import AppConfig
+from src.utils.configs.model_configs.prism_config import PrismConfig
 from src.utils.configs.model_configs.user_config import UserConfig
-from src.utils.date import Date
+from src.utils.constants.user_constants import WES_ID, EMMA_ID, MARY_ID, MAX_ID, TYLER_ID, PAYTON_ID, BRIAN_ID
 from src.utils.enums.prism_enums import AgeType, GenderType, RaceType, RankType
 
 
-def build_user_config(
-    version: int,
-    user_id: UUID,
-    name: str,
-    alias: str,
-
-    gender: GenderType,
-    birth_date: Date,
-
-    rank: RankType = RankType.Arch,
-    race: RaceType = RaceType.Human,
-) -> UserConfig:
-    return UserConfig(
-        version=version,
-        user_id=user_id,
-        name=name,
-        alias=alias,
-
-        gender=gender,
-        race=race,
-        rank=rank,
-        birth_date=birth_date
-    )
-
-
-def build_wes_config(version: int) -> UserConfig:
-    return build_user_config(
-        version=version,
-        user_id=create_user_id('0'),
-        name="Wes Black",
-        alias="wes-omega",
-
-        gender=GenderType.Male,
-        birth_date=convert_to_date(month=3, day=12, year=1993)
-    )
-
-
-def build_emma_config(version: int) -> UserConfig:
-    return build_user_config(
-        version=version,
-        user_id=create_user_id('A'),
-        name="Emma Green",
-        alias="emma-gamma",
-
-        gender=GenderType.Female,
-        birth_date=convert_to_date(month=8, day=24, year=1994)
-    )
-
-
-def build_mary_config(version: int) -> UserConfig:
-    return build_user_config(
-        version=version,
-        user_id=create_user_id('B'),
-        name="Mary Gold",
-        alias="mary-lambda",
-
-        gender=GenderType.Female,
-        birth_date=convert_to_date(month=8, day=18, year=1969)
-    )
-
-
-def build_max_config(version: int) -> UserConfig:
-    return build_user_config(
-        version=version,
-        user_id=create_user_id('C'),
-        name="Max Alpha",
-        alias="max-alpha",
-
-        gender=GenderType.Female,
-        birth_date=convert_to_date(month=2, day=19, year=1993)
-    )
-
-
-def build_tyler_config(version: int) -> UserConfig:
-    return build_user_config(
-        version=version,
-        user_id=create_user_id('D'),
-        name="Tyler Cyan",
-        alias="tyler-theta",
-
-        gender=GenderType.Male,
-        birth_date=convert_to_date(month=3, day=6, year=1996)
-    )
-
 
 def build_payton_config(version: int) -> UserConfig:
-    return build_user_config(
+    payton_config = build_drone_config(
         version=version,
-        user_id=create_user_id('E'),
-        name="Payton White",
-        alias="payton-mu",
-
+        name="Payton Sigma",
+        alias="payton-sigma",
+        dna=PAYTON_ID,
+        age=AgeType.Adult,
         gender=GenderType.Male,
-        birth_date=convert_to_date(month=5, day=16, year=2000)
+        race=RaceType.Human,
+        rank=RankType.Arch,
+        date=convert_to_date(month=5, day=16, year=2000)
+    )
+    payton_avatar = build_avatar_drone(config=payton_config)
+    payton_apps = configure_apps(version=version, user_id=payton_config.user_id)
+
+    return build_user_config(
+        avatar_config=payton_avatar.config.avatar_config,
+        app_configs=[app.config for app in payton_apps],
     )
 
 
 def build_brian_config(version: int) -> UserConfig:
-    return build_user_config(
+    brian_config = build_drone_config(
         version=version,
-        user_id=create_user_id('F'),
-        name="Brian Grey",
-        alias="brian-tau",
-
+        name="Brian Psi",
+        alias="brian-psi",
+        dna=BRIAN_ID,
+        age=AgeType.Adult,
         gender=GenderType.Male,
-        birth_date=convert_to_date(month=11, day=28, year=1979)
+        race=RaceType.Human,
+        rank=RankType.Arch,
+        date=convert_to_date(month=11, day=28, year=1979)
     )
+    brian_avatar = build_avatar_drone(config=brian_config)
+    brian_apps = configure_apps(version=version, user_id=brian_config.user_id)
 
-
-
-
-
-
-
-
-
-
-
+    return build_user_config(
+        avatar_config=brian_avatar.config.avatar_config,
+        app_configs=[app.config for app in brian_apps],
+    )
 

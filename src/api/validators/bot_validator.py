@@ -3,7 +3,7 @@ from src.api.builders.config_builders.user_configs import build_user_config
 from src.api.validators.config_validators.bot_configs import validate_bot_config
 from src.api.validators.config_validators.server_configs import validate_server_config
 from src.models.drones.bot_drone import BotDrone
-from src.models.hedron_server import HedronServer
+from src.models.bots.hedron_server import HedronServer
 
 
 def validate_server(server: HedronServer, expected_value: HedronServer) -> None:
@@ -15,14 +15,7 @@ def validate_server(server: HedronServer, expected_value: HedronServer) -> None:
     validate_server_config(config=server.config, expected_value=expected_value.config)
 
     owner = server.owner
-    owner_config = build_user_config(
-        version=server.version,
-        name=owner.name,
-        age=owner.age,
-        gender=owner.gender,
-        birth_date=owner.birth_date,
-        user_id=owner.user_id,
-    )
+    owner_config = build_user_config(,
     valid_user = build_user(config=owner_config)
     validate_user(user=owner, expected_value=valid_user)
 

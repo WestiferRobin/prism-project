@@ -30,3 +30,29 @@ def build_drone_config(
     )
     return DroneConfig(prism_config=prism_config)
 
+
+def build_billy_config(version: int) -> DroneConfig:
+    billy_config = build_drone_config(
+        version=version,
+        name="Billy Boy",
+        alias="billy-boy",
+        age=AgeType.Adult,
+        gender=GenderType.Male,
+        race=RaceType.Human,
+        rank=RankType.Arch,
+    )
+    return billy_config
+
+
+def build_jeffery_config(version: int) -> DroneConfig:
+    jeffery_config = build_drone_config(
+        version=version,
+        name="Jeffery Boy",
+        alias="jeffery-boy",
+        age=AgeType.Adult,
+        gender=GenderType.Male,
+        race=RaceType.Human,
+        rank=RankType.Arch
+    )
+    return jeffery_config
+

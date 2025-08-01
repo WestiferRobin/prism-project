@@ -3,14 +3,13 @@ from uuid import UUID
 
 from pydantic import BaseModel
 
-from src.api.builders.app_builders import build_app
 from src.app import App
 from src.app.game import Game
 from src.app.tools import Tool
 from src.app.widgets import Widget
+from src.models.bots import Bot
 from src.models.drones import Drone
-from src.models.drones.bot_drone import BotDrone
-from src.models.hedron_server import HedronServer
+from src.models.bots.hedron_server import HedronServer
 from src.models.legion.bot_legion import BotLegion
 from src.models.vehicles.speeders.bot_speeder import BotSpeeder
 from src.utils.configs.app_configs.game_config import GameConfig
@@ -23,31 +22,13 @@ from src.utils.user import User
 class PrismNet(BaseModel):
     config: NetConfig
 
-    hedron: HedronServer
-    speeder: BotSpeeder
-    legion: BotLegion
+    users: List[User]
+    apps: List[App]
+    bots: List[Bot]
 
     def __init__(self, **net_data):
         super().__init__(**net_data)
 
-    def __str__(self):
-        return f"Prism.net: version {self.version}"
-
-    @property
-    def users(self) -> List[User]:
-        users = []
-        for user_config in self.config.user_configs:
-            user = User(config=user_config)
-            users.append(user)
-        return users
-
-    @property
-    def apps(self) -> List[App]:
-        apps = []
-        for app_config in self.config.app_configs:
-            app = App(config=app_config)
-            apps.append(app)
-        return apps
 
     @property
     def games(self) -> List[Game]:

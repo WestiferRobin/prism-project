@@ -1,8 +1,14 @@
-from src.models.prisms import Prism
-from src.utils.configs.model_configs.prism_config import PrismConfig
+from src.models.drones import Drone
+from src.utils.configs.model_configs.user_config import UserConfig
 
 
-class User(Prism):
-    def __init__(self, config: PrismConfig, **prism_data):
-        super().__init__(config=config, prism_data=prism_data)
+class User:
+    config: UserConfig
+
+    def __init__(self, **user_data):
+        super().__init__(**user_data)
+
+    @property
+    def avatar(self) -> Drone:
+        return Drone(config=self.config.avatar_config)
 

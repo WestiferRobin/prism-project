@@ -1,5 +1,3 @@
-from uuid import UUID
-
 from src.utils.configs.model_configs.drone_config import DroneConfig
 from src.utils.configs.model_configs.vehicle_configs import VehicleConfig
 from src.utils.enums.vehicle_enums import VehicleType
