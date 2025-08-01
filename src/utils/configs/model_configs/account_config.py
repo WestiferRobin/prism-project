@@ -4,8 +4,6 @@ from src.utils.configs import Config
 
 
 class AccountConfig(Config):
-    user_id: UUID
-
     def __init__(self,
         version: int,
         user_id: UUID,
@@ -18,4 +16,8 @@ class AccountConfig(Config):
             name=app_name,
             alias=app_alias
         )
+
+    @property
+    def user_id(self) -> UUID:
+        return self.id
 

@@ -1,5 +1,4 @@
 from typing import List
-from uuid import UUID
 
 from src.api.builders.app_builders import build_app_list, build_prism_cook, build_prism_hive
 from src.api.builders.app_builders.game_builder import build_solar_conquest
@@ -28,12 +27,6 @@ def get_app_configs(version: int) -> List[AppConfig]:
 
     return app_configs
 
-
-def get_user_accounts(version: int, user_id: UUID) -> List[AppConfig]:
-    app_configs = get_app_configs(version=version)
-    for app_config in app_configs:
-        app_config.add_account(account_id=user_id)
-    return app_configs
 
 def get_apps(version: int = DEBUG_VERSION) -> List[App]:
     app_configs = get_app_configs(version)

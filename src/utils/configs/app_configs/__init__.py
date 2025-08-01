@@ -19,12 +19,13 @@ class AppConfig(Config):
         account_configs: List[AccountConfig],
         **app_data
     ):
+        accounts = {}
+        for account_config in account_configs:
+            accounts[account_config.id] = account_config
         super().__init__(
             config_id=app_id,
-            accounts={
-                account_config.id: account_config for account_config in account_configs
-            },
-            config_data=app_data
+            accounts=accounts,
+            **app_data
         )
 
 

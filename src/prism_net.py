@@ -7,11 +7,8 @@ from src.app import App
 from src.app.game import Game
 from src.app.tools import Tool
 from src.app.widgets import Widget
-from src.models.bots import Bot
+from src.bots import Bot
 from src.models.drones import Drone
-from src.models.bots.hedron_server import HedronServer
-from src.models.legion.bot_legion import BotLegion
-from src.models.vehicles.speeders.bot_speeder import BotSpeeder
 from src.utils.configs.app_configs.game_config import GameConfig
 from src.utils.configs.app_configs.tool_config import ToolConfig
 from src.utils.configs.app_configs.widget_config import WidgetConfig

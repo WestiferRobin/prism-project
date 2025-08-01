@@ -5,7 +5,6 @@ from src.utils.configs.app_configs import AppConfig
 from src.utils.configs.app_configs.game_config import GameConfig
 from src.utils.configs.app_configs.tool_config import ToolConfig
 from src.utils.configs.model_configs.account_config import AccountConfig
-from src.utils.configs.model_configs.user_config import UserConfig
 from src.utils.enums.platform_enums import PlatformType
 
 
@@ -20,7 +19,7 @@ def build_app_config(
     if app_id is None:
         app_id = uuid4()
     if account_configs is None:
-        accounts_configs = []
+        account_configs = []
     return AppConfig(
         version=version,
         app_id=app_id,
@@ -37,27 +36,25 @@ def build_game_config(
     game_alias: str,
     platform: PlatformType,
     game_id: UUID = None,
-    player_configs: List[UserConfig] = None
+    player_configs: List[AccountConfig] = None,
 ) -> GameConfig:
     if game_id is None:
         game_id = uuid4()
-    if player_configs is None:
-        player_configs = []
     app_config = build_app_config(
         version=version,
         app_id=game_id,
         app_name=game_name,
         app_alias=game_alias,
         platform=platform,
-        user_configs=player_configs
+        account_configs=player_configs
     )
     return GameConfig(
-        version=app_config.version,
-        config_id=app_config.id,
+        version=version,
+        game_id=app_config.id,
         name=app_config.name,
         alias=app_config.alias,
-        platform=app_config.platform,
-        player_configs=app_config.user_configs,
+        player_configs=app_config.account_configs,
+        platform=app_config.platform
     )
 
 
@@ -67,7 +64,7 @@ def build_tool_config(
     tool_alias: str,
     platform: PlatformType,
     tool_id: UUID = None,
-    user_configs: List[UserConfig] = None
+    account_configs: List[AccountConfig] = None
 ) -> ToolConfig:
     if tool_id is None:
         tool_id = uuid4()
@@ -77,14 +74,14 @@ def build_tool_config(
         app_name=tool_name,
         app_alias=tool_alias,
         platform=platform,
-        user_configs=user_configs
+        account_configs=account_configs
     )
     return ToolConfig(
         version=app_config.version,
-        config_id=app_config.id,
+        tool_id=app_config.id,
         name=app_config.name,
         alias=app_config.alias,
         platform=app_config.platform,
-        user_configs=app_config.user_configs,
+        account_configs=app_config.account_configs,
     )
 

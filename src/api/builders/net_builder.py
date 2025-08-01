@@ -2,7 +2,7 @@ from typing import List
 
 from src.api.builders.config_builders.net_configs import build_net_config
 from src.app import App
-from src.models.bots import Bot
+from src.bots import Bot
 from src.prism_net import PrismNet
 from src.utils.user import User
 

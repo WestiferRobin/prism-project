@@ -1,5 +1,5 @@
 from src.api.builders.config_builders.app_configs import  build_tool_config
-from src.app.tools import Tool
+from src.app.tool import Tool
 from src.utils.configs.app_configs.tool_config import ToolConfig
 from src.utils.enums.platform_enums import PlatformType
 

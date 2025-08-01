@@ -5,75 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/builders/app_builders/mobile_apps/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/app_builders/mobile_apps/prism_reflect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs/celeberty_configs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/net_configs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/brian_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/emma_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/mary_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/max_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/payton_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/tyler_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/wes_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/model_builders/prism_builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/mvp_builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/net_builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/helpers/app_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/helpers/registry_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/services/app_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/services/bot_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/bots/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/drones/avatar_bot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/prisms/avatar_prism.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/prisms/bot_prism.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/prisms/legion_prism.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/account_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/constants/user_constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/test_mvp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/tool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/company.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/accounts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/company_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/test_company.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/mobile_apps/prism_reflect.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/mobile_apps/prism_reflect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/brian_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/brian_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/emma_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/emma_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/mary_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/mary_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/max_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/max_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/payton_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/payton_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/tyler_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/tyler_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/wes_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/wes_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/prism_builders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/prism_builders/avatar_builder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/user_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/user_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/helpers/id_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/helpers/id_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/services/user_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/mvp_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/mvp_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/net_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/net_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/services/app_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/services/app_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/services/bot_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/services/bot_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/validators/bot_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/bot_validator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/validators/model_validators/server_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/model_validators/server_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/hedron_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/bots/hedron_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/vehicles/speeders/bot_speeder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/vehicles/speeders/bot_speeder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/tools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/tools/forge.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/tools/lab.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/account_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/widgets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/bots/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bots/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/bots/hedron_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bots/hedron_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/company/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/schemas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/account_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/schemas/requests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/schemas/responses.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/prism_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prism_net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/tool_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/tool_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/drone_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/drone_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/prism_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/prism_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/vehicle_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/vehicle_configs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/vehicle_configs/speeder_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/vehicle_configs/speeder_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/net_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/net_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/account_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/account_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_versions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/test_versions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_apps/test_solar_conquest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_apps/test_solar_conquest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_apps/test_web_apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_apps/test_web_apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_mvp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_mvp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_net/test_bots.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_net/test_bots.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_net/test_platforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_net/test_platforms.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,11 +117,11 @@
       <recent name="$PROJECT_DIR$/zdocs/faq" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/models/bots" />
       <recent name="$PROJECT_DIR$/src/api/converters" />
       <recent name="$PROJECT_DIR$/tests/unit" />
       <recent name="$PROJECT_DIR$/tests/acceptance/test_versions" />
-      <recent name="$PROJECT_DIR$/tests/acceptance/test_net" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">

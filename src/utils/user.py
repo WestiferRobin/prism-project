@@ -1,8 +1,10 @@
+from pydantic import BaseModel
+
 from src.models.drones import Drone
 from src.utils.configs.model_configs.user_config import UserConfig
 
 
-class User:
+class User(BaseModel):
     config: UserConfig
 
     def __init__(self, **user_data):

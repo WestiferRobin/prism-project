@@ -5,3 +5,11 @@
   - Director: Drone("John Red")
   - Director: Drone("Mei Blue")
 """
+from pydantic import BaseModel
+
+from src.utils.configs.company_config import CompanyConfig
+
+
+class Company(BaseModel):
+    config: CompanyConfig
+

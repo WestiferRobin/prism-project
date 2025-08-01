@@ -1,3 +1,4 @@
+from src.api.builders.config_builders.account_configs import build_account_config
 from src.api.builders.config_builders.drone_configs import build_drone_config, build_billy_config
 from src.api.builders.config_builders.user_configs import build_user_config
 from src.api.converters.date_converter import convert_to_date
@@ -20,11 +21,21 @@ def build_emma_config(version: int) -> UserConfig:
         date=convert_to_date(month=8, day=24, year=1994)
     )
     companion_config = build_billy_config(version=version)
+    account_configs = []
     emma_apps = configure_apps(version=version, user_id=emma_config.id)
+    for app in emma_apps:
+        account_config = build_account_config(
+            version=version,
+            user_id=emma_config.id,
+            app_name=app.config.name,
+            app_alias=app.config.alias,
+        )
+        account_configs.append(account_config)
+
 
     return build_user_config(
         avatar_config=emma_config,
         companion_config=companion_config,
-        app_configs=[app.config for app in emma_apps],
+        account_configs=account_configs,
     )
 
