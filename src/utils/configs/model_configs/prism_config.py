@@ -1,5 +1,6 @@
 from uuid import UUID
 
+from src.utils.constants.date_constants import CURRENT_YEAR
 from src.utils.date import Date
 from src.utils.configs import Config
 from src.utils.enums.prism_enums import AgeType, GenderType, RankType, RaceType
@@ -18,8 +19,9 @@ class PrismConfig(Config):
     def dna(self) -> UUID:
         return self.id
 
-    def age(self, current_date: Date) -> AgeType:
-        year_difference = current_date.year - self.birth_date.year
+    @property
+    def age(self) -> AgeType:
+        year_difference = CURRENT_YEAR - self.birth_date.year
         return AgeType.find_type(age=year_difference)
 
 

@@ -1,7 +1,7 @@
 from uuid import UUID, uuid4
 
-from src.api.helpers.alias_helper import create_alias
-from src.api.helpers.name_helper import create_name
+from src.api.helpers.alias_helper import configure_alias
+from src.api.helpers.name_helper import configure_name
 from src.utils.constants.date_constants import CURRENT_YEAR
 from src.utils.date import Date
 from src.utils.configs.model_configs.prism_config import PrismConfig
@@ -28,9 +28,9 @@ def build_prism_config(
     if rank is None:
         rank = RankType.random_rank()
     if name is None:
-        name = create_name(gender=gender, race=race)
+        name = configure_name(gender=gender, race=race)
     if alias is None:
-        alias = create_alias(name=name)
+        alias = configure_alias(name=name)
 
     if date is None:
         date = Date.random_date()

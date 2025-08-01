@@ -7,7 +7,7 @@ from src.api.builders.config_builders.user_configs.max_config import build_max_c
 from src.api.builders.config_builders.user_configs.payton_config import build_payton_config
 from src.api.builders.config_builders.user_configs.tyler_config import build_tyler_config
 from src.api.builders.config_builders.user_configs.wes_config import build_wes_config
-from src.api.builders.model_builders.user_builder import build_user_list
+from src.api.builders.model_builders.user_builder import build_users
 from src.utils.configs.app_configs import AppConfig
 from src.utils.configs.model_configs.user_config import UserConfig
 from src.utils.constants import DEV_VERSION, PROD_VERSION, DEBUG_VERSION
@@ -28,8 +28,8 @@ def get_user_configs(version: int) -> List[UserConfig]:
     return user_configs
 
 
-def get_users(version: int = DEBUG_VERSION) -> List[User]:
+def get_users(version: int) -> List[User]:
     user_configs = get_user_configs(version=version)
-    user_list = build_user_list(configs=user_configs)
+    user_list = build_users(configs=user_configs)
     return user_list
 

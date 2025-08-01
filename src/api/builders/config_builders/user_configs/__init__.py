@@ -18,6 +18,10 @@ def build_user_config(
         account_configs = []
 
     return UserConfig(
+        version=avatar_config.version,
+        config_id=avatar_config.id,
+        name=avatar_config.name,
+        alias=avatar_config.alias,
         avatar_config=avatar_config,
         companion_config=companion_config,
         account_configs=account_configs,

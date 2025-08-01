@@ -10,11 +10,11 @@ def validate_bot_config(config: BotConfig, expected_value: BotConfig) -> None:
     assert config is not None
     assert expected_value is not None
     assert isinstance(config, BotConfig)
-    validate_config(config=config, expected_value=expected_value)
+    validate_config(source_config=config, target_config=expected_value)
 
     assert config.drone is not None
     assert isinstance(config.drone, DroneConfig)
-    validate_drone_config(config=config.drone)
+    validate_drone_config(source_config=config.drone)
 
     assert config.id is not None
     assert isinstance(config.id, UUID)

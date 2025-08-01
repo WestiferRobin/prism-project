@@ -6,5 +6,5 @@ def validate_server_config(config: ServerConfig, expected_value: ServerConfig) -
     assert config is not None
     assert isinstance(config, ServerConfig)
 
-    validate_config(config=config, expected_value=expected_value)
+    validate_config(source_config=config, target_config=expected_value)
 

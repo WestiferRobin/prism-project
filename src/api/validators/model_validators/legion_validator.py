@@ -11,7 +11,7 @@ def validate_legion(legion: Legion):
 
     assert legion.config is not None
     assert isinstance(legion.config, LegionConfig)
-    validate_legion_config(config=legion.config)
+    validate_legion_config(source_config=legion.config)
 
     assert legion.admin is not None
     assert isinstance(legion.admin, LegionDrone)

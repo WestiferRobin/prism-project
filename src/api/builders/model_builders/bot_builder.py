@@ -2,7 +2,7 @@ from uuid import UUID
 
 from src.api.builders import build_server_config
 from src.api.builders.config_builders.bot_configs import build_bot_config, build_speeder_config
-from src.api.helpers.alias_helper import create_alias
+from src.api.helpers.alias_helper import configure_alias
 from src.models.drones.bot_drone import BotDrone
 from src.bots import HedronServer
 from src.models.vehicles.speeders.bot_speeder import BotSpeeder
@@ -46,7 +46,7 @@ def build_bot_speeder(version: int, owner_id: UUID, pilot_name: str) -> BotSpeed
     pilot_config = build_bot_config(
         version=version,
         bot_name=pilot_name,
-        bot_alias=create_alias(name=pilot_name),
+        bot_alias=configure_alias(name=pilot_name),
         owner_id=owner_id
     )
     speeder_config = build_speeder_config(pilot_config=pilot_config)

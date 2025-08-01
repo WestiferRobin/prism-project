@@ -5,48 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/tool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/widget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/accounts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/company_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/test_company.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/builders/company_builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/company_configs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs/leader_configs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/validators/company_validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validators/account_configs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validators/comapny_configs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validators/net_configs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/validators/config_validators/user_configs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/mobile_apps/prism_reflect.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/mobile_apps/prism_reflect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/brian_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/brian_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/emma_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/emma_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/mary_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/mary_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/max_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/max_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/payton_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/payton_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/tyler_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/tyler_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/wes_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/wes_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/user_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/user_builder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/mvp_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/mvp_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/net_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/net_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/helpers/alias_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/helpers/alias_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/helpers/name_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/helpers/name_helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/services/app_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/services/app_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/services/bot_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/services/bot_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/bot_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/bot_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/model_validators/server_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/model_validators/server_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/tools/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/tools/forge.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/tools/lab.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/account_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/widgets/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/bots/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bots/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/bots/hedron_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/bots/hedron_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/company/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/schemas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/account_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/schemas/requests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/schemas/responses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/services/user_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/config_validators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/config_validators/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/config_validators/bot_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/config_validators/bot_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/config_validators/drone_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/config_validators/drone_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/config_validators/legion_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/config_validators/legion_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/config_validators/prism_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/config_validators/prism_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/config_validators/server_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/config_validators/server_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/model_validators/legion_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/model_validators/legion_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/validators/net_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/net_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fastapi_sample.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/prism_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prism_net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/tool_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/tool_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/account_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/account_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/company_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/company_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/legion_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/legion_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/prism_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/prism_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/user_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_company.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/test_company.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_mvp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/test_mvp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_versions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/test_versions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/test_mvp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_mvp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for acceptance.test_bots.test_bot_drone.executor": "Run",
+    "Python tests.Python tests for acceptance.test_company.test_prism_co.executor": "Run",
     "Python tests.Python tests for acceptance.test_mvp.test_dev_version.executor": "Run",
+    "Python tests.Python tests for acceptance.test_mvp.test_mvp.executor": "Run",
     "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation.executor": "Run",
     "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation.executor": "Run",
     "Python tests.Python tests for test_dev_version.executor": "Run",
@@ -91,6 +89,7 @@
     "Python.elements.executor": "Debug",
     "Python.example_plotter.executor": "Run",
     "Python.kinematics.executor": "Run",
+    "Python.legion_config.executor": "Run",
     "Python.main.executor": "Run",
     "Python.molecule.executor": "Run",
     "Python.molecules.executor": "Run",
@@ -124,7 +123,29 @@
       <recent name="$PROJECT_DIR$/tests/acceptance/test_versions" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Python tests for acceptance.test_mvp.test_mvp">
+    <configuration name="legion_config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/utils/configs/model_configs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/utils/configs/model_configs/legion_config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
@@ -169,7 +190,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for acceptance.test_net.test_bots.test_bot_drone" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for acceptance.test_company.test_prism_co" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,11 +201,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;acceptance.test_net.test_bots.test_bot_drone&quot;" />
+      <option name="_new_target" value="&quot;acceptance.test_company.test_prism_co&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for acceptance.test_versions.test_mvp.test_dev_version" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for acceptance.test_mvp.test_mvp" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,32 +216,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;acceptance.test_versions.test_mvp.test_dev_version&quot;" />
+      <option name="_new_target" value="&quot;acceptance.test_mvp.test_mvp&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_mvp.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="nexus-lab-engine" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/unit/test_mvp.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for acceptance.test_mvp.test_mvp" />
+        <item itemvalue="Python tests.Python tests for acceptance.test_company.test_prism_co" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.legion_config" />
         <item itemvalue="Python.uuid_converter" />
-        <item itemvalue="Python tests.Python tests in test_mvp.py" />
-        <item itemvalue="Python tests.Python tests for acceptance.test_net.test_bots.test_bot_drone" />
-        <item itemvalue="Python tests.Python tests for acceptance.test_versions.test_mvp.test_dev_version" />
       </list>
     </recent_temporary>
   </component>
@@ -246,26 +252,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/acceptance/test_versions/test_mvp.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/api/converters/uuid_converter.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/api/validators/config_validators/legion_configs.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
+        <breakpoint enabled="true" type="jupyter-exception">
+          <properties exception="BaseException" />
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>

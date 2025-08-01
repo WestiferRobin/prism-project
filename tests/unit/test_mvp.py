@@ -8,4 +8,4 @@ from src.utils.user import User
 
 def test_prism_net(users: List[User], version: int = DEV_VERSION):
     prism_net = build_mvp(users=users)
-    validate_mvp(mvp=prism_net)
+    validate_mvp(,,

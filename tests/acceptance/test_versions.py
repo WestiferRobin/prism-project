@@ -8,29 +8,29 @@ from src.utils.constants import DEV_VERSION, ALPHA_VERSION, BETA_VERSION, FINAL_
 def test_initial_version() -> None:
     mvp_users = get_initial_users()
     mvp = build_mvp(version=DEV_VERSION, users=mvp_users)
-    validate_mvp(version=DEV_VERSION, mvp=mvp, users=mvp_users)
+    validate_mvp(,,
 
 
 def test_alpha_version() -> None:
     mvp_users = get_alpha_users()
     mvp = build_mvp(version=ALPHA_VERSION, users=mvp_users)
-    validate_mvp(version=ALPHA_VERSION, mvp=mvp, users=mvp_users)
+    validate_mvp(,,
 
 
 def test_beta_version() -> None:
     mvp_users = get_beta_users()
     mvp = build_mvp(version=BETA_VERSION, users=mvp_users)
-    validate_mvp(version=BETA_VERSION, mvp=mvp, users=mvp_users)
+    validate_mvp(,,
 
 
 def test_demo_version() -> None:
     mvp_users = get_demo_users()
     mvp = build_mvp(version=FINAL_VERSION, users=mvp_users)
-    validate_mvp(version=FINAL_VERSION, mvp=mvp, users=mvp_users)
+    validate_mvp(,,
 
 
 def test_final_version() -> None:
     mvp_users = get_final_users()
     mvp = build_mvp(version=PROD_VERSION, users=mvp_users)
-    validate_mvp(version=PROD_VERSION, mvp=mvp, users=mvp_users)
+    validate_mvp(,,
 

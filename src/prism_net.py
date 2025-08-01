@@ -5,8 +5,8 @@ from pydantic import BaseModel
 
 from src.app import App
 from src.app.game import Game
-from src.app.tools import Tool
-from src.app.widgets import Widget
+from src.app.tool import Tool
+from src.app.widget import Widget
 from src.bots import Bot
 from src.models.drones import Drone
 from src.utils.configs.app_configs.game_config import GameConfig
