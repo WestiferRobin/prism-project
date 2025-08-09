@@ -5,27 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/models/colonies/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/colonies/legion_colony.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/controllers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/controllers/faction_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/fleets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/fleets/legion_fleet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/colony_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/enums/colony_enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/unit/model_tests/test_legion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/wes_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/wes_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/app_validators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/app_validators/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/app_validators/game_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/app_validators/game_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/validators/app_validators/tool_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/validators/app_validators/tool_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/enums/game_enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/game_enums/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_versions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/test_versions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/api_tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_apps/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/app_tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_apps/test_mobile_apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/app_tests/test_mobile_apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_apps/test_solar_conquest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/app_tests/test_solar_conquest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_apps/test_web_apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/app_tests/test_web_apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/bot_tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_net/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/model_tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_net/test_bots.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/bot_tests/test_bots.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_net/test_platforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/bot_tests/test_platforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_ui/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/ui_tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/faction_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/faction_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/factions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/legion/faction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/legion/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/legion/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/faction_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/faction_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/app_tests/test_solar_conquest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/app_tests/test_solar_conquest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,10 @@
     "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation.executor": "Run",
     "Python tests.Python tests for test_dev_version.executor": "Run",
     "Python tests.Python tests for unit.app_tests.test_solar_conquest.test_solar_conquest.executor": "Debug",
+    "Python tests.Python tests for unit.app_tests.test_solar_conquest.test_solar_conquest_classic.executor": "Debug",
+    "Python tests.Python tests for unit.model_tests.test_legion.test_classic.executor": "Run",
     "Python tests.Python tests in __init__.py.executor": "Run",
+    "Python tests.Python tests in acceptance.executor": "Run",
     "Python tests.Python tests in test_acceptance.py.executor": "Run",
     "Python tests.Python tests in test_mvp.py.executor": "Run",
     "Python tests.Python tests in tests.executor": "Run",
@@ -101,15 +99,15 @@
       <recent name="$PROJECT_DIR$/zdocs/faq" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/models/legion" />
       <recent name="$PROJECT_DIR$/tests/unit/bot_tests" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/models/bots" />
       <recent name="$PROJECT_DIR$/src/api/converters" />
-      <recent name="$PROJECT_DIR$/tests/unit" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for acceptance.test_versions.test_debug_mvp">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for unit.model_tests.test_legion.test_classic">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,47 +116,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/models/legion" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/models/legion/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for acceptance.test_company.test_prism_co" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="nexus-lab-engine" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;acceptance.test_company.test_prism_co&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for acceptance.test_mvp.test_mvp" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="nexus-lab-engine" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;acceptance.test_mvp.test_mvp&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for acceptance.test_versions.test_debug_mvp" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -176,7 +144,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for unit.app_tests.test_solar_conquest.test_solar_conquest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for unit.app_tests.test_solar_conquest.test_solar_conquest_classic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="nexus-lab-engine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,17 +155,47 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;unit.app_tests.test_solar_conquest.test_solar_conquest&quot;" />
+      <option name="_new_target" value="&quot;unit.app_tests.test_solar_conquest.test_solar_conquest_classic&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for unit.model_tests.test_legion.test_classic" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;unit.model_tests.test_legion.test_classic&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in acceptance" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="nexus-lab-engine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/acceptance" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/acceptance&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for unit.model_tests.test_legion.test_classic" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python tests.Python tests for unit.app_tests.test_solar_conquest.test_solar_conquest_classic" />
+        <item itemvalue="Python tests.Python tests in acceptance" />
         <item itemvalue="Python tests.Python tests for acceptance.test_versions.test_debug_mvp" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python tests.Python tests for unit.app_tests.test_solar_conquest.test_solar_conquest" />
-        <item itemvalue="Python tests.Python tests for acceptance.test_mvp.test_mvp" />
-        <item itemvalue="Python tests.Python tests for acceptance.test_company.test_prism_co" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +227,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/unit/app_tests/test_solar_conquest.py</url>
-          <line>16</line>
+          <line>35</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

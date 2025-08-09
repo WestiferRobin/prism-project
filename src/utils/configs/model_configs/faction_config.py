@@ -1,7 +1,7 @@
-from src.utils.configs import Config
+from src.utils.configs.model_configs.legion_config import LegionConfig
 from src.utils.enums.game_enums.faction_enums import FactionType
 
 
-class FactionConfig(Config):
+class FactionConfig(LegionConfig):
     faction_type: FactionType
 
