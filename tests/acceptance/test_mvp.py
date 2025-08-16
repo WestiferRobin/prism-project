@@ -4,7 +4,7 @@ from src.api.builders.net_builder import build_prism_net
 from src.api.services.app_service import get_apps
 from src.api.services.bot_service import get_bots
 from src.api.services.user_service import get_user_configs
-from src.api.validators import validate_mvp
+from utils import validate_mvp
 from src.utils.constants import MVP_VERSIONS
 
 

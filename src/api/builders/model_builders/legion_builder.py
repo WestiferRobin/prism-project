@@ -1,21 +1,24 @@
-from src.api.builders.model_builders.drone_builder import build_legion_drone
-from src.models.drones.legion_drone import LegionDrone
+from src.api.builders.config_builders.legion_configs import build_legion_config
 from src.models.legion import Legion
-from src.utils.enums.prism_enums import RankType
+from src.utils.configs.model_configs.drone_config import DroneConfig
 
 
-def build_legion(version: int, admin: LegionDrone = None) -> Legion:
-    if admin is None:
-        admin = build_legion_drone(version=version, rank=RankType.Arch)
-
-    vice = build_legion_drone(version=version, rank=RankType.Arch)
-    general = build_legion_drone(version=version, rank=RankType.Arch)
-    admiral = build_legion_drone(version=version, rank=RankType.Arch)
-
-    return Legion(
-        admin=admin,
-        vice=vice,
-        general=general,
-        admiral=admiral
+def build_legion(
+    version: int,
+    name: str,
+    leader_config: DroneConfig,
+    vice_config: DroneConfig,
+    general_config: DroneConfig,
+    admiral_config: DroneConfig
+) -> Legion:
+    legion_config = build_legion_config(
+        version=version,
+        name=name,
+        leader_config=leader_config,
+        vice_config=vice_config,
+        general_config=general_config,
+        admiral_config=admiral_config
     )
+
+    return Legion(config=legion_config)
 

@@ -1,6 +1,6 @@
 from src.api.builders.company_builder import build_prism_co, build_company
 from src.api.builders.config_builders.user_configs.wes_config import build_wes_config
-from src.api.validators.company_validator import validate_company
+from utils.validators.company_validator import validate_company
 from src.utils.constants import DEBUG_VERSION
 
 

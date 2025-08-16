@@ -1,7 +1,7 @@
 from typing import List
 
 from src.api.builders import build_mvp
-from src.api.validators import validate_mvp
+from utils import validate_mvp
 from src.utils.constants import DEV_VERSION
 from src.utils.user import User
 
