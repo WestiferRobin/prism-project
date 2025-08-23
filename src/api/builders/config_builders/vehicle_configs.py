@@ -1,4 +1,4 @@
-from src.models.equations.mass import Mass
+from src.models.equations.chemistry.mass import Mass
 from src.utils.configs.model_configs.vehicle_config import VehicleConfig
 from src.utils.enums.vehicle_enums import VehicleType
 

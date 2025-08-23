@@ -2,7 +2,7 @@ from typing import List, Dict
 
 from pydantic import BaseModel
 
-from src.models.equations.mass import Mass
+from src.models.equations.chemistry.mass import Mass
 from src.models.equations.physics.force import Force
 from src.utils.configs.model_configs.vehicle_configs import VehicleConfig
 from src.utils.enums.vehicle_enums import VehicleType

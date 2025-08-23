@@ -1,5 +1,5 @@
 from src.api.builders import build_hedron_hive
-from src.api.builders.model_builders.bot_builder import build_bot_drone
+from src.api.builders.model_builders.project_builder.bot_builder import build_bot_drone
 from utils import validate_server, validate_bot
 from src.utils.constants import DEV_VERSION
 
