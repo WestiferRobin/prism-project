@@ -5,17 +5,17 @@ TEST_VERSION = DEV_VERSION + 1
 PROD_VERSION = DEV_VERSION + 2
 
 # Feature Pipeline
-ALPHA_VERSION = DEV_VERSION + 3 # No Acceptance yet
-BETA_VERSION = DEV_VERSION + 4 # Yes Acceptance
-FINAL_VERSION = DEV_VERSION + 5 # Yes Environments
+# ALPHA_VERSION = DEV_VERSION + 3 # No Acceptance yet
+# BETA_VERSION = DEV_VERSION + 4 # Yes Acceptance
+# FINAL_VERSION = DEV_VERSION + 5 # Yes Environments
 DEBUG_VERSION = DEV_VERSION + 6 # Prism Project (cli-python)
 
 MVP_VERSIONS = [
     DEV_VERSION,
     TEST_VERSION,
     PROD_VERSION,
-    ALPHA_VERSION,
-    BETA_VERSION,
-    FINAL_VERSION,
+    # ALPHA_VERSION,
+    # BETA_VERSION,
+    # FINAL_VERSION,
     DEBUG_VERSION
 ]

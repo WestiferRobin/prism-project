@@ -3,25 +3,32 @@ from random import choice, randint
 from src.utils.exceptions import PrismException
 
 class RaceType(str, Enum):
-    Human = "human"
-    Aeon = "aeon"
-    Archon = "archon"
+    Human = "human" # earth humans and star humans
+    Cyborg = "cyborg" # humans with cyber parts
 
-    Slug = "slug"
-    Bug = "bug"
-    Reptile = "reptile"
+    Aeon = "aeon" # white and blue and yellow and green elves
+    Archon = "archon" # black and grey and red and orange demons
 
-    Mammal = "mammal"
-    Ape = "ape"
-    Raptor = "raptor"
+    Slug = "slug" # Jabba as Tzar of Exchange while Zimo as Vice Tzar
+    Bug = "bug" # Common of Confederacy and Exchange
+    Reptile = "reptile" # Common of Ethereal and Exchange
 
-    Shark = "shark"
-    Fish = "fish"
-    Squid = "squid"
+    Deer = "Deer" # Common of Federation and Guild
+    Wolf = "wolf" # Common of Raiders and Guild
+    Lion = "lion" # Common of Pirates and Raiders
+    Bear = "bear" # Common of Pirates and Raiders
 
-    Droid = "droid"
-    Android = "android"
-    Cyborg = "cyborg"
+    Raptor = "raptor" # Common of Pirates and Guild
+    Parrot = "parrot" # Common of Raiders and Guild
+    Bird = "bird" # Common of Pirates and Raiders
+
+    Shark = "shark" # Common of Ethereal and Exchange
+    Orca = "orca" # Common of Federation and Guild
+    Squid = "squid" # Common of Pirates and Raiders
+    Fish = "fish" # Common of Ethereal nd Federation
+
+    Droid = "droid" # droid but machine like
+    Android = "android" # droid but human like
 
     @staticmethod
     def random_race() -> "RaceType":

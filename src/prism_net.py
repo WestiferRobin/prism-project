@@ -5,13 +5,13 @@ from pydantic import BaseModel
 
 from src.app import App
 from src.app.game import Game
-from src.app.tool import Tool
+from src.app.lab import Lab
 from src.app.widget import Widget
 from src.bots import Bot
 from src.models.drones import Drone
 from src.utils.configs.app_configs.game_config import GameConfig
-from src.utils.configs.app_configs.tool_config import ToolConfig
-from src.utils.configs.app_configs.widget_config import WidgetConfig
+from src.utils.configs.app_configs.lab_config import LabConfig
+from src.utils.configs.app_configs.forge_config import ForgeConfig
 from src.utils.configs.net_config import NetConfig
 from src.utils.user import User
 
@@ -38,12 +38,12 @@ class PrismNet(BaseModel):
         return games
 
     @property
-    def tools(self) -> List[Tool]:
+    def tools(self) -> List[Lab]:
         tools = []
         for app_config in self.config.app_configs:
-            if isinstance(app_config, ToolConfig):
-                tool_config = cast(ToolConfig, app_config)
-                tool = Tool(config=tool_config)
+            if isinstance(app_config, LabConfig):
+                tool_config = cast(LabConfig, app_config)
+                tool = Lab(config=tool_config)
                 tools.append(tool)
         return tools
 
@@ -51,8 +51,8 @@ class PrismNet(BaseModel):
     def widgets(self) -> List[Widget]:
         widgets = []
         for app_config in self.config.app_configs:
-            if isinstance(app_config, WidgetConfig):
-                widget_config = cast(WidgetConfig, app_config)
+            if isinstance(app_config, ForgeConfig):
+                widget_config = cast(ForgeConfig, app_config)
                 widget = Widget(config=widget_config)
                 widgets.append(widget)
         return widgets

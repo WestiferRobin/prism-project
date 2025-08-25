@@ -5,54 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Mathmatical_Logos/Logos_Christ_Man_Rights_As_God_In_Legion.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/KJV_SourceCode.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/KJV_Tokens.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/periodic-table.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/model_builders/game_builders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/model_builders/lab_builders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/model_builders/lab_builders/density_builders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/model_builders/lab_builders/mass_builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/builders/model_builders/project_builder/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/getters/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/getters/science_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/equations/chemistry/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/equations/chemistry/atom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/equations/chemistry/mass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/equations/chemistry/molecule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/enums/mass_enum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/test_theory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/app_tests/prism_labs_tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/app_tests/prism_labs_tests/test_projects.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/model_tests/game_tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/model_tests/lab_tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/model_tests/lab_tests/test_mass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/theory_tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/unit/theory_tests/test_science.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/converters/config_converter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/forge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/studio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/terminals/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/terminals/mobile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/terminals/web.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/forge_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/studio_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/terminal_configs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/terminal_configs/mobile_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/terminal_configs/web_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/app_tests/test_forge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/app_tests/test_game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/cost_test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/acceptance/cost_test/test_mvp_cost.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/vehicle_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/vehicle_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/area_builders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/lab_builders/area_builders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/bot_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/project_builder/bot_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/drone_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/project_builder/drone_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/faction_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/game_builders/faction_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/legion_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/project_builder/legion_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/mass_builder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/prism_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/project_builder/prism_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/vehicle_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/game_builders/vehicle_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/model_builders/volume_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/model_builders/lab_builders/volume_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/density.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/chemistry/density.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/mass.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/math/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/equations/math/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/equations/physics/density.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/vehicles/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/vehicles/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants/physics_contstants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/science_constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_company.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/bot_tests/test_company.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_versions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/bot_tests/test_versions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/bot_tests/test_bots.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/bot_tests/test_bots.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/model_tests/test_force.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/model_tests/lab_tests/test_force.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/model_tests/test_legion.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/model_tests/game_tests/test_legion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/model_tests/test_mass.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/utils/validators/model_validators/mass_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/utils/validators/model_validators/mass_validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prism_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prism_net.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/tool_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/lab_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/widget_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/account_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/account_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/enums/game_enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/game_enums/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/enums/platform_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/platform_enums.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/enums/prism_enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/prism_enums/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/app_tests/test_prism_lab.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/app_tests/test_lab.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,11 +120,11 @@
       <recent name="$PROJECT_DIR$/zdocs/faq" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/plaforms" />
+      <recent name="$PROJECT_DIR$/src/utils/configs/app_configs" />
       <recent name="$PROJECT_DIR$/src/models/equations/chemistry" />
       <recent name="$PROJECT_DIR$/src/models/equations/physics" />
       <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/src/api/builders/model_builders/lab_builders" />
-      <recent name="$PROJECT_DIR$/src/api/builders/model_builders/game_builders" />
     </key>
   </component>
   <component name="RunManager" selected="Python.science_constants">

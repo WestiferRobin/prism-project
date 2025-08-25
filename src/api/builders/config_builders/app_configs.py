@@ -3,7 +3,7 @@ from uuid import UUID, uuid4
 
 from src.utils.configs.app_configs import AppConfig
 from src.utils.configs.app_configs.game_config import GameConfig
-from src.utils.configs.app_configs.tool_config import ToolConfig
+from src.utils.configs.app_configs.lab_config import LabConfig
 from src.utils.configs.model_configs.account_config import AccountConfig
 from src.utils.enums.game_enums import GameMode
 from src.utils.enums.platform_enums import PlatformType
@@ -68,7 +68,7 @@ def build_tool_config(
     platform: PlatformType,
     tool_id: UUID = None,
     account_configs: List[AccountConfig] = None
-) -> ToolConfig:
+) -> LabConfig:
     if tool_id is None:
         tool_id = uuid4()
     app_config = build_app_config(
@@ -79,12 +79,6 @@ def build_tool_config(
         platform=platform,
         account_configs=account_configs
     )
-    return ToolConfig(
-        version=app_config.version,
-        tool_id=app_config.id,
-        name=app_config.name,
-        alias=app_config.alias,
-        platform=app_config.platform,
-        account_configs=app_config.account_configs,
-    )
+    return LabConfig(lab_id=app_config.id, account_configs=app_config.account_configs, version=app_config.version,
+                     name=app_config.name, alias=app_config.alias, platform=app_config.platform)
 

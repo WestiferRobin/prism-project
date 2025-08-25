@@ -30,7 +30,7 @@ def build_app_registry(configs: List[AppConfig]) -> Dict[UUID, App]:
 def build_prism_cook(version: int, app_id: UUID = None, platform: PlatformType = PlatformType.Mobile) -> App:
     config = build_app_config(
         version=version,
-        app_name="Prism Cook",
+        app_name="Prism Forge",
         app_alias="prism-cook",
         platform=platform,
         app_id=app_id

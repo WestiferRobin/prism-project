@@ -30,7 +30,7 @@ def build_solar_conquest(
     version: int = 0,
     game_id: UUID = None,
     game_mode: GameMode = GameMode.Classic,
-    platform: PlatformType = PlatformType.PC,
+    platform: PlatformType = PlatformType.Terminal,
     account_configs: List[AccountConfig] = None
 ) -> Game:
     if game_id is None:

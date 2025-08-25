@@ -1,3 +1,4 @@
+import uuid
 from typing import List
 from uuid import UUID
 
@@ -24,4 +25,27 @@ class GameConfig(AppConfig):
     @property
     def player_configs(self) -> List[UserConfig]:
         return self.user_configs
+
+
+class ClassicConfig(GameConfig):
+    def __init__(self,
+        player_config: AccountConfig,
+        enemy_config: AccountConfig,
+        game_id: UUID = None
+    ):
+        if game_id is None:
+            game_id = uuid.uuid4()
+        super().__init__(
+            game_id=game_id,
+            game_mode=GameMode.Classic,
+            player_configs=[player_config, enemy_config]
+        )
+
+
+class CampaignConfig(GameConfig):
+    def __init__(self,
+        federation_config: AccountConfig,
+        empire_config: AccountConfig,
+    ):
+        pass
 

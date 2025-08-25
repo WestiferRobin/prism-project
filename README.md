@@ -1,36 +1,55 @@
-# MVP: Prism.net
+# PrismProject: MVP Model of Prism.hive (formerly Prism.co)
 
-Goal: A Platform where Drones and Users for productivity and play
+- central platform for user drone interaction in workflows for automation
+  - Game: Legion vs Legion War and Trade Games
+    - Find Tribal relationships in colonies
+    - Map data to modern day colonies with limited resources to do company work for trade for prism-hive
+    - Why is to build prism-drone with prism-ai using it as a logos seeking ai
+    - Idea:
+      - I make a dataset on native myth/legends/theology/science on a prism-drone's llm with gpt prompts
+      - prism-drones should figure out how to work in a team in war and trade missions
+      - prism-drones should figure out how to work in a team for the legion colony on planet to survive
+        - diplomacy with other Tribes of Outposts, Nations of Cities, States of Bases, and Factions of Citadels with Fortress
+        - war with other Tribes, Nations, States, and Factions
+      - simulation is generated and is learned by what the prism-drone is seen with the gnosis and egos models inside the prism-drone model
+  - Labs: Drive, Code, Terminal, 2D-UI in statics and dynamics images, video, and audio, and same UI for 3D
+    - Money = Material made of atoms
+    - Mark rates of atoms per market density for money reasons
+    - Version-0 Projects: Spheres and Cubes with Squares and Circles
+    - Version-1 Projects: Triangles and Pyramids with Rectangles and Prism (rectangular prism in 3D is in the dataset)
+    - Version-2 Projects: Mass and Energy Relationships for Solid, Liquid, Gas, and Plasma from 0-11 Dimensions based on string theory
+    - Version 3-7 as legion-project for user running prism-hive behind web-site with user's legion in a system
+      - Version-3 Projects: Drone Model from prism-conquest
+      - Version-3 Projects: Speeder Model from prism-conquest
+      - Version-4 Projects: Shuttle Model from prism-conquest
+      - Version-5 Projects: Ship Model from prism-conquest
+      - Version-6 Projects: Colony Model from prism-conquest
+      - Version-7 Projects: Legion Model from prism-conquest
+  - Studio: Engine service system of making Videos, Images, Posts, Books, and ComicBooks with prism-drones using prism-labs
+    - Money = Clicks and Views based on terms
+    - Market: Education, Science, History, Spirituality = Fiction Book Model and Album Model
+    - Goal: Market Cases
+      - Tiktok Videos for Highlights and Facts/Wisdom
+      - Youtube Videos for Podcasts and Spiritual Music Mix
+      - Instagram for Promotion and Facts/Wisdom
+      - Twitter for Promotion and Facts/Wisdom
+      - Date: 01/01/2026 ready with some momentum before 12/25/2025 on 08/2025 momentum
+      - AC:
+        - Videos for Youtube and Tiktok with Images for Icon
+        - Images for Instagram and Youtube
+        - Twitter for Instagram, Tiktok, Youtube, and PrismHive source
+  - Forge: Drive, Scribe(Word/Docs), Sheets(Excel), Todo(Trello), Chronos(Calander with automation tasks for drones and users with forge)
+    - Note: Divide ForgeApps into Drive, Scribe, Todos, and Chronos into separate lite apps.
+    - Idea: web has full suite while mobile references each other like google-drive with microsoft-word recognitions with prism-drones
+  - Hive: PrismHive is GPT-Drone system with 1-12 drones per tier case at scale with market place
+    - Serves like amazon with gpt for prism-drones
+    - Serves like creation with prism-drones and api docs and portals
+    - Serves like social media as well with amazon and portal to prism-drones with prism-forge for prism-drone creation with prism-labs or import
+  - Version 2: 2030 and beyond
+    - Hive with VR/XR world with Unreal in C++
+      - Minecraft/Valorant/Rimworld/Rivals in Galaxy Map in prism-conquest
+      - make c++ api and then design around c api design with validation in python script tests
+    - Bots with C API in Embedded Linux and Python Scripts
+      - Hive Bot: like Alexa but in a PI or PC app on Computer
+      - Prism Bot: prism-drone in bot-drone with servos and bot app integration on terminal app
 
-# Tech Specs
-
-React-Components: 
-  - Language: TypeScript
-  - Supports:
-    - React.js
-    - Next.js
-    - Tailwind
-
-REST-API: Java, Python
-- SpringBoot
-- FastAPI
-
-Drone-API: Python, C++
-- PyTorch
-- Linux: Terminal
-
-# Prism.net
-
-## Introduction
-### Prism-Drone
-
-## Apps
-### Prism-Hive
-### Prism-Forge
-### Prism-Lab
-### Prism-Reflect
-
-# SOURCE
-
-Ranks: https://www.reddit.com/r/coolguides/comments/1eaxkdm/a_cool_guide_to_us_military_ranks/#lightbox
-Army: https://cdn.britannica.com/74/178774-050-9A6238DD/units-army-size-ranks-officers.jpg
