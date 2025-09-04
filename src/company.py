@@ -13,3 +13,5 @@ from src.utils.configs.company_config import CompanyConfig
 class Company(BaseModel):
     config: CompanyConfig
 
+
+

@@ -1,10 +1,15 @@
+from typing import List
+
 from src.utils.configs.model_configs.drone_config import DroneConfig
 from src.utils.configs.model_configs.legion_config import LegionConfig
+from src.utils.configs.model_configs.team_config import TeamConfig
 from src.utils.configs.model_configs.user_config import UserConfig
 
 
 class CompanyConfig(LegionConfig):
     leader_config: UserConfig
+    chief_configs: List[DroneConfig]
+    team_configs: List[TeamConfig]
 
     def __init__(self,
         leader_config: UserConfig,
@@ -21,15 +26,4 @@ class CompanyConfig(LegionConfig):
             **company_data
         )
 
-    @property
-    def project_leader_config(self) -> DroneConfig:
-        return self.vice_config
-
-    @property
-    def tech_leader_config(self) -> DroneConfig:
-        return self.general_config
-
-    @property
-    def market_leader_config(self) -> DroneConfig:
-        return self.admiral_config
 

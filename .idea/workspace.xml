@@ -5,41 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/converters/config_converter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/forge.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/studio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/terminals/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/terminals/mobile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/terminals/web.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/forge_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/studio_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/terminal_configs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/terminal_configs/mobile_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/terminal_configs/web_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/app_tests/test_forge.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/app_tests/test_game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/cost_test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/acceptance/cost_test/test_mvp_cost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/team_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/game_builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/app_builders/tool_builders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/app_configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/widget.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prism_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prism_net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/game_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/tool_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/app_configs/lab_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/app_configs/widget_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/configs/model_configs/account_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/account_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mathmatical_Logos/Logos_Christ_Man_Rights_As_God_In_Legion.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/periodic-table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/company.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/configs/company_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/company_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/constants/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/enums/game_enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/game_enums/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/enums/platform_enums.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/platform_enums.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/enums/prism_enums/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/enums/prism_enums/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/app_tests/test_prism_lab.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/app_tests/test_lab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/design/platform-design.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/design/platform-design.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/faq/Docker_instructions.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/Docker_instructions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/faq/FEATURE_CHANNELS.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/FEATURE_CHANNELS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/faq/FOR_AWS_DEPLOYMENT.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/FOR_AWS_DEPLOYMENT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/faq/HOW_TO_RUN_TESTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/HOW_TO_RUN_TESTS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/faq/REDIS_HOW_TO.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/REDIS_HOW_TO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/faq/RPC_NOTES.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/RPC_NOTES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/faq/SQL_ALCHEMY_HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/SQL_ALCHEMY_HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/faq/requirements_cleanup.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/requirements_cleanup.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/legacy/cad_blender_pipeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/legacy/cad_blender_pipeline.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/legacy/equation_notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/legacy/equation_notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/legacy/hypothesis_notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/legacy/hypothesis_notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/legacy/master-page.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/legacy/master-page.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/legacy/project_silver_notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/legacy/project_silver_notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/notes/design-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/notes/design-notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/notes/endpoint-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/notes/endpoint-notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/notes/scratch-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/notes/scratch-notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/org-chart.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/org-chart.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/wiki/prism_company.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/wiki/prism_company.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zdocs/wiki/user_cases.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/wiki/user_cases.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,50 +62,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for acceptance.test_bots.test_bot_drone.executor": "Run",
-    "Python tests.Python tests for acceptance.test_company.test_prism_co.executor": "Run",
-    "Python tests.Python tests for acceptance.test_mvp.test_dev_version.executor": "Run",
-    "Python tests.Python tests for acceptance.test_mvp.test_mvp.executor": "Run",
-    "Python tests.Python tests for acceptance.test_versions.test_debug_mvp.executor": "Run",
-    "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation.executor": "Run",
-    "Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation.executor": "Run",
-    "Python tests.Python tests for test_dev_version.executor": "Run",
-    "Python tests.Python tests for unit.app_tests.test_solar_conquest.test_solar_conquest.executor": "Debug",
-    "Python tests.Python tests for unit.app_tests.test_solar_conquest.test_solar_conquest_classic.executor": "Debug",
-    "Python tests.Python tests for unit.model_tests.test_legion.test_classic.executor": "Run",
-    "Python tests.Python tests for unit.model_tests.test_legion.test_faction.executor": "Run",
-    "Python tests.Python tests in __init__.py.executor": "Run",
-    "Python tests.Python tests in acceptance.executor": "Run",
-    "Python tests.Python tests in test_acceptance.py.executor": "Run",
-    "Python tests.Python tests in test_mvp.py.executor": "Run",
-    "Python tests.Python tests in tests.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python.atoms.executor": "Run",
-    "Python.compound.executor": "Run",
-    "Python.elements.executor": "Debug",
-    "Python.example_plotter.executor": "Run",
-    "Python.kinematics.executor": "Run",
-    "Python.legion_config.executor": "Run",
-    "Python.main.executor": "Debug",
-    "Python.molecule.executor": "Run",
-    "Python.molecules.executor": "Run",
-    "Python.newton_simulator.executor": "Run",
-    "Python.physics_variables.executor": "Run",
-    "Python.quantum_mechanics.executor": "Run",
-    "Python.reactions.executor": "Run",
-    "Python.science_constants.executor": "Debug",
-    "Python.uuid_converter.executor": "Run",
-    "Python.uuid_helper.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/wesleywebb/Dev/PrismCo/prism-project/tests/unit",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for acceptance.test_bots.test_bot_drone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for acceptance.test_company.test_prism_co.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for acceptance.test_mvp.test_dev_version.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for acceptance.test_mvp.test_mvp.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for acceptance.test_versions.test_debug_mvp.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_constant_equation.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for equation_tests.math_equation_tests.algerbra_equation_tests.test_linear_equations.test_linear_equation.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_dev_version.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for unit.app_tests.test_solar_conquest.test_solar_conquest.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for unit.app_tests.test_solar_conquest.test_solar_conquest_classic.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for unit.model_tests.test_legion.test_classic.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for unit.model_tests.test_legion.test_faction.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in __init__.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in acceptance.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_acceptance.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_mvp.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.atoms.executor&quot;: &quot;Run&quot;,
+    &quot;Python.compound.executor&quot;: &quot;Run&quot;,
+    &quot;Python.elements.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.example_plotter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.kinematics.executor&quot;: &quot;Run&quot;,
+    &quot;Python.legion_config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.molecule.executor&quot;: &quot;Run&quot;,
+    &quot;Python.molecules.executor&quot;: &quot;Run&quot;,
+    &quot;Python.newton_simulator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.physics_variables.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quantum_mechanics.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reactions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.science_constants.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.uuid_converter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.uuid_helper.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wesleywebb/Dev/PrismCo/prism-project/tests/unit&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/unit" />
@@ -260,7 +255,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>7</line>
+          <line>6</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
