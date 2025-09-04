@@ -1,5 +1,6 @@
 from typing import List
 
+from src.utils.configs.app_configs import AppConfig
 from src.utils.configs.model_configs.drone_config import DroneConfig
 from src.utils.configs.model_configs.legion_config import LegionConfig
 from src.utils.configs.model_configs.team_config import TeamConfig
@@ -10,6 +11,9 @@ class CompanyConfig(LegionConfig):
     leader_config: UserConfig
     chief_configs: List[DroneConfig]
     team_configs: List[TeamConfig]
+
+    game_config: AppConfig
+    studio_config: AppConfig
 
     def __init__(self,
         leader_config: UserConfig,

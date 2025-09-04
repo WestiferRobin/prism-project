@@ -7,11 +7,11 @@
 """
 from pydantic import BaseModel
 
+from src.prism_net import PrismNet
 from src.utils.configs.company_config import CompanyConfig
 
 
 class Company(BaseModel):
     config: CompanyConfig
-
-
+    network: PrismNet
 

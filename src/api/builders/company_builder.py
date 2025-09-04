@@ -1,4 +1,4 @@
-from src.api.builders.config_builders.company_configs import build_company_config
+from src.api.builders.config_builders.legion_configs.company_configs import build_company_config
 from src.api.helpers.alias_helper import configure_alias
 from src.company import Company
 from src.utils.configs.model_configs.user_config import UserConfig

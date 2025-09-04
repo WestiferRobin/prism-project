@@ -20,6 +20,8 @@ class PrismNet(BaseModel):
     config: NetConfig
 
     users: List[User]
+    drones: List[Drone]
+
     apps: List[App]
     bots: List[Bot]
 

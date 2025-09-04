@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from src.api.builders.config_builders.prism_configs import build_prism_config
+from src.api.builders.config_builders.drone_configs.prism_configs import build_prism_config
 from src.utils.configs.model_configs.drone_config import DroneConfig
 from src.utils.date import Date
 from src.utils.enums.prism_enums import AgeType, GenderType, RaceType, RankType

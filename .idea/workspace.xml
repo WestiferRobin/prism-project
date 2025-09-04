@@ -5,36 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34803ad7-ff9a-4424-b46b-26218c5dd3bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/configs/model_configs/team_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/legion_configs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/builders/config_builders/legion_configs/faction_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.docs/wiki/user_cases.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/wiki/user_cases.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mathmatical_Logos/Logos_Christ_Man_Rights_As_God_In_Legion.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/periodic-table.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/company_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/company_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/company_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/legion_configs/company_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/legion_configs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/prism_configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs/prism_configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/brian_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/builders/config_builders/user_configs/emma_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/helpers/registry_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/services/user_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/company.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prism_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prism_net.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/configs/company_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/configs/company_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/constants/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/design/platform-design.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/design/platform-design.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/faq/Docker_instructions.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/Docker_instructions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/faq/FEATURE_CHANNELS.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/FEATURE_CHANNELS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/faq/FOR_AWS_DEPLOYMENT.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/FOR_AWS_DEPLOYMENT.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/faq/HOW_TO_RUN_TESTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/HOW_TO_RUN_TESTS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/faq/REDIS_HOW_TO.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/REDIS_HOW_TO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/faq/RPC_NOTES.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/RPC_NOTES.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/faq/SQL_ALCHEMY_HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/SQL_ALCHEMY_HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/faq/requirements_cleanup.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/faq/requirements_cleanup.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/legacy/cad_blender_pipeline.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/legacy/cad_blender_pipeline.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/legacy/equation_notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/legacy/equation_notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/legacy/hypothesis_notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/legacy/hypothesis_notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/legacy/master-page.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/legacy/master-page.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/legacy/project_silver_notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/legacy/project_silver_notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/notes/design-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/notes/design-notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/notes/endpoint-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/notes/endpoint-notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/notes/scratch-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/notes/scratch-notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/org-chart.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/org-chart.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/wiki/prism_company.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/wiki/prism_company.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zdocs/wiki/user_cases.md" beforeDir="false" afterPath="$PROJECT_DIR$/.docs/wiki/user_cases.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants/user_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/user_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/test_mvp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/test_mvp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,11 +106,11 @@
       <recent name="$PROJECT_DIR$/zdocs/faq" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/api/builders/config_builders/legion_configs" />
+      <recent name="$PROJECT_DIR$/src/api/builders/config_builders/drone_configs" />
       <recent name="$PROJECT_DIR$/src/app/plaforms" />
       <recent name="$PROJECT_DIR$/src/utils/configs/app_configs" />
       <recent name="$PROJECT_DIR$/src/models/equations/chemistry" />
-      <recent name="$PROJECT_DIR$/src/models/equations/physics" />
-      <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
   <component name="RunManager" selected="Python.science_constants">
@@ -252,11 +243,6 @@
           <url>file://$PROJECT_DIR$/tests/unit/app_tests/test_solar_conquest.py</url>
           <line>35</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/models/equations/chemistry/mass.py</url>

@@ -7,7 +7,6 @@
 
 - AC: 
   - Wes wants Forge, Legion, Reflect
-  - Emma wants Forge, Lab, Reflect
   - Mary wants Forge, Studio, Hive
   - Max wants Forge, Conquest, Hive
 
@@ -36,11 +35,6 @@ Goal: Build an AI Fighting and Trade Force
 
 - AC:
   - Solar Conquest is for R&D
-
-# Emma Cases (Lab Case)
-- Emma has a lot of things she needs to do and does a lot of things
-- 
-- Emma can see Wes's chemistry solutions on Project
 
 # Mary Cases (Studio Case)
 - Needs social media to be created and scheduled
