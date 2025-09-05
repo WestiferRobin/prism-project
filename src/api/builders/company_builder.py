@@ -24,7 +24,8 @@ def build_prism_co(
 ) -> Company:
     return build_company(
         version=version,
-        company_name="Prism Co",
+        company_name="Prism.co",
         leader_config=leader_config,
     )
+
 

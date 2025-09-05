@@ -18,8 +18,9 @@ if __name__ == '__main__':
     elif mvp_version == TEST_VERSION:
         prism_co.run_hive() # Company site and marketplace of prism-drones linked to drive and studio
     elif mvp_version == PROD_VERSION:
-        prism_co.run_labs() # Build LogoLLM, SilverOrb, Computation Experiments, etc in a vscode, notebook, and stem paradine
+        prism_co.run_lab() # Build LogoLLM, SilverOrb, Computation Experiments, etc in a vscode, notebook, and stem paradine
     elif mvp_version == FINAL_VERSION:
         prism_co.run_forge() # Google Drive and Microsoft Office with ChatGPT linked with prism-apps
-
+    else:
+        raise Exception(f"Unsupported mvp version: {mvp_version}")
 

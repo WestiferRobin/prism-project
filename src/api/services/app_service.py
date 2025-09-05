@@ -2,8 +2,8 @@ from typing import List
 
 from src.api.builders.app_builders import build_app_list, build_prism_cook, build_prism_hive
 from src.api.builders.app_builders.game_builder import build_solar_conquest
-from src.api.builders.app_builders.tool_builders import build_prism_lab, build_prism_forge, build_prism_studio
-from src.app import App
+from src.api.builders.app_builders.studio_builder import build_prism_lab, build_prism_forge, build_prism_studio
+from src.models.app import App
 from src.utils.configs.app_configs import AppConfig
 from src.utils.configs.model_configs.user_config import UserConfig
 from src.utils.constants import DEV_VERSION, TEST_VERSION, PROD_VERSION, ALPHA_VERSION, FINAL_VERSION, \

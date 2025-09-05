@@ -1,0 +1,62 @@
+services:
+  lab-studio-service:
+    container_name: lab-studio-service
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+      - "50051:50051"
+    environment:
+      - POSTGRES_URL=postgresql+asyncpg://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
+      - REDIS_URL=redis://${REDIS_HOST}:${REDIS_PORT}
+      - RABBITMQ_URL=amqp://${QUEUE_CONTENT_USER}:${QUEUE_CONTENT_PASSWORD}@${QUEUE_CONTENT_HOST}:${QUEUE_CONTENT_PORT}/
+      - ENV_MODE=docker
+    depends_on:
+      - lab-studio-postgres
+      - lab-studio-redis
+      - lab-studio-queue
+    networks:
+      - default
+
+  lab-studio-postgres:
+    image: postgres:15
+    container_name: lab-studio-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: lab-studio
+      POSTGRES_PASSWORD: lab-studio
+      POSTGRES_DB: lab-studio-db
+    volumes:
+      - prism_content_pgdata:/var/lib/postgresql/dependencies
+    networks:
+      - default
+
+  lab-studio-redis:
+    image: redis:7
+    container_name: lab-studio-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - default
+
+  lab-studio-queue:
+    image: rabbitmq:3-management
+    container_name: lab-studio-queue
+    ports:
+      - "5673:5672"     # AMQP
+      - "15673:15672"   # Management UI
+    environment:
+      RABBITMQ_DEFAULT_USER: lab-studio
+      RABBITMQ_DEFAULT_PASS: lab-studio
+    networks:
+      - default
+
+volumes:
+  prism_content_pgdata:
+
+networks:
+  default:
+    name: prism_config-web
+    external: true

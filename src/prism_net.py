@@ -3,10 +3,10 @@ from uuid import UUID
 
 from pydantic import BaseModel
 
-from src.app import App
-from src.app.game import Game
-from src.app.lab import Lab
-from src.app.widget import Widget
+from src.models.app import App
+from src.models.app.game import Game
+from src.models.app.lab import Lab
+from src.models.app import Widget
 from src.bots import Bot
 from src.models.drones import Drone
 from src.utils.configs.app_configs.game_config import GameConfig

@@ -2,7 +2,7 @@ from typing import List
 from uuid import UUID
 
 from src.api.helpers.registry_helper import configure_app_registry
-from src.app import App
+from src.models.app import App
 from src.utils.exceptions import PrismException
 
 

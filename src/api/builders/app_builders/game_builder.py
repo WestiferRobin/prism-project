@@ -2,7 +2,7 @@ from typing import List
 from uuid import UUID, uuid4
 
 from src.api.builders.config_builders.app_configs import build_game_config
-from src.app.game import Game
+from src.models.app.game import Game
 from src.models.controllers.faction_controller import FactionController
 from src.models.legion.faction import Faction
 from src.utils.configs.app_configs.game_config import GameConfig

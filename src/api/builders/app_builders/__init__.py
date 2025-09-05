@@ -2,7 +2,7 @@ from typing import List, Dict
 from uuid import UUID
 
 from src.api.builders.config_builders.app_configs import build_app_config
-from src.app import App
+from src.models.app import App
 from src.utils.configs.app_configs import AppConfig
 from src.utils.enums.platform_enums import PlatformType
 
